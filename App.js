@@ -78,7 +78,7 @@ export default class App extends Component<{}> {
             <Panel
               space={30}
               label='Activity'>
-              <Layout direction='row'>
+              <Layout row>
                 <Activity />
                 <Activity size='small' />
               </Layout>
@@ -86,7 +86,7 @@ export default class App extends Component<{}> {
             <Panel
               space={30}
               label='Activity Label'>
-              <Layout direction='row'>
+              <Layout row>
                 <Activity>
                   LOADING
                 </Activity>
@@ -98,7 +98,7 @@ export default class App extends Component<{}> {
             <Panel
               space={30}
               label='Activity Stacked'>
-              <Layout direction='row'>
+              <Layout row>
                 <Activity stacked>
                   LOADING
                 </Activity>

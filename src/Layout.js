@@ -18,6 +18,9 @@ class Layout extends Component {
         end: ({prop}) => {
           return {alignItems: 'flex-end'}
         },
+        row: ({prop}) => {
+          return {flexDirection: 'row'}
+        },
         space: ({prop, props}) => {
           if (prop) {
             const vertical = !props.styleFlexRow
