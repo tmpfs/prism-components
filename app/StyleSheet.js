@@ -20,7 +20,15 @@ export default ({colors, fonts}) => {
     'com.prism.ui.Panel.Body': {
       backgroundColor: '#335599',
       padding: 20
-    }
+    },
+
+    'com.prism.ui.BulletList': {
+      color: colors.cream
+    },
+
+    'com.prism.ui.BulletList.Bullet': {
+      marginRight: 5
+    },
 
     // Utils
     //

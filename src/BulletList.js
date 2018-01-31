@@ -7,9 +7,19 @@ import Label from './Label'
 
 class BulletList extends Component {
 
+  static styleOptions = () => {
+    return {
+      mapPropsToStyleObject: {
+        bullet: ['color'],
+        label: ['color']
+      }
+    }
+  }
+
   static propTypes = {
     items: PropTypes.array.isRequired,
-    number: PropTypes.bool,
+    numerical: PropTypes.bool,
+    space: PropTypes.number,
     justify: PropTypes.string,
     bold: PropTypes.bool,
     color: PropTypes.string,
@@ -21,34 +31,41 @@ class BulletList extends Component {
     number: false,
     bold: false,
     justify: 'start',
-    color: '#999999'
+    space: 5
   }
 
   render() {
     const {
+      style,
+      space,
       items,
       justify,
-      padding,
-      number,
+      numerical,
       color,
       bold,
       bulletColor,
-      labelColor
+      labelColor,
+      bulletStyle,
+      labelStyle
     } = this.props
+
+    // TODO: restore `style`
     return (
-      <Layout padding={padding}>
+      <Layout>
       {
+        // TODO: use Iterator and apply space to all but the last element
         items.map((label, i) => {
           return (
-            <Layout key={i} direction='row' justify={justify}>
+            <Layout key={i} direction='row' justify={justify} style={{marginBottom: space}}>
               <Label
-                style={{color: bulletColor || color, paddingBottom: number ? 0 : 5}}>
-                {number ? (i + 1).toString() + '.' : '\u2022'}
+                color={bulletColor || color}
+                style={bulletStyle}>
+                {numerical ? (i + 1).toString() + '.' : '\u2022'}
               </Label>
               <Label
                 bold={bold}
                 color={labelColor || color}
-                style={{paddingLeft: 5}}>
+                style={labelStyle}>
                 {label}
               </Label>
             </Layout>

@@ -1,5 +1,6 @@
 import BlockQuote from './BlockQuote'
 import BulletList from './BulletList'
+import Citation from './Citation'
 import Heading from './Heading'
 import Label from './Label'
 import Layout from './Layout'
@@ -10,6 +11,7 @@ import ScrollPane from './ScrollPane'
 export {
   BlockQuote,
   BulletList,
+  Citation,
   Heading,
   Label,
   Layout,

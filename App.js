@@ -4,6 +4,7 @@ import {Prism, StyleRegistry} from 'react-native-prism'
 import {
   BlockQuote,
   BulletList,
+  Citation,
   Heading,
   Label,
   Layout,
@@ -43,10 +44,10 @@ export default class App extends Component<{}> {
             </Layout>
             <Panel
               space={30}
-              label='Label Align'>
-              <Label align='left'>React Native is cool</Label>
-              <Label align='center'>React Native is cool</Label>
-              <Label align='right'>React Native is cool</Label>
+              label='Label'>
+              <Label>
+                Minimal, idiomatic style management for React Native.
+              </Label>
             </Panel>
             <Panel
               space={30}
@@ -61,11 +62,17 @@ export default class App extends Component<{}> {
               <BlockQuote>
                 Minimal, idiomatic style management for React Native.
               </BlockQuote>
+              <Citation>Muji 2018</Citation>
             </Panel>
             <Panel
               space={30}
               label='Unordered List'>
-              <BulletList items={['Apples', 'Oranges', 'Mango']} />
+              <BulletList items={['Go', 'Rust', 'Javascript']} />
+            </Panel>
+            <Panel
+              space={30}
+              label='Ordered List'>
+              <BulletList numerical={true} items={['Document', 'Test', 'Iterate']} />
             </Panel>
           </Layout>
         </ScrollPane>
