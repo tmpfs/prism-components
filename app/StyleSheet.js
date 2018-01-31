@@ -1,6 +1,14 @@
 export default ({colors, fonts}) => {
   return {
+    'View': {
+      backgroundColor: 'transparent'
+    },
     'Text': {
+      fontSize: 16,
+      color: colors.cream
+    },
+    'TextInput': {
+      fontSize: 16,
       color: colors.cream
     },
     'com.prism.ui.Layout': {
@@ -65,6 +73,17 @@ export default ({colors, fonts}) => {
       borderRadius: 0,
       paddingLeft: 12,
       height: 45
+    },
+    'com.prism.ui.TextArea': {
+      textAlignVertical: 'top',
+      height: 100,
+      paddingHorizontal: 10,
+      backgroundColor: 'transparent',
+    },
+    'com.prism.ui.TextArea.Background': {
+      backgroundColor: 'rgba(51, 102, 153, 0.75)',
+      borderColor: 'rgba(255, 255, 255, 0.5)',
+      borderWidth: 1
     },
 
     // Utils

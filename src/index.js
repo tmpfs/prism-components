@@ -11,6 +11,7 @@ import Notice from './Notice'
 import Panel from './Panel'
 import Paragraph from './Paragraph'
 import ScrollPane from './ScrollPane'
+import TextArea from './TextArea'
 import TouchButton from './TouchButton'
 
 export {
@@ -27,6 +28,7 @@ export {
   Panel,
   Paragraph,
   ScrollPane,
+  TextArea,
   TouchButton,
 }
 

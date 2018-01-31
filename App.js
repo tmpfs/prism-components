@@ -15,6 +15,7 @@ import {
   Panel,
   Paragraph,
   ScrollPane,
+  TextArea,
   TouchButton as Button
 } from './src'
 
@@ -48,6 +49,13 @@ export default class App extends Component<{}> {
           </Layout>
 
           <List space={30}>
+            <Panel
+              label='Text Area'>
+              <List space={30}>
+                <TextArea>This is some default text</TextArea>
+              </List>
+            </Panel>
+
             <Panel
               label='List Menu'>
               <List>
