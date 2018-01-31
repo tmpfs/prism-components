@@ -23,7 +23,6 @@ class TouchButton extends Component {
   }
 
   static propTypes = {
-    title: PropTypes.string,
     disabled: PropTypes.bool,
     onPress: PropTypes.func,
     disabledOpacity: PropTypes.number,

@@ -28,8 +28,6 @@ class BulletList extends Component {
   }
 
   static defaultProps = {
-    number: false,
-    bold: false,
     justify: 'start',
     space: 5
   }

@@ -9,6 +9,7 @@ import {
   Heading,
   Label,
   Layout,
+  List,
   Notice,
   Panel,
   Paragraph,
@@ -48,18 +49,22 @@ export default class App extends Component<{}> {
             <Panel
               space={30}
               label='Button'>
-              <Button>Touch Me</Button>
-              <Button disabled>Touch Me</Button>
+              <List space={10}>
+                <Button>Touch Me</Button>
+                <Button disabled>Touch Me</Button>
+              </List>
             </Panel>
             <Panel
               space={30}
               label='Notice'>
-              <Notice space={10}>
-                Minimal, idiomatic style management for React Native.
-              </Notice>
-              <Notice error={true}>
-                Minimal, idiomatic style management for React Native.
-              </Notice>
+              <List space={10}>
+                <Notice>
+                  Minimal, idiomatic style management for React Native.
+                </Notice>
+                <Notice error={true}>
+                  Minimal, idiomatic style management for React Native.
+                </Notice>
+              </List>
             </Panel>
             <Panel
               space={30}
@@ -96,30 +101,32 @@ export default class App extends Component<{}> {
             <Panel
               space={30}
               label='Activity'>
-              <Layout row radius={5} padding={[10]} space={20} background='dodgerblue'>
-                <Layout center>
-                  <Activity large />
+              <List space={20}>
+                <Layout row radius={5} padding={[10]} background='dodgerblue'>
+                  <Layout center>
+                    <Activity large />
+                  </Layout>
+                  <Layout center>
+                    <Activity />
+                  </Layout>
                 </Layout>
-                <Layout center>
-                  <Activity />
+                <Layout row radius={5} padding={[10]} background='dodgerblue'>
+                  <Activity stacked large>
+                    LOADING
+                  </Activity>
+                  <Activity stacked>
+                    LOADING
+                  </Activity>
                 </Layout>
-              </Layout>
-              <Layout row radius={5} padding={[10]} space={20} background='dodgerblue'>
-                <Activity stacked large>
-                  LOADING
-                </Activity>
-                <Activity stacked>
-                  LOADING
-                </Activity>
-              </Layout>
-              <Layout row radius={5} padding={[10]} background='dodgerblue'>
-                <Activity large>
-                  LOADING
-                </Activity>
-                <Activity>
-                  LOADING
-                </Activity>
-              </Layout>
+                <Layout row radius={5} padding={[10]} background='dodgerblue'>
+                  <Activity large>
+                    LOADING
+                  </Activity>
+                  <Activity>
+                    LOADING
+                  </Activity>
+                </Layout>
+              </List>
             </Panel>
           </Layout>
         </ScrollPane>
