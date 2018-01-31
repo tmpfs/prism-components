@@ -1,8 +1,8 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
-
 import {Prism} from 'react-native-prism'
 import Label from './Label'
+import Namespace from './Namespace'
 
 class Heading extends Component {
 
@@ -48,4 +48,4 @@ class Heading extends Component {
   }
 }
 
-export default Prism(Heading)
+export default Prism(Heading, Namespace)

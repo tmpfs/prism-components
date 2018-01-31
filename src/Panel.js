@@ -1,10 +1,9 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
-
 import {Prism} from 'react-native-prism'
-
 import Layout from './Layout'
 import Label from './Label'
+import Namespace from './Namespace'
 
 class Panel extends Component {
 
@@ -69,4 +68,4 @@ class Panel extends Component {
   }
 }
 
-export default Prism(Panel)
+export default Prism(Panel, Namespace)

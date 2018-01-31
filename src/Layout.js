@@ -1,10 +1,10 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
-import {View as NativeView} from 'react-native'
+import {View} from 'react-native'
 import {Prism} from 'react-native-prism'
-import NameSpace from './NameSpace'
+import Namespace from './Namespace'
 
-class View extends Component {
+class Layout extends Component {
   static styleOptions = ({compile}) => {
     return {
       defaultStyles: [compile({flex: 1, backgroundColor: 'transparent'})],
@@ -53,9 +53,9 @@ class View extends Component {
   render() {
     const {style} = this.props
     return (
-      <NativeView style={style}>{this.props.children}</NativeView>
+      <View style={style}>{this.props.children}</View>
     )
   }
 }
 
-export default Prism(View, NameSpace)
+export default Prism(Layout, Namespace)

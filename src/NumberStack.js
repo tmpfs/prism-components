@@ -1,9 +1,9 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
-
 import {Prism} from 'react-native-prism'
 import Layout from './Layout'
 import Label from './Label'
+import Namespace from './Namespace'
 
 const Sizes = {
   large: {
@@ -64,4 +64,4 @@ class NumberStack extends Component {
   }
 }
 
-export default Prism(NumberStack)
+export default Prism(NumberStack, Namespace)

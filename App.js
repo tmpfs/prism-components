@@ -2,8 +2,11 @@ import React, {Component} from 'react'
 import {Prism, StyleRegistry} from 'react-native-prism'
 
 import {
-  Text,
-  View
+  BlockQuote,
+  Label,
+  Paragraph,
+  Layout,
+  ScrollPane
 } from './src'
 
 import Colors from './app/Colors'
@@ -27,25 +30,21 @@ const image = 'https://raw.githubusercontent.com/fika-community/prism/master/pri
 export default class App extends Component<{}> {
   render () {
     return (
-      <View background='backgroundGreen'>
-        <View
-          margin={20}
-          padding={10}
-          background='green'
-          border={[4, 'cream']}>
-
-            <Text
-              border='cream'
-              padding={20}
-              align='center'
-              //color='muted'
-              size={18}
-              //error
-              margin={[10, 20]}>
-                Minimal, idiomatic style management for React Native.
-              </Text>
-          </View>
-      </View>
+      <Layout background='background'>
+        <ScrollPane>
+          <Layout>
+            <Layout
+              margin={20}
+              padding={10}>
+              <BlockQuote
+                align='center'
+                size={18}>
+                  Minimal, idiomatic style management for React Native.
+              </BlockQuote>
+            </Layout>
+          </Layout>
+        </ScrollPane>
+      </Layout>
     )
   }
 }
