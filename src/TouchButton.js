@@ -23,6 +23,7 @@ class TouchButton extends Component {
   }
 
   static propTypes = {
+    title: PropTypes.string,
     disabled: PropTypes.bool,
     onPress: PropTypes.func,
     disabledOpacity: PropTypes.number,
@@ -47,14 +48,14 @@ class TouchButton extends Component {
   }
 
   render() {
-    const {style, labelStyle, onPress} = this.props
+    const {style, title, labelStyle, onPress} = this.props
     return (
       <TouchableOpacity
         onPress={onPress}
         style={{opacity: this.state.opacity}}>
         <Label
           style={style}>
-          {this.props.children}
+          {this.props.children || title}
         </Label>
       </TouchableOpacity>
     )

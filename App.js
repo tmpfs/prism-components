@@ -10,6 +10,7 @@ import {
   Label,
   Layout,
   List,
+  ListItem,
   Notice,
   Panel,
   Paragraph,
@@ -47,6 +48,15 @@ export default class App extends Component<{}> {
           </Layout>
 
           <List space={30}>
+            <Panel
+              label='List Menu'>
+              <List>
+                <ListItem>Menu Item 1</ListItem>
+                <ListItem>Menu Item 2</ListItem>
+                <ListItem>Menu Item 3</ListItem>
+              </List>
+            </Panel>
+
             <Panel
               label='Button'>
               <List space={10}>

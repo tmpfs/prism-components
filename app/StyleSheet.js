@@ -58,6 +58,14 @@ export default ({colors, fonts}) => {
       //backgroundColor: 'rgba(248, 231, 29, 1.0)',
       //opacity: 0.2
     },
+    'com.prism.ui.List': {},
+    'com.prism.ui.ListItem': {
+      //backgroundColor: colors.backgroundGreen,
+      textAlign: 'left',
+      borderRadius: 0,
+      paddingLeft: 12,
+      height: 45
+    },
 
     // Utils
     //

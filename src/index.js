@@ -6,6 +6,7 @@ import Heading from './Heading'
 import Label from './Label'
 import Layout from './Layout'
 import List from './List'
+import ListItem from './ListItem'
 import Notice from './Notice'
 import Panel from './Panel'
 import Paragraph from './Paragraph'
@@ -21,6 +22,7 @@ export {
   Label,
   Layout,
   List,
+  ListItem,
   Notice,
   Panel,
   Paragraph,
