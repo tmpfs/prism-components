@@ -9,8 +9,9 @@ import {
   Heading,
   Label,
   Layout,
-  Paragraph,
+  Notice,
   Panel,
+  Paragraph,
   ScrollPane
 } from './src'
 
@@ -43,6 +44,16 @@ export default class App extends Component<{}> {
               padding={10}>
               <Heading align='center'>Prism</Heading>
             </Layout>
+            <Panel
+              space={30}
+              label='Notice'>
+              <Notice space={10}>
+                Minimal, idiomatic style management for React Native.
+              </Notice>
+              <Notice error={true}>
+                Minimal, idiomatic style management for React Native.
+              </Notice>
+            </Panel>
             <Panel
               space={30}
               label='Label'>

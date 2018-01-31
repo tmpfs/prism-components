@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
-import {View} from 'react-native'
 import {Prism} from 'react-native-prism'
+import {View} from 'react-native-prism-primitives'
 import Namespace from './Namespace'
 
 class Layout extends Component {

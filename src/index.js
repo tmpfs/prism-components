@@ -5,6 +5,7 @@ import Citation from './Citation'
 import Heading from './Heading'
 import Label from './Label'
 import Layout from './Layout'
+import Notice from './Notice'
 import Panel from './Panel'
 import Paragraph from './Paragraph'
 import ScrollPane from './ScrollPane'
@@ -17,6 +18,7 @@ export {
   Heading,
   Label,
   Layout,
+  Notice,
   Panel,
   Paragraph,
   ScrollPane

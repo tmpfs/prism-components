@@ -56,7 +56,7 @@ class BulletList extends Component {
         // TODO: use Iterator and apply space to all but the last element
         items.map((label, i) => {
           return (
-            <Layout key={i} direction='row' justify={justify} style={{marginBottom: space}}>
+            <Layout key={i} row justify={justify} style={{marginBottom: space}}>
               <Label
                 color={bulletColor || color}
                 style={bulletStyle}>

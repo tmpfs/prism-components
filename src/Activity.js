@@ -10,7 +10,8 @@ class Activity extends Component {
 
   static styleOptions = ({compile}) => {
     return {
-      defaultStyles: [compile({flex: 1, backgroundColor: 'transparent'})],
+      defaultStyles: [
+        compile({flex: 1, backgroundColor: 'transparent'})],
       mapPropsToStyleObject: {
         activityIndicator: []
       }
@@ -49,7 +50,8 @@ class Activity extends Component {
 
     const activitySize = large ? 'large' : 'small'
 
-    // Default is not label
+    // Default is no label
+    //
     // TODO: fix the need to add flex: 0 here
     // TODO: activityIndicatorStyle is inheriting flex: 1 from the defaultStyles
     let activity = (

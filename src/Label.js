@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
-import {Text} from 'react-native'
 import {Prism} from 'react-native-prism'
+import {Text} from 'react-native-prism-primitives'
 import Namespace from './Namespace'
 
 class Label extends Component {
