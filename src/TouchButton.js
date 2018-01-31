@@ -25,11 +25,13 @@ class TouchButton extends Component {
   static propTypes = {
     title: PropTypes.string,
     disabled: PropTypes.bool,
-    onPress: PropTypes.func
+    onPress: PropTypes.func,
+    disabledOpacity: PropTypes.number,
   }
 
   static defaultProps = {
-    disabled: false
+    disabled: false,
+    disabledOpacity: 0.2
   }
 
   state = {
@@ -38,8 +40,10 @@ class TouchButton extends Component {
   }
 
   componentWillMount () {
-    if (this.props.disabled) {
-      this.setState({disabled: true, opacity: 0.4})
+    const {disabled, disabledOpacity} = this.props
+    if (disabled) {
+      this.setState(
+        {disabled: true, opacity: disabledOpacity})
     }
   }
 
