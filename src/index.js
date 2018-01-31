@@ -1,3 +1,4 @@
+import Activity from './Activity'
 import BlockQuote from './BlockQuote'
 import BulletList from './BulletList'
 import Citation from './Citation'
@@ -9,6 +10,7 @@ import Paragraph from './Paragraph'
 import ScrollPane from './ScrollPane'
 
 export {
+  Activity,
   BlockQuote,
   BulletList,
   Citation,

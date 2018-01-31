@@ -10,19 +10,13 @@ class Layout extends Component {
       defaultStyles: [compile({flex: 1, backgroundColor: 'transparent'})],
       mapPropsToStyle: {
         center: ({prop}) => {
-          if (prop) {
-            return {alignItems: 'center', justifyContent: 'center'}
-          }
+          return {alignItems: 'center', justifyContent: 'center'}
         },
         start: ({prop}) => {
-          if (prop) {
-            return {alignItems: 'flex-start'}
-          }
+          return {alignItems: 'flex-start'}
         },
         end: ({prop}) => {
-          if (prop) {
-            return {alignItems: 'flex-end'}
-          }
+          return {alignItems: 'flex-end'}
         },
         space: ({prop, props}) => {
           if (prop) {
@@ -45,9 +39,7 @@ class Layout extends Component {
   }
 
   static defaultProps = {
-    space: 0,
-    start: false,
-    end: false
+    space: 0
   }
 
   render() {

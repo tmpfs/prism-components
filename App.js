@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import {Prism, StyleRegistry} from 'react-native-prism'
 
 import {
+  Activity,
   BlockQuote,
   BulletList,
   Citation,
@@ -73,6 +74,38 @@ export default class App extends Component<{}> {
               space={30}
               label='Ordered List'>
               <BulletList numerical={true} items={['Document', 'Test', 'Iterate']} />
+            </Panel>
+            <Panel
+              space={30}
+              label='Activity'>
+              <Layout direction='row'>
+                <Activity />
+                <Activity size='small' />
+              </Layout>
+            </Panel>
+            <Panel
+              space={30}
+              label='Activity Label'>
+              <Layout direction='row'>
+                <Activity>
+                  LOADING
+                </Activity>
+                <Activity size='small'>
+                  LOADING
+                </Activity>
+              </Layout>
+            </Panel>
+            <Panel
+              space={30}
+              label='Activity Stacked'>
+              <Layout direction='row'>
+                <Activity stacked>
+                  LOADING
+                </Activity>
+                <Activity stacked size='small'>
+                  LOADING
+                </Activity>
+              </Layout>
             </Panel>
           </Layout>
         </ScrollPane>
