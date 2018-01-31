@@ -40,14 +40,14 @@ export default class App extends Component<{}> {
     return (
       <Layout background='background'>
         <ScrollPane>
-          <Layout>
-            <Layout
-              margin={20}
-              padding={10}>
-              <Heading align='center'>Prism</Heading>
-            </Layout>
+          <Layout
+            margin={20}
+            padding={10}>
+            <Heading align='center'>Prism</Heading>
+          </Layout>
+
+          <List space={30}>
             <Panel
-              space={30}
               label='Button'>
               <List space={10}>
                 <Button>Touch Me</Button>
@@ -55,7 +55,6 @@ export default class App extends Component<{}> {
               </List>
             </Panel>
             <Panel
-              space={30}
               label='Notice'>
               <List space={10}>
                 <Notice>
@@ -67,21 +66,18 @@ export default class App extends Component<{}> {
               </List>
             </Panel>
             <Panel
-              space={30}
               label='Label'>
               <Label>
                 Minimal, idiomatic style management for React Native.
               </Label>
             </Panel>
             <Panel
-              space={30}
               label='Paragraph'>
               <Paragraph>
                 Minimal, idiomatic style management for React Native.
               </Paragraph>
             </Panel>
             <Panel
-              space={30}
               label='Block Quote'>
               <BlockQuote>
                 Minimal, idiomatic style management for React Native.
@@ -89,20 +85,26 @@ export default class App extends Component<{}> {
               <Citation>Muji 2018</Citation>
             </Panel>
             <Panel
-              space={30}
               label='Unordered List'>
               <BulletList items={['Go', 'Rust', 'Javascript']} />
             </Panel>
             <Panel
-              space={30}
               label='Ordered List'>
-              <BulletList numerical={true} items={['Document', 'Test', 'Iterate']} />
+              <BulletList
+                numerical={true}
+                items={['Document', 'Test', 'Iterate']} />
             </Panel>
             <Panel
-              space={30}
               label='Activity'>
-              <List space={20}>
-                <Layout row radius={5} padding={[10]} background='dodgerblue'>
+              <List
+                space={20}
+                all={{
+                  row: true,
+                  padding: [10],
+                  background: 'dodgerblue',
+                  radius: 5}}
+                >
+                <Layout>
                   <Layout center>
                     <Activity large />
                   </Layout>
@@ -110,7 +112,7 @@ export default class App extends Component<{}> {
                     <Activity />
                   </Layout>
                 </Layout>
-                <Layout row radius={5} padding={[10]} background='dodgerblue'>
+                <Layout>
                   <Activity stacked large>
                     LOADING
                   </Activity>
@@ -118,7 +120,7 @@ export default class App extends Component<{}> {
                     LOADING
                   </Activity>
                 </Layout>
-                <Layout row radius={5} padding={[10]} background='dodgerblue'>
+                <Layout>
                   <Activity large>
                     LOADING
                   </Activity>
@@ -128,7 +130,8 @@ export default class App extends Component<{}> {
                 </Layout>
               </List>
             </Panel>
-          </Layout>
+
+          </List>
         </ScrollPane>
       </Layout>
     )

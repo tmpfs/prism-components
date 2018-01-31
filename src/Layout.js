@@ -19,23 +19,25 @@ class Layout extends Component {
           return {alignItems: 'flex-end'}
         },
         row: ({prop}) => {
-          return {flexDirection: 'row'}
-        },
-        space: ({prop, props}) => {
-          if (prop) {
-            const vertical = !props.styleFlexRow
-            const styleProp = vertical ? 'marginBottom' : 'marginRight'
-            const spacer = {}
-            spacer[styleProp] = prop
-            return spacer
+          if (prop === true) {
+            return {flexDirection: 'row'}
           }
-        }
+        },
+        //space: ({prop, props}) => {
+          //if (prop) {
+            //const vertical = !props.styleFlexRow
+            //const styleProp = vertical ? 'marginBottom' : 'marginRight'
+            //const spacer = {}
+            //spacer[styleProp] = prop
+            //return spacer
+          //}
+        //}
       }
     }
   }
 
   static propTypes = {
-    space: PropTypes.number,
+    //space: PropTypes.number,
     center: PropTypes.bool,
     start: PropTypes.bool,
     end: PropTypes.bool

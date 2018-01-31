@@ -4,6 +4,7 @@ import {Prism} from 'react-native-prism'
 import Namespace from './Namespace'
 import Layout from './Layout'
 import Label from './Label'
+import List from './List'
 
 class BulletList extends Component {
 
@@ -21,6 +22,7 @@ class BulletList extends Component {
     numerical: PropTypes.bool,
     space: PropTypes.number,
     justify: PropTypes.string,
+    row: PropTypes.bool,
     bold: PropTypes.bool,
     color: PropTypes.string,
     bulletColor: PropTypes.string,
@@ -29,13 +31,15 @@ class BulletList extends Component {
 
   static defaultProps = {
     justify: 'start',
-    space: 5
+    space: 5,
+    row: false
   }
 
   render() {
     const {
       style,
       space,
+      row,
       items,
       justify,
       numerical,
@@ -47,14 +51,12 @@ class BulletList extends Component {
       labelStyle
     } = this.props
 
-    // TODO: restore `style`
     return (
-      <Layout>
+      <List row={row} space={space}>
       {
-        // TODO: use Iterator and apply space to all but the last element
         items.map((label, i) => {
           return (
-            <Layout key={i} row justify={justify} style={{marginBottom: space}}>
+            <Layout key={i} row justify={justify}>
               <Label
                 color={bulletColor || color}
                 style={bulletStyle}>
@@ -70,7 +72,7 @@ class BulletList extends Component {
           )
         })
       }
-      </Layout>
+      </List>
     )
   }
 }

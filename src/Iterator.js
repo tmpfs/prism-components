@@ -7,12 +7,14 @@ import Layout from './Layout'
 class Iterator extends Component {
 
   static propTypes = {
+    all: PropTypes.object,
     item: PropTypes.object,
     when: PropTypes.func,
     last: PropTypes.bool
   }
 
   static defaultProps = {
+    all: {},
     item: {},
     last: true,
     first: true,
@@ -30,18 +32,21 @@ class Iterator extends Component {
   render() {
     const {
       style,
+      all,
+      row,
       item,
       when
     } = this.props
     const children = React.Children.toArray(this.props.children)
     return (
-      <Layout style={style}>
+      <Layout row={row} style={style}>
       {
         children.map((child, i) => {
-          if (!when(child, i, children.length, this.props)) {
-            return React.cloneElement(child)
+          let extraProps = Object.assign({}, all)
+          if (when(child, i, children.length, this.props)) {
+            extraProps = Object.assign(extraProps, item)
           }
-          return React.cloneElement(child, item)
+          return React.cloneElement(child, extraProps)
         })
       }
       </Layout>
