@@ -45,12 +45,12 @@ android_library(
 
 android_build_config(
     name = "build_config",
-    package = "com.primitives",
+    package = "com.components",
 )
 
 android_resource(
     name = "res",
-    package = "com.primitives",
+    package = "com.components",
     res = "src/main/res",
 )
 

@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import {Prism, StyleRegistry} from 'react-native-prism'
+
 import {
   Text,
   View
@@ -43,9 +44,6 @@ export default class App extends Component<{}> {
               margin={[10, 20]}>
                 Minimal, idiomatic style management for React Native.
               </Text>
-
-            <View direction='row' justify='center'>
-            </View>
           </View>
       </View>
     )

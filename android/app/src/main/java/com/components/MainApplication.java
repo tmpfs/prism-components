@@ -1,4 +1,4 @@
-package com.primitives;
+package com.components;
 
 import android.app.Application;
 

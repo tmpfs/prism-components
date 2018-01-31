@@ -1,7 +1,7 @@
 {
   "name": "react-native-prism-components",
-  "description": "Component library for Prism",
   "version": "1.0.0",
+  "description": "Component library for Prism",
   "main": "src/index.js",
   "scripts": {
     "test": "jest"
@@ -9,6 +9,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/fika-community/prism-components.git"
+  },
+  "dependencies": {
+    "react-native-prism-primitives": "^1.0.1"
   },
   "devDependencies": {
     "babel-jest": "22.1.0",
@@ -20,8 +23,9 @@
     "preset": "react-native"
   },
   "peerDependencies": {
-    "react": "^16.2.0",
-    "react-native": "^0.52.2",
+    "prop-types": "^15.6.0",
+    "react": "16.2.0",
+    "react-native": "0.52.2",
     "react-native-prism": "^1.7.2"
   }
 }
