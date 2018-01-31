@@ -3,9 +3,11 @@ import {Prism, StyleRegistry} from 'react-native-prism'
 
 import {
   BlockQuote,
+  Heading,
   Label,
-  Paragraph,
   Layout,
+  Paragraph,
+  Panel,
   ScrollPane
 } from './src'
 
@@ -36,12 +38,29 @@ export default class App extends Component<{}> {
             <Layout
               margin={20}
               padding={10}>
-              <BlockQuote
-                align='center'
-                size={18}>
-                  Minimal, idiomatic style management for React Native.
-              </BlockQuote>
+              <Heading align='center'>Prism</Heading>
             </Layout>
+            <Panel
+              space={30}
+              label='Label Align'>
+              <Label align='left'>React Native is cool</Label>
+              <Label align='center'>React Native is cool</Label>
+              <Label align='right'>React Native is cool</Label>
+            </Panel>
+            <Panel
+              space={30}
+              label='Paragraph'>
+              <Paragraph>
+                Minimal, idiomatic style management for React Native.
+              </Paragraph>
+            </Panel>
+            <Panel
+              space={30}
+              label='Block Quote'>
+              <BlockQuote>
+                Minimal, idiomatic style management for React Native.
+              </BlockQuote>
+            </Panel>
           </Layout>
         </ScrollPane>
       </Layout>

@@ -7,21 +7,21 @@ import Namespace from './Namespace'
 
 class Panel extends Component {
 
+  static styleOptions = () => {
+    return {
+      mapPropsToStyleObject: {
+        header: [],
+        body: []
+      }
+    }
+  }
+
   static propTypes = {
     space: PropTypes.number,
     label: PropTypes.string,
+    layoutProps: PropTypes.object,
     labelProps: PropTypes.object,
-    labelStyle: Prism.propTypes.style,
-    header: PropTypes.node,
-    headerPadding: PropTypes.number,
-    bodyPadding: PropTypes.number,
-    headerStyle: Prism.propTypes.style,
-    bodyStyle: Prism.propTypes.style
-  }
-
-  static defaultProps = {
-    headerPadding: 10,
-    bodyPadding: 20
+    header: PropTypes.node
   }
 
   render () {
@@ -31,36 +31,25 @@ class Panel extends Component {
       labelProps,
       labelStyle,
       headerStyle,
-      headerPadding,
       bodyStyle,
-      bodyPadding
     } = this.props
 
-    const layoutProps = {space}
+    let {label, header, layoutProps} = this.props
+    layoutProps = {space, ...layoutProps}
 
-    headerStyle = [styleSheet.PanelHeader].concat(headerStyle)
-    bodyStyle = [styleSheet.PanelBody].concat(bodyStyle)
-
-    let {label, header} = this.props
     if (label && !header) {
       header = (
         <Label
-          bold={true}
           {...labelProps}
-          style={labelStyle}
-          label={label} />
+          style={labelStyle}>{label}</Label>
       )
     }
     return (
       <Layout {...layoutProps} style={style}>
-        <Layout
-          style={headerStyle}
-          padding={headerPadding}>
+        <Layout style={headerStyle}>
           {header}
         </Layout>
-        <Layout
-          style={bodyStyle}
-          padding={bodyPadding}>
+        <Layout style={bodyStyle}>
           {this.props.children}
         </Layout>
       </Layout>

@@ -11,7 +11,8 @@ class Paragraph extends Component {
   }
 
   static defaultProps = {
-    lines: 0
+    lines: 0,
+    size: 18
   }
 
   render() {

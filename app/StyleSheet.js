@@ -12,6 +12,15 @@ export default ({colors, fonts}) => {
       flex: 1,
       padding: 20
     },
+    'com.prism.ui.Panel.Header': {
+      backgroundColor: '#336699',
+      paddingVertical: 10,
+      paddingHorizontal: 20
+    },
+    'com.prism.ui.Panel.Body': {
+      backgroundColor: '#335599',
+      padding: 20
+    }
 
     // Utils
     //
