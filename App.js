@@ -3,6 +3,7 @@ import {Prism, StyleRegistry} from 'react-native-prism'
 
 import {
   BlockQuote,
+  BulletList,
   Heading,
   Label,
   Layout,
@@ -60,6 +61,11 @@ export default class App extends Component<{}> {
               <BlockQuote>
                 Minimal, idiomatic style management for React Native.
               </BlockQuote>
+            </Panel>
+            <Panel
+              space={30}
+              label='Unordered List'>
+              <BulletList items={['Apples', 'Oranges', 'Mango']} />
             </Panel>
           </Layout>
         </ScrollPane>

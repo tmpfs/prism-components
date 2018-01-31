@@ -12,6 +12,9 @@ class Label extends Component {
         align: 'textAlign'
       },
       mapPropsToStyle: {
+        color: ({prop, styleSheet}) => {
+          return {color: prop}
+        },
         bold: ({prop, styleSheet}) => {
           if (styleSheet.bold !== undefined) {
             return styleSheet.bold
@@ -51,14 +54,16 @@ class Label extends Component {
       style,
       textProps,
       lines,
-      ellipsis
+      ellipsis,
+      color
     } = this.props
     return (
       <Text
         numberOfLines={lines}
         ellipsizeMode={ellipsis}
-        {...textProps}
-        style={style}>{this.props.children}</Text>
+        color={color}
+        style={style}
+        {...textProps}>{this.props.children}</Text>
     )
   }
 }
