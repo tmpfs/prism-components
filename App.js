@@ -78,31 +78,27 @@ export default class App extends Component<{}> {
             <Panel
               space={30}
               label='Activity'>
-              <Layout row>
-                <Activity />
-                <Activity size='small' />
+              <Layout row radius={5} padding={[10]} space={20} background='dodgerblue'>
+                <Layout center>
+                  <Activity large />
+                </Layout>
+                <Layout center>
+                  <Activity />
+                </Layout>
               </Layout>
-            </Panel>
-            <Panel
-              space={30}
-              label='Activity Label'>
-              <Layout row>
-                <Activity>
+              <Layout row radius={5} padding={[10]} space={20} background='dodgerblue'>
+                <Activity stacked large>
                   LOADING
                 </Activity>
-                <Activity size='small'>
-                  LOADING
-                </Activity>
-              </Layout>
-            </Panel>
-            <Panel
-              space={30}
-              label='Activity Stacked'>
-              <Layout row>
                 <Activity stacked>
                   LOADING
                 </Activity>
-                <Activity stacked size='small'>
+              </Layout>
+              <Layout row radius={5} padding={[10]} background='dodgerblue'>
+                <Activity large>
+                  LOADING
+                </Activity>
+                <Activity>
                   LOADING
                 </Activity>
               </Layout>

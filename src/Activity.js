@@ -19,7 +19,8 @@ class Activity extends Component {
 
   static propTypes = {
     labelProps: PropTypes.object,
-    size: PropTypes.oneOf(['small', 'large']),
+    // TODO: rename this so we can use `size` for `fontSize`
+    large: PropTypes.bool,
     tint: PropTypes.string,
     space: PropTypes.number,
     stacked: PropTypes.bool
@@ -28,6 +29,7 @@ class Activity extends Component {
   static defaultProps = {
     size: 'large',
     //tint: Colors.tint,
+    tint: 'white',
     space: 10,
     stacked: false,
     labelProps: {}
@@ -37,7 +39,7 @@ class Activity extends Component {
     const {
       style,
       activityIndicatorStyle,
-      size,
+      large,
       tint,
       children,
       stacked,
@@ -45,12 +47,16 @@ class Activity extends Component {
       labelProps
     } = this.props
 
+    const activitySize = large ? 'large' : 'small'
+
     // Default is not label
+    // TODO: fix the need to add flex: 0 here
+    // TODO: activityIndicatorStyle is inheriting flex: 1 from the defaultStyles
     let activity = (
       <ActivityIndicator
-        size={size}
+        size={activitySize}
         color={tint}
-        style={activityIndicatorStyle} />
+        style={activityIndicatorStyle.concat({flex: 0})} />
     )
 
     let element = activity
@@ -66,7 +72,7 @@ class Activity extends Component {
           </Label>
         </Layout>
       ) : (
-        <Layout direction='row' center style={style}>
+        <Layout row center style={style}>
           {activity}
           <Label
             style={{marginLeft: space}}
