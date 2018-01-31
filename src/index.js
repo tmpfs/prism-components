@@ -9,6 +9,7 @@ import Notice from './Notice'
 import Panel from './Panel'
 import Paragraph from './Paragraph'
 import ScrollPane from './ScrollPane'
+import TouchButton from './TouchButton'
 
 export {
   Activity,
@@ -21,7 +22,8 @@ export {
   Notice,
   Panel,
   Paragraph,
-  ScrollPane
+  ScrollPane,
+  TouchButton,
 }
 
 export * from 'react-native-prism-primitives'

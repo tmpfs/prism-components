@@ -12,7 +12,8 @@ import {
   Notice,
   Panel,
   Paragraph,
-  ScrollPane
+  ScrollPane,
+  TouchButton as Button
 } from './src'
 
 import Colors from './app/Colors'
@@ -44,6 +45,12 @@ export default class App extends Component<{}> {
               padding={10}>
               <Heading align='center'>Prism</Heading>
             </Layout>
+            <Panel
+              space={30}
+              label='Button'>
+              <Button>Touch Me</Button>
+              <Button disabled>Touch Me</Button>
+            </Panel>
             <Panel
               space={30}
               label='Notice'>

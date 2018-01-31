@@ -44,6 +44,20 @@ export default ({colors, fonts}) => {
     'com.prism.ui.Notice.Label.Error': {
       color: colors.cream
     },
+    'com.prism.ui.Button': {
+      fontSize: 18,
+      paddingTop: 12,
+      backgroundColor: 'steelblue',
+      borderRadius: 4,
+      overflow: 'hidden',
+      textAlign: 'center',
+      height: 45,
+      width: '100%'
+    },
+    'com.prism.ui.Button.Disabled': {
+      //backgroundColor: 'rgba(248, 231, 29, 1.0)',
+      //opacity: 0.2
+    },
 
     // Utils
     //
