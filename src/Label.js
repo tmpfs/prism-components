@@ -47,6 +47,11 @@ class Label extends Component {
       ellipsis,
       color
     } = this.props
+
+    //if (this.context.font) {
+      //console.log('Label got font from context!!!')
+    //}
+
     return (
       <Text
         numberOfLines={lines}

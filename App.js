@@ -36,6 +36,15 @@ Prism.configure(
   }
 )
 
+    //<Layout font={{size:'xx-large', color: 'red'}}>
+      //<Layout>
+        //<Panel label='Foo'>
+          //<Label font={{color: 'green'}}>Some context text</Label>
+        //</Panel>
+      //</Layout>
+    //</Layout>
+
+
 const image = 'https://raw.githubusercontent.com/fika-community/prism/master/prism.png'
 
 export default class App extends Component<{}> {
@@ -52,6 +61,7 @@ export default class App extends Component<{}> {
           <List space={30}>
             <Panel
               label='Heading'>
+
               <List>
                 <Heading font={{size: 'xx-small'}}>
                   Heading
