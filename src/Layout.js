@@ -18,6 +18,7 @@ class Layout extends Component {
         end: ({prop}) => {
           return {alignItems: 'flex-end'}
         },
+        // TODO: remove this when `direction` -> `row`
         row: ({prop}) => {
           if (prop === true) {
             return {flexDirection: 'row'}

@@ -3571,9 +3571,9 @@ react-native-prism-primitives@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/react-native-prism-primitives/-/react-native-prism-primitives-1.0.1.tgz#c47e0283408858a806be8b10b0dfa38c274312e4"
 
-react-native-prism@^1.8.2:
-  version "1.8.2"
-  resolved "https://registry.yarnpkg.com/react-native-prism/-/react-native-prism-1.8.2.tgz#bc60bf1997b57d06123596fd9c22579c44802448"
+react-native-prism@^1.8.3:
+  version "1.8.3"
+  resolved "https://registry.yarnpkg.com/react-native-prism/-/react-native-prism-1.8.3.tgz#a477638ea9d402884a01d523b62af00a7afbff44"
 
 react-native@0.52.2:
   version "0.52.2"
