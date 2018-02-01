@@ -52,7 +52,8 @@ export default class App extends Component<{}> {
             <Panel
               label='Text Area'>
               <List space={30}>
-                <TextArea>This is some default text</TextArea>
+                <TextArea>Enter your comment</TextArea>
+                <TextArea disabled>Do something before editing</TextArea>
               </List>
             </Panel>
 

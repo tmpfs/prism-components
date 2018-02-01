@@ -78,12 +78,13 @@ export default ({colors, fonts}) => {
       textAlignVertical: 'top',
       height: 100,
       paddingHorizontal: 10,
-      backgroundColor: 'transparent',
-    },
-    'com.prism.ui.TextArea.Background': {
+      //backgroundColor: 'transparent',
       backgroundColor: 'rgba(51, 102, 153, 0.75)',
       borderColor: 'rgba(255, 255, 255, 0.5)',
       borderWidth: 1
+    },
+    'com.prism.ui.TextArea.Disabled': {
+      color: '#9e9e9e'
     },
 
     // Utils
