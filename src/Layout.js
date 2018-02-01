@@ -22,22 +22,12 @@ class Layout extends Component {
           if (prop === true) {
             return {flexDirection: 'row'}
           }
-        },
-        //space: ({prop, props}) => {
-          //if (prop) {
-            //const vertical = !props.styleFlexRow
-            //const styleProp = vertical ? 'marginBottom' : 'marginRight'
-            //const spacer = {}
-            //spacer[styleProp] = prop
-            //return spacer
-          //}
-        //}
+        }
       }
     }
   }
 
   static propTypes = {
-    //space: PropTypes.number,
     center: PropTypes.bool,
     start: PropTypes.bool,
     end: PropTypes.bool
