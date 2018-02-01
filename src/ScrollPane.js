@@ -5,11 +5,6 @@ import {Prism} from 'react-native-prism'
 import Namespace from './Namespace'
 
 class ScrollPane extends Component {
-  static styleOptions = ({compile}) => {
-    return {
-      defaultStyles: [compile({flex: 1})]
-    }
-  }
   render () {
     return (
       <ScrollView {...this.props}>{this.props.children}</ScrollView>

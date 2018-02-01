@@ -7,7 +7,6 @@ import Namespace from './Namespace'
 class Layout extends Component {
   static styleOptions = ({compile}) => {
     return {
-      defaultStyles: [compile({flex: 1})],
       mapPropsToStyle: {
         center: ({prop}) => {
           if (prop === true) {

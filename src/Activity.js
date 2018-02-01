@@ -16,12 +16,9 @@ class Activity extends Component {
 
   static styleOptions = ({compile}) => {
     return {
-      //supportsText: true,
       colors: colors,
-      defaultStyles: [
-        compile({flex: 1, backgroundColor: 'transparent'})],
       mapPropsToStyleObject: {
-        activityIndicator: ['color', 'flex']
+        activityIndicator: []
       }
     }
   }
@@ -39,6 +36,9 @@ class Activity extends Component {
     space: 10,
     stacked: false,
     labelProps: {},
+    style: {
+      flex: 1
+    },
     activityIndicatorStyle: {
       color: colors.tint
     }
