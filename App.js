@@ -15,6 +15,7 @@ import {
   NumberStack,
   Panel,
   Paragraph,
+  Picture,
   ScrollPane,
   TextArea,
   TouchButton as Button
@@ -53,9 +54,15 @@ export default class App extends Component<{}> {
       <Layout background='background'>
         <ScrollPane>
           <Layout
+            center
             margin={20}
             padding={10}>
-            <Heading align='center'>Prism</Heading>
+            <Picture
+              width={128}
+              height={128}
+              source={{uri: image}}
+            />
+            <Heading font={{size: 'large'}}>Prism</Heading>
           </Layout>
 
           <List space={30}>

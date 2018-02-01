@@ -11,7 +11,7 @@
     "url": "https://github.com/fika-community/prism-components.git"
   },
   "dependencies": {
-    "react-native-prism-primitives": "^1.0.1"
+    "react-native-prism-primitives": "^1.0.3"
   },
   "devDependencies": {
     "babel-jest": "22.1.0",

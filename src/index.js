@@ -12,6 +12,7 @@ import Notice from './Notice'
 import NumberStack from './NumberStack'
 import Panel from './Panel'
 import Paragraph from './Paragraph'
+import Picture from './Picture'
 import ScrollPane from './ScrollPane'
 import TextArea from './TextArea'
 import TouchButton from './TouchButton'
@@ -31,6 +32,7 @@ export {
   NumberStack,
   Panel,
   Paragraph,
+  Picture,
   ScrollPane,
   TextArea,
   TouchButton,
