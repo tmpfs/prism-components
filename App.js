@@ -12,6 +12,7 @@ import {
   List,
   ListItem,
   Notice,
+  NumberStack,
   Panel,
   Paragraph,
   ScrollPane,
@@ -50,6 +51,106 @@ export default class App extends Component<{}> {
 
           <List space={30}>
             <Panel
+              label='Heading'>
+              <List>
+                <Heading font={{size: 'xx-small'}}>
+                  Heading
+                </Heading>
+                <Heading font={{size: 'x-small'}}>
+                  Heading
+                </Heading>
+                <Heading font={{size: 'small'}}>
+                  Heading
+                </Heading>
+                <Heading font={{size: 'medium'}}>
+                  Heading
+                </Heading>
+                <Heading font={{size: 'large'}}>
+                  Heading
+                </Heading>
+                <Heading font={{size: 'x-large'}}>
+                  Heading
+                </Heading>
+                <Heading font={{size: 'xx-large'}}>
+                  Heading
+                </Heading>
+              </List>
+            </Panel>
+            <Panel
+              label='Label'>
+              <List space={5}>
+                <Label font={{size: 'xx-small'}}>
+                  Minimal, idiomatic style management for React Native.
+                </Label>
+                <Label font={{size: 'x-small'}}>
+                  Minimal, idiomatic style management for React Native.
+                </Label>
+                <Label font={{size: 'small'}}>
+                  Minimal, idiomatic style management for React Native.
+                </Label>
+                <Label font={{size: 'medium'}}>
+                  Minimal, idiomatic style management for React Native.
+                </Label>
+                <Label font={{size: 'large'}}>
+                  Minimal, idiomatic style management for React Native.
+                </Label>
+                <Label font={{size: 'x-large'}}>
+                  Minimal, idiomatic style management for React Native.
+                </Label>
+                <Label font={{size: 'xx-large'}}>
+                  Minimal, idiomatic style management for React Native.
+                </Label>
+              </List>
+            </Panel>
+            <Panel
+              label='Paragraph'>
+              <List space={5}>
+                <Paragraph font={{size: 'xx-small'}}>
+                  Minimal, idiomatic style management for React Native.
+                </Paragraph>
+                <Paragraph font={{size: 'x-small'}}>
+                  Minimal, idiomatic style management for React Native.
+                </Paragraph>
+                <Paragraph font={{size: 'small'}}>
+                  Minimal, idiomatic style management for React Native.
+                </Paragraph>
+                <Paragraph font={{size: 'medium'}}>
+                  Minimal, idiomatic style management for React Native.
+                </Paragraph>
+                <Paragraph font={{size: 'large'}}>
+                  Minimal, idiomatic style management for React Native.
+                </Paragraph>
+                <Paragraph font={{size: 'x-large'}}>
+                  Minimal, idiomatic style management for React Native.
+                </Paragraph>
+                <Paragraph font={{size: 'xx-large'}}>
+                  Minimal, idiomatic style management for React Native.
+                </Paragraph>
+              </List>
+
+            </Panel>
+            <Panel
+              label='Number Stack'>
+              <List space={30} all={{row: true}}>
+                <List all={{size: 'large', color: 'background'}}>
+                  <NumberStack align='left' value={3}>Statistic</NumberStack>
+                  <NumberStack value={7}>Statistic</NumberStack>
+                  <NumberStack align='right' value={42}>Statistic</NumberStack>
+                </List>
+                <List all={{size: 'medium', color: 'skyblue'}}>
+                  <NumberStack align='left' value={3}>Magic Number is 3</NumberStack>
+                  <NumberStack value={7}>Magic Number is 7</NumberStack>
+                  <NumberStack align='right' value={42}>Magic Number is 42</NumberStack>
+                </List>
+                <List all={{size: 'small', color: 'powderblue'}}>
+                  <NumberStack align='left' value={3}>Magic</NumberStack>
+                  <NumberStack value={7}>Magic</NumberStack>
+                  <NumberStack align='right' value={42}>Magic</NumberStack>
+                </List>
+              </List>
+            </Panel>
+
+            <Panel
               label='Text Area'>
               <List space={30}>
                 <TextArea>Enter your comment</TextArea>
@@ -79,7 +180,7 @@ export default class App extends Component<{}> {
                 <Notice>
                   Minimal, idiomatic style management for React Native.
                 </Notice>
-                <Notice error={true}>
+                <Notice error>
                   Minimal, idiomatic style management for React Native.
                 </Notice>
               </List>
@@ -89,12 +190,6 @@ export default class App extends Component<{}> {
               <Label>
                 Minimal, idiomatic style management for React Native.
               </Label>
-            </Panel>
-            <Panel
-              label='Paragraph'>
-              <Paragraph>
-                Minimal, idiomatic style management for React Native.
-              </Paragraph>
             </Panel>
             <Panel
               label='Block Quote'>
@@ -113,6 +208,7 @@ export default class App extends Component<{}> {
                 numerical={true}
                 items={['Document', 'Test', 'Iterate']} />
             </Panel>
+
             <Panel
               label='Activity'>
               <List
@@ -149,6 +245,7 @@ export default class App extends Component<{}> {
                 </Layout>
               </List>
             </Panel>
+
 
           </List>
         </ScrollPane>

@@ -5,26 +5,25 @@ import Layout from './Layout'
 import Label from './Label'
 import Namespace from './Namespace'
 
-const Sizes = {
-  large: {
-    label: 24,
-    value: 70
-  },
-  medium: {
-    label: 20,
-    value: 55
-  },
-  small: {
-    label: 16,
-    value: 40
-  }
-}
-
 class NumberStack extends Component {
 
+  static styleOptions = () => {
+    return {
+      mapPropsToStyleObject: {
+        title: ['color'],
+        number: ['color']
+      },
+      mapPropsToStyleState: ({props}) => {
+        const {size} = props
+        if (size) {
+          const stateName = size.charAt(0).toUpperCase() + size.substr(1)
+          return stateName
+        }
+      }
+    }
+  }
+
   static propTypes = {
-    label: PropTypes.string,
-    transform: PropTypes.string,
     value: PropTypes.number,
     color: PropTypes.string,
     bold: PropTypes.bool,
@@ -34,29 +33,51 @@ class NumberStack extends Component {
   static defaultProps = {
     bold: true,
     size: 'medium',
-    transform: 'upper'
+    align: 'center'
+    //transform: 'upper'
   }
 
   render() {
-    const {style, size, label, color, bold, value, transform} = this.props
-    const fontSize = Sizes[size]
+    const {
+      style,
+      align,
+      color,
+      bold,
+      value,
+      titleStyle,
+      numberStyle
+    } = this.props
+
+    const center = (align === 'center')
+    let ellipsis
+    if (align === 'right') {
+      ellipsis='head'
+    }
+
     const title = (
       <Label
-        label={label}
+        align={align}
         bold={bold}
-        transform={transform}
-        style={style.concat({fontSize: fontSize.label})} />
+        color={color}
+        ellipsis={ellipsis}
+        style={titleStyle}>
+        {this.props.children}
+      </Label>
     )
 
     const num = (
       <Label
-        label={value.toString()}
+        align={align}
         bold={bold}
-        style={style.concat({fontSize: fontSize.value})} />
+        color={color}
+        ellipsis={ellipsis}
+        style={numberStyle}>
+        {value.toString()}
+      </Label>
     )
 
     return (
-      <Layout center={true}>
+      <Layout center={center} style={style}>
         {title}
         {num}
       </Layout>

@@ -3,4 +3,5 @@ export default {
   background: 'steelblue',
   backgroundLight: 'powderblue',
   backgroundDark: 'steelblue',
+  tint: '#5affda'
 }

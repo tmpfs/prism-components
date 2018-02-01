@@ -1,26 +1,33 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
-import {ActivityIndicator} from 'react-native'
+import {ActivityIndicator} from 'react-native-prism-primitives'
 import {Prism} from 'react-native-prism'
 import Namespace from './Namespace'
 import Layout from './Layout'
 import Label from './Label'
 
+import {StyleSheet} from 'react-native'
+
+const colors = {
+  tint: '#5affda'
+}
+
 class Activity extends Component {
 
   static styleOptions = ({compile}) => {
     return {
+      //supportsText: true,
+      colors: colors,
       defaultStyles: [
         compile({flex: 1, backgroundColor: 'transparent'})],
       mapPropsToStyleObject: {
-        activityIndicator: []
+        activityIndicator: ['color', 'flex']
       }
     }
   }
 
   static propTypes = {
     labelProps: PropTypes.object,
-    // TODO: rename this so we can use `size` for `fontSize`
     large: PropTypes.bool,
     tint: PropTypes.string,
     space: PropTypes.number,
@@ -29,11 +36,12 @@ class Activity extends Component {
 
   static defaultProps = {
     size: 'large',
-    //tint: Colors.tint,
-    tint: 'white',
     space: 10,
     stacked: false,
-    labelProps: {}
+    labelProps: {},
+    activityIndicatorStyle: {
+      color: colors.tint
+    }
   }
 
   render() {
@@ -41,7 +49,6 @@ class Activity extends Component {
       style,
       activityIndicatorStyle,
       large,
-      tint,
       children,
       stacked,
       space,
@@ -50,15 +57,17 @@ class Activity extends Component {
 
     const activitySize = large ? 'large' : 'small'
 
+    // TODO: implement and use mapStyleToProp
+    const flat = StyleSheet.flatten(activityIndicatorStyle)
+    const tintColor = flat.color
+    delete flat.color
+
     // Default is no label
-    //
-    // TODO: fix the need to add flex: 0 here
-    // TODO: activityIndicatorStyle is inheriting flex: 1 from the defaultStyles
     let activity = (
       <ActivityIndicator
         size={activitySize}
-        color={tint}
-        style={activityIndicatorStyle.concat({flex: 0})} />
+        color={tintColor}
+        style={flat} />
     )
 
     let element = activity

@@ -8,19 +8,17 @@ class Heading extends Component {
 
   static styleOptions = () => {
     return {
-      mapPropsToStyle: {
+      supportsText: true,
+      sizes: {
+        'xx-small': 16,
+        'x-small': 20,
+        'small': 24,
+        'medium': 30,
+        'large': 36,
+        'x-large': 42,
+        'xx-large': 48
       }
     }
-  }
-
-  //static propTypes = {
-    //label: PropTypes.string.isRequired,
-    //size: PropTypes.oneOf(['small', 'medium', 'large']),
-    //center: PropTypes.bool
-  //}
-
-  static defaultProps = {
-    size: 22
   }
 
   render() {

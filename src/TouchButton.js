@@ -48,12 +48,13 @@ class TouchButton extends Component {
   }
 
   render() {
-    const {style, title, labelStyle, onPress} = this.props
+    const {style, title, labelStyle, color, onPress} = this.props
     return (
       <TouchableOpacity
         onPress={onPress}
         style={{opacity: this.state.opacity}}>
         <Label
+          color={color}
           style={style}>
           {this.props.children || title}
         </Label>

@@ -9,6 +9,7 @@ import Layout from './Layout'
 import List from './List'
 import ListItem from './ListItem'
 import Notice from './Notice'
+import NumberStack from './NumberStack'
 import Panel from './Panel'
 import Paragraph from './Paragraph'
 import ScrollPane from './ScrollPane'
@@ -27,6 +28,7 @@ export {
   List,
   ListItem,
   Notice,
+  NumberStack,
   Panel,
   Paragraph,
   ScrollPane,

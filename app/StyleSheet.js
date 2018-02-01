@@ -87,6 +87,42 @@ export default ({colors, fonts}) => {
       color: '#9e9e9e'
     },
 
+    'com.prism.ui.NumberStack': {
+      flex: 1
+    },
+    'com.prism.ui.NumberStack.Title': {
+      flex: 1
+    },
+    'com.prism.ui.NumberStack.Number': {
+      flex: 1
+    },
+
+    'com.prism.ui.NumberStack.Title.Small': {
+      fontSize: 16
+    },
+    'com.prism.ui.NumberStack.Number.Small': {
+      fontSize: 40
+    },
+    'com.prism.ui.NumberStack.Title.Medium': {
+      fontSize: 20
+    },
+    'com.prism.ui.NumberStack.Number.Medium': {
+      fontSize: 55
+    },
+    'com.prism.ui.NumberStack.Title.Large': {
+      fontSize: 24
+    },
+    'com.prism.ui.NumberStack.Number.Large': {
+      fontSize: 70
+    },
+
+    'com.prism.ui.Activity': {
+    },
+    'com.prism.ui.Activity.ActivityIndicator': {
+      flex: 0,
+      color: colors.tint
+    },
+
     // Utils
     //
     //bold: {

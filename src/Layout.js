@@ -10,7 +10,9 @@ class Layout extends Component {
       defaultStyles: [compile({flex: 1})],
       mapPropsToStyle: {
         center: ({prop}) => {
-          return {alignItems: 'center', justifyContent: 'center'}
+          if (prop === true) {
+            return {alignItems: 'center', justifyContent: 'center'}
+          }
         },
         start: ({prop}) => {
           return {alignItems: 'flex-start'}
