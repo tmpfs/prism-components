@@ -7,6 +7,7 @@ import List from '../src/List'
 import ListItem from '../src/ListItem'
 
 import LogoType from './LogoType'
+import LayoutScreen from './screens/LayoutScreen'
 import ActivityScreen from './screens/ActivityScreen'
 import ButtonScreen from './screens/ButtonScreen'
 import HeadingScreen from './screens/HeadingScreen'
@@ -20,17 +21,18 @@ import BulletListScreen from './screens/BulletListScreen'
 import ListScreen from './screens/ListScreen'
 
 const Categories = [
-  ActivityScreen,
-  ButtonScreen,
-  HeadingScreen,
+  LayoutScreen,
   LabelScreen,
+  HeadingScreen,
   ParagraphScreen,
   TextAreaScreen,
+  ButtonScreen,
   BlockQuoteScreen,
   NumberStackScreen,
   NoticeScreen,
   BulletListScreen,
   ListScreen,
+  ActivityScreen,
 ]
 
 class Index extends Component {
