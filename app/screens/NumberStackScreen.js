@@ -7,7 +7,7 @@ import List from '../../src/List'
 import NumberStack from '../../src/NumberStack'
 
 class NumberStackScreen extends ScreenRenderer {
-  static title = 'NumberStack'
+  static title = 'Number Stack'
   static navigationOptions = {
     header: BackNavigationHeader(NumberStackScreen.title)
   }
