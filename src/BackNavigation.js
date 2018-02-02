@@ -8,15 +8,22 @@ import BackLink from './BackLink'
 
 class BackNavigation extends Component {
 
+  static mapPropsToStyleObject = {
+    link: []
+  }
+
   static propTypes = {
     onPress: PropTypes.func
   }
 
   render() {
+    const {style, linkStyle, onPress} = this.props
     return (
-      <BackLink {...this.props}>
-        {this.props.children}
-      </BackLink>
+      <Layout style={style}>
+        <BackLink style={linkStyle} onPress={onPress}>
+          {this.props.children}
+        </BackLink>
+      </Layout>
     )
   }
 }

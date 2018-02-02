@@ -1,11 +1,10 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 import {Prism} from 'react-native-prism'
-import {Image} from 'react-native-prism-primitives'
+import {Image, TouchableOpacity} from 'react-native-prism-primitives'
 
 import Namespace from './Namespace'
 import Label from './Label'
-import ListItem from './ListItem'
 
 class BackLink extends Component {
 
@@ -13,19 +12,25 @@ class BackLink extends Component {
     onPress: PropTypes.func
   }
 
+  static mapPropsToStyleObject = {
+    image: [],
+    label: []
+  }
+
   render() {
-    const {style, onPress} = this.props
+    const {style, imageStyle, labelStyle, onPress} = this.props
     return (
-      <ListItem row style={style} onPress={onPress}>
+      <TouchableOpacity style={style} onPress={onPress}>
         <Image
-          border='green'
-          style={{height: 22, width: 13, marginRight: 5}}
+          width={13}
+          height={22}
+          style={imageStyle}
           source={require('./images/chevron.png')} />
         <Label
-          style={{marginLeft: 4}}>
-        {this.props.children}
+          style={labelStyle}>
+          {this.props.children}
         </Label>
-      </ListItem>
+      </TouchableOpacity>
     )
   }
 }

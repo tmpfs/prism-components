@@ -41,12 +41,25 @@ export default ({colors, fonts}) => {
     },
     'com.prism.ui.BackNavigation': {
       flex: 0,
+      backgroundColor: colors.backgroundDark,
       height: 50
     },
     'com.prism.ui.BackLink': {
-      //width: '100%',
+      flexDirection: 'row',
+      width: '100%',
+      //alignContent: 'center',
       alignItems: 'flex-start',
-      padding: 8,
+      padding: 11,
+    },
+
+    'com.prism.ui.BackLink.Image': {
+      marginRight: 15
+    },
+    'com.prism.ui.BackLink.Label': {
+      //flexDirection: 'row',
+      //width: '100%',
+      //alignItems: 'flex-start',
+      //padding: 8,
 
       fontFamily: fonts.regular,
       // NOTE: must reset the font weight
