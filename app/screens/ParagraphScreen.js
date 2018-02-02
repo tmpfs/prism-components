@@ -24,7 +24,7 @@ class ParagraphScreen extends ScreenRenderer {
               This is some text that illustrates how text style props are inherited
               from the parent hierarchy.
 
-              We add a <Label bold>large</Label> size to the grandparent List which
+              We add a <Label bold text={{transform: 'uppercase'}}>large</Label> size to the grandparent List which
               propagates through the children using childContext.
             </Paragraph>
 
