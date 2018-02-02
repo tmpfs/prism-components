@@ -15,6 +15,22 @@ class LabelScreen extends ScreenRenderer {
   }
   list = [
     {
+      label: 'Text Transform',
+      component: (
+        <List space={5}>
+          <Label text={{transform: 'lowercase'}}>
+            {copy}
+          </Label>
+          <Label text={{transform: 'uppercase'}}>
+            {copy}
+          </Label>
+          <Label text={{transform: 'capitalize'}}>
+            {copy}
+          </Label>
+        </List>
+      )
+    },
+    {
       label: 'Font Size',
       component: (
         <List space={5}>
