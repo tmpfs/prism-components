@@ -19,6 +19,12 @@ const CenterStyle = {
 
 class Rectangle extends Component {
 
+  static styleOptions = () => {
+    return {
+      supportsDimension: true
+    }
+  }
+
   static defaultProps = {
     style: {
       flex: 0,

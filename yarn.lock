@@ -3604,13 +3604,13 @@ react-native-drawer-layout@1.3.2:
   dependencies:
     react-native-dismiss-keyboard "1.0.0"
 
-react-native-prism-primitives@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/react-native-prism-primitives/-/react-native-prism-primitives-1.0.3.tgz#3e2d3998085525405c718be973520cc21f33d61a"
+react-native-prism-primitives@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/react-native-prism-primitives/-/react-native-prism-primitives-1.1.1.tgz#4cbb3d955fea4d6f1a074fc5b1b2d495af997ef4"
 
-react-native-prism@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/react-native-prism/-/react-native-prism-2.1.0.tgz#bd27ee9ab49d592cc9f6badda9aa98fb922f9ebc"
+react-native-prism@^2.2.5:
+  version "2.2.5"
+  resolved "https://registry.yarnpkg.com/react-native-prism/-/react-native-prism-2.2.5.tgz#96c97b8fc0c4a9392434d3c030347b6569a6d8a0"
 
 react-native-tab-view@^0.0.74:
   version "0.0.74"

@@ -7,6 +7,7 @@ import Namespace from './Namespace'
 class Layout extends Component {
   static styleOptions = ({compile}) => {
     return {
+      supportsDimension: true,
       mapPropsToStyle: {
         center: ({prop}) => {
           if (prop === true) {

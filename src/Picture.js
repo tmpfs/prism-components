@@ -9,9 +9,14 @@ import Activity from './Activity'
 
 class Picture extends Component {
 
-  static mapPropsToStyleObject = {
-    activity: [],
-    image: []
+  static styleOptions = () => {
+    return {
+      supportsDimension: true,
+      mapPropsToStyleObject: {
+        activity: [],
+        image: []
+      }
+    }
   }
 
   static propTypes = {
@@ -36,11 +41,6 @@ class Picture extends Component {
 
   render() {
     const {style, activityStyle, imageStyle, width, height} = this.props
-
-    // FIXME: MODIFYING STYLES IN RENDER
-    const dimensions = {width, height}
-    style.push(dimensions)
-    imageStyle.push(dimensions)
 
     let {source} = this.props
 
@@ -71,7 +71,7 @@ class Picture extends Component {
     }
 
     return (
-      <Layout center={true} flex={0} style={dimensions}>
+      <Layout center={true} flex={0} style={style}>
         <Image
           ref='image'
           width={width}
