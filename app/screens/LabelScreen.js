@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 
 import ScreenRenderer from './ScreenRenderer'
-//import back from '../../navigator/back'
+import BackNavigationHeader from '../../src/BackNavigationHeader'
 
 import List from '../../src/List'
 import Label from '../../src/Label'
@@ -11,7 +11,7 @@ const copy = `Minimal, idiomatic style management for React Native.`
 class LabelScreen extends ScreenRenderer {
   static title = 'Label'
   static navigationOptions = {
-    //header: back(LabelScreen.title)
+    header: BackNavigationHeader(LabelScreen.title)
   }
   list = [
     {

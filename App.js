@@ -26,6 +26,7 @@ import Fonts from './app/Fonts'
 import StyleSheet from './app/StyleSheet'
 
 import Layout from './src/Layout'
+import ComponentList from './app/ComponentList'
 
 const registry = new StyleRegistry()
 registry.addColors(Colors)
@@ -47,10 +48,6 @@ Prism.configure(
       //</Layout>
     //</Layout>
 
-
-const image = 'https://raw.githubusercontent.com/fika-community/prism/master/prism.png'
-
-import ComponentList from './app/ComponentList'
 
 export default class App extends Component<{}> {
   render () {

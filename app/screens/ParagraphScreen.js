@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 
 import ScreenRenderer from './ScreenRenderer'
-//import back from '../../navigator/back'
+import BackNavigationHeader from '../../src/BackNavigationHeader'
 
 import List from '../../src/List'
 import Paragraph from '../../src/Paragraph'
@@ -11,7 +11,7 @@ const copy = `Minimal, idiomatic style management for React Native.`
 class ParagraphScreen extends ScreenRenderer {
   static title = 'Paragraph'
   static navigationOptions = {
-    //header: back(ParagraphScreen.title)
+    header: BackNavigationHeader(ParagraphScreen.title)
   }
   list = [
     {

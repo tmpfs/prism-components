@@ -13,11 +13,7 @@ class ScreenRenderer extends Component {
             return (
               <Panel
                 key={i}
-                space={30}
-                label={item.label}
-                labelProps={{
-                  transform: 'upper'
-                }}>
+                label={item.label}>
                 {item.component}
               </Panel>
             )

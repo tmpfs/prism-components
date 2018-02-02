@@ -3,8 +3,10 @@ import {Platform} from 'react-native'
 
 import ScrollPane from '../src/ScrollPane'
 import Layout from '../src/Layout'
+import List from '../src/List'
 import ListItem from '../src/ListItem'
 
+import LogoType from './LogoType'
 import LabelScreen from './screens/LabelScreen'
 import ParagraphScreen from './screens/ParagraphScreen'
 
@@ -13,51 +15,37 @@ const Categories = [
   ParagraphScreen
 ]
 
-import Colors from './Colors'
-import Fonts from './Fonts'
-
-const styles = {
-  header: {
-    backgroundColor: Colors.background
-  },
-  headerTitle: {
-    fontFamily: Fonts.regular(Platform.OS),
-    // NOTE: must reset the font weight
-    fontWeight: 'normal',
-    color: Colors.cream,
-    fontSize: 18,
-  }
-}
-
 class Index extends Component {
+
   static navigationOptions = {
     title: 'Prism Components',
-    // NOTE: we use styles rather than a custom JSX element
-    // NOTE: as the behaviour is not so good on android using `header`
-    headerStyle: styles.header,
-    headerTitleStyle: styles.headerTitle
+    headerStyle: {display: 'none'}
   }
+
   render () {
     return (
       <ScrollPane>
-        {
-          Categories.map((item, i) => {
-            console.log(item.name)
-            return (
-              <Layout key={i}>
-                <ListItem
-                  onPress={
-                    () => {
-                      this.props.navigation.navigate(item.name)
+        <LogoType />
+        <List padding={[0, 20]} space={1}>
+          {
+            Categories.map((item, i) => {
+              //console.log(item.name)
+              return (
+                <Layout key={i}>
+                  <ListItem
+                    onPress={
+                      () => {
+                        this.props.navigation.navigate(item.name)
+                      }
                     }
-                  }
-                  >
-                  {item.title}
-                </ListItem>
-              </Layout>
-            )
-          })
-        }
+                    >
+                    {item.title}
+                  </ListItem>
+                </Layout>
+              )
+            })
+          }
+        </List>
       </ScrollPane>
     )
   }

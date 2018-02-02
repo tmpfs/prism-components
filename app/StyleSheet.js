@@ -39,6 +39,31 @@ export default ({colors, fonts}) => {
     'com.prism.ui.BulletList.Bullet': {
       marginRight: 5
     },
+    'com.prism.ui.BackNavigation': {
+      flex: 0,
+      height: 50
+    },
+    'com.prism.ui.BackLink': {
+      //width: '100%',
+      alignItems: 'flex-start',
+      padding: 8,
+
+      fontFamily: fonts.regular,
+      // NOTE: must reset the font weight
+      fontWeight: 'normal',
+      color: colors.cream,
+      fontSize: 18,
+    },
+
+    //backgroundColor: Colors.background
+  //},
+  //headerTitle: {
+    //fontFamily: Fonts.regular(Platform.OS),
+    //// NOTE: must reset the font weight
+    //fontWeight: 'normal',
+    //color: Colors.cream,
+    //fontSize: 18,
+
     'com.prism.ui.Notice': {
       padding: 10,
       borderRadius: 2,

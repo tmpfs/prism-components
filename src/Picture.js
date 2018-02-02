@@ -11,7 +11,7 @@ class Picture extends Component {
 
   static styleOptions = ({styleSheet}) => {
     return {
-      defaultStyles: [styleSheet.absolute]
+      //defaultStyles: [styleSheet.absolute]
     }
   }
 
@@ -69,7 +69,6 @@ class Picture extends Component {
           {...handlers}
           style={style}
           source={source} />
-
         {activity}
       </Layout>
     )
