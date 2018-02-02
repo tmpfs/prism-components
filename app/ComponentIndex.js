@@ -7,10 +7,12 @@ import List from '../src/List'
 import ListItem from '../src/ListItem'
 
 import LogoType from './LogoType'
+import ActivityScreen from './screens/ActivityScreen'
 import LabelScreen from './screens/LabelScreen'
 import ParagraphScreen from './screens/ParagraphScreen'
 
 const Categories = [
+  ActivityScreen,
   LabelScreen,
   ParagraphScreen
 ]

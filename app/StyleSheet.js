@@ -41,19 +41,19 @@ export default ({colors, fonts}) => {
     },
     'com.prism.ui.BackNavigation': {
       flex: 0,
-      backgroundColor: colors.backgroundDark,
-      height: 50
+      backgroundColor: colors.backgroundDark
     },
     'com.prism.ui.BackLink': {
       flexDirection: 'row',
       width: '100%',
       //alignContent: 'center',
       alignItems: 'flex-start',
-      padding: 11,
+      padding: 12,
     },
 
     'com.prism.ui.BackLink.Image': {
-      marginRight: 15
+      marginRight: 15,
+      tintColor: colors.cream
     },
 
     'com.prism.ui.BackLink.Label': {

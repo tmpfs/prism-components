@@ -15,7 +15,7 @@ class ParagraphScreen extends ScreenRenderer {
   }
   list = [
     {
-      label: 'Paragraph',
+      label: 'Sizes',
       component: (
         <List space={5}>
           <Paragraph font={{size: 'xx-small'}}>

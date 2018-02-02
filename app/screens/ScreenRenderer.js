@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 
 import ScrollPane from '../../src/ScrollPane'
+import List from '../../src/List'
 import Panel from '../../src/Panel'
 
 class ScreenRenderer extends Component {
@@ -8,6 +9,7 @@ class ScreenRenderer extends Component {
     const {list} = this
     return (
       <ScrollPane padding={20}>
+        <List space={20}>
         {
           list.map((item, i) => {
             return (
@@ -19,6 +21,7 @@ class ScreenRenderer extends Component {
             )
           })
         }
+        </List>
       </ScrollPane>
     )
   }

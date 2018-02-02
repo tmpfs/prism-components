@@ -15,7 +15,7 @@ class LabelScreen extends ScreenRenderer {
   }
   list = [
     {
-      label: 'Label',
+      label: 'Sizes',
       component: (
         <List space={5}>
           <Label font={{size: 'xx-small'}}>
