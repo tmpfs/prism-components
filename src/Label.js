@@ -10,6 +10,9 @@ class Label extends Component {
     return {
       supportsText: true,
       mapPropsToStyle: {
+        align: ({prop, styleSheet}) => {
+          return {textAlign: prop}
+        },
         color: ({prop, styleSheet}) => {
           return {color: prop}
         },

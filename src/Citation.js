@@ -11,7 +11,7 @@ class Citation extends Component {
   }
 
   static defaultProps = {
-    emdash: true,
+    emdash: false,
     whitespace: false
   }
 

@@ -46,8 +46,6 @@ Prism.configure(
     //</Layout>
 
 
-const image = 'https://raw.githubusercontent.com/fika-community/prism/master/prism.png'
-
 export default class App extends Component<{}> {
   render () {
     return (
@@ -57,82 +55,6 @@ export default class App extends Component<{}> {
           <List space={30}>
             <Panel
               label='Number Stack'>
-              <List space={30} all={{row: true}}>
-                <List all={{size: 'large', color: 'background'}}>
-                  <NumberStack align='left' value={3}>Statistic</NumberStack>
-                  <NumberStack value={7}>Statistic</NumberStack>
-                  <NumberStack align='right' value={42}>Statistic</NumberStack>
-                </List>
-                <List all={{size: 'medium', color: 'skyblue'}}>
-                  <NumberStack align='left' value={3}>Magic Number is 3</NumberStack>
-                  <NumberStack value={7}>Magic Number is 7</NumberStack>
-                  <NumberStack align='right' value={42}>Magic Number is 42</NumberStack>
-                </List>
-                <List all={{size: 'small', color: 'powderblue'}}>
-                  <NumberStack align='left' value={3}>Magic</NumberStack>
-                  <NumberStack value={7}>Magic</NumberStack>
-                  <NumberStack align='right' value={42}>Magic</NumberStack>
-                </List>
-              </List>
-            </Panel>
-
-            <Panel
-              label='Text Area'>
-              <List space={30}>
-                <TextArea>Enter your comment</TextArea>
-                <TextArea disabled>Do something before editing</TextArea>
-              </List>
-            </Panel>
-
-            <Panel
-              label='List Menu'>
-              <List>
-                <ListItem>Menu Item 1</ListItem>
-                <ListItem>Menu Item 2</ListItem>
-                <ListItem>Menu Item 3</ListItem>
-              </List>
-            </Panel>
-
-            <Panel
-              label='Button'>
-              <List space={10}>
-                <Button>Touch Me</Button>
-                <Button disabled>Touch Me</Button>
-              </List>
-            </Panel>
-            <Panel
-              label='Notice'>
-              <List space={10}>
-                <Notice>
-                  Minimal, idiomatic style management for React Native.
-                </Notice>
-                <Notice error>
-                  Minimal, idiomatic style management for React Native.
-                </Notice>
-              </List>
-            </Panel>
-            <Panel
-              label='Label'>
-              <Label>
-                Minimal, idiomatic style management for React Native.
-              </Label>
-            </Panel>
-            <Panel
-              label='Block Quote'>
-              <BlockQuote>
-                Minimal, idiomatic style management for React Native.
-              </BlockQuote>
-              <Citation>Muji 2018</Citation>
-            </Panel>
-            <Panel
-              label='Unordered List'>
-              <BulletList items={['Go', 'Rust', 'Javascript']} />
-            </Panel>
-            <Panel
-              label='Ordered List'>
-              <BulletList
-                numerical={true}
-                items={['Document', 'Test', 'Iterate']} />
             </Panel>
 
           </List>

@@ -8,21 +8,34 @@ import ListItem from '../src/ListItem'
 
 import LogoType from './LogoType'
 import ActivityScreen from './screens/ActivityScreen'
+import ButtonScreen from './screens/ButtonScreen'
 import HeadingScreen from './screens/HeadingScreen'
 import LabelScreen from './screens/LabelScreen'
 import ParagraphScreen from './screens/ParagraphScreen'
+import TextAreaScreen from './screens/TextAreaScreen'
+import BlockQuoteScreen from './screens/BlockQuoteScreen'
+import NumberStackScreen from './screens/NumberStackScreen'
+import NoticeScreen from './screens/NoticeScreen'
+import BulletListScreen from './screens/BulletListScreen'
+import ListScreen from './screens/ListScreen'
 
 const Categories = [
   ActivityScreen,
+  ButtonScreen,
   HeadingScreen,
   LabelScreen,
-  ParagraphScreen
+  ParagraphScreen,
+  TextAreaScreen,
+  BlockQuoteScreen,
+  NumberStackScreen,
+  NoticeScreen,
+  BulletListScreen,
+  ListScreen,
 ]
 
 class Index extends Component {
 
   static navigationOptions = {
-    title: 'Prism Components',
     headerStyle: {display: 'none'}
   }
 
@@ -30,7 +43,7 @@ class Index extends Component {
     return (
       <ScrollPane>
         <LogoType />
-        <List padding={[0, 20]} space={1}>
+        <List padding={[0, 20]} space={1} margin={{bottom: 20}}>
           {
             Categories.map((item, i) => {
               //console.log(item.name)

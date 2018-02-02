@@ -97,7 +97,7 @@ export default ({colors, fonts}) => {
       backgroundColor: colors.backgroundDark,
       textAlign: 'left',
       borderRadius: 0,
-      paddingLeft: 12,
+      paddingHorizontal: 12,
       height: 45
     },
     'com.prism.ui.TextArea': {

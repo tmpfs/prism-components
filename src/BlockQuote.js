@@ -10,7 +10,7 @@ class BlockQuote extends Component {
   }
 
   static defaultProps = {
-    quote: true
+    quote: false
   }
 
   render() {
