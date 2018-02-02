@@ -32,7 +32,7 @@ class PictureScreen extends ScreenRenderer {
             height={96}
             source={{
               uri: 'https://manaveda.com/assets/img/splash/sari.jpg?d=' + Date.now(),
-              cache: 'no-cache'
+              cache: 'reload'
             }} />
         </Layout>
       )
