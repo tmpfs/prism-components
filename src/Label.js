@@ -9,9 +9,6 @@ class Label extends Component {
   static styleOptions = ({styleSheet, sizes}) => {
     return {
       supportsText: true,
-      mapPropsToStyleProp: {
-        align: 'textAlign'
-      },
       mapPropsToStyle: {
         color: ({prop, styleSheet}) => {
           return {color: prop}
@@ -47,10 +44,6 @@ class Label extends Component {
       ellipsis,
       color
     } = this.props
-
-    //if (this.context.font) {
-      //console.log('Label got font from context!!!')
-    //}
 
     return (
       <Text

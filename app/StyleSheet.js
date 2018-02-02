@@ -19,9 +19,10 @@ export default ({colors, fonts}) => {
       fontSize: 18,
       //color: colors.cream
     },
+    'com.prism.ui.Paragraph': {},
     'com.prism.ui.ScrollPane': {
       flex: 1,
-      padding: 20
+      //padding: 20
     },
     'com.prism.ui.Panel.Header': {
       backgroundColor: '#336699',
