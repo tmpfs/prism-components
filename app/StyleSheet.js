@@ -151,8 +151,8 @@ export default ({colors, fonts}) => {
 
     // Utils
     //
-    //bold: {
-      //fontFamily: fonts.medium
-    //}
+    bold: {
+      fontFamily: fonts.medium
+    },
   }
 }
