@@ -54,3 +54,6 @@ buck-out/
 
 *.bak
 *.log
+
+# VS Code
+.vscode
