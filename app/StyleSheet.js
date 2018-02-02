@@ -55,27 +55,14 @@ export default ({colors, fonts}) => {
     'com.prism.ui.BackLink.Image': {
       marginRight: 15
     },
-    'com.prism.ui.BackLink.Label': {
-      //flexDirection: 'row',
-      //width: '100%',
-      //alignItems: 'flex-start',
-      //padding: 8,
 
+    'com.prism.ui.BackLink.Label': {
       fontFamily: fonts.regular,
       // NOTE: must reset the font weight
       fontWeight: 'normal',
       color: colors.cream,
       fontSize: 18,
     },
-
-    //backgroundColor: Colors.background
-  //},
-  //headerTitle: {
-    //fontFamily: Fonts.regular(Platform.OS),
-    //// NOTE: must reset the font weight
-    //fontWeight: 'normal',
-    //color: Colors.cream,
-    //fontSize: 18,
 
     'com.prism.ui.Notice': {
       padding: 10,
