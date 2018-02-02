@@ -69,7 +69,7 @@ export default ({colors, fonts}) => {
     },
     'com.prism.ui.List': {},
     'com.prism.ui.ListItem': {
-      //backgroundColor: colors.backgroundGreen,
+      backgroundColor: colors.backgroundDark,
       textAlign: 'left',
       borderRadius: 0,
       paddingLeft: 12,

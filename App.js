@@ -25,6 +25,8 @@ import Colors from './app/Colors'
 import Fonts from './app/Fonts'
 import StyleSheet from './app/StyleSheet'
 
+import Layout from './src/Layout'
+
 const registry = new StyleRegistry()
 registry.addColors(Colors)
 registry.addFonts(Fonts)
@@ -53,7 +55,9 @@ import ComponentList from './app/ComponentList'
 export default class App extends Component<{}> {
   render () {
     return (
-      <ComponentList />
+      <Layout background='background'>
+        <ComponentList />
+      </Layout>
     )
   }
 }

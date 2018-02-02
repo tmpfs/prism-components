@@ -18,20 +18,20 @@ import Fonts from './Fonts'
 
 const styles = {
   header: {
-    //backgroundColor: Colors.backgroundYellow
+    backgroundColor: Colors.background
   },
   headerTitle: {
-    //fontFamily: Fonts.regular(Platform.OS),
+    fontFamily: Fonts.regular(Platform.OS),
     // NOTE: must reset the font weight
-    //fontWeight: 'normal',
-    //color: Colors.green,
-    //fontSize: 18,
+    fontWeight: 'normal',
+    color: Colors.cream,
+    fontSize: 18,
   }
 }
 
 class Index extends Component {
   static navigationOptions = {
-    title: 'Components',
+    title: 'Prism Components',
     // NOTE: we use styles rather than a custom JSX element
     // NOTE: as the behaviour is not so good on android using `header`
     headerStyle: styles.header,
