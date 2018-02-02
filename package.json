@@ -4,7 +4,8 @@
   "description": "Component library for Prism",
   "main": "src/index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "icon": "app-icon generate -i src/images/prism.png"
   },
   "repository": {
     "type": "git",
