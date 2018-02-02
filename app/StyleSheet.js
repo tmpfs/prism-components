@@ -67,10 +67,11 @@ export default ({colors, fonts}) => {
     'com.prism.ui.Notice': {
       padding: 10,
       borderRadius: 2,
-      backgroundColor: colors.cream,
+      backgroundColor: '#336699',
     },
     'com.prism.ui.Notice.Label': {
-      color: 'steelblue'
+      color: colors.cream,
+      fontSize: 15
     },
     'com.prism.ui.Notice.Error': {
       backgroundColor: 'red',
