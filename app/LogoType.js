@@ -12,8 +12,7 @@ class LogoType extends Component {
       <Layout
         flex={0}
         center
-        margin={20}
-        padding={10}>
+        margin={{top: 70, bottom: 20}}>
         <Picture
           width={128}
           height={128}
