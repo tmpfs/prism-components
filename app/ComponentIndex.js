@@ -19,10 +19,12 @@ import NumberStackScreen from './screens/NumberStackScreen'
 import NoticeScreen from './screens/NoticeScreen'
 import BulletListScreen from './screens/BulletListScreen'
 import ListScreen from './screens/ListScreen'
+import PictureScreen from './screens/PictureScreen'
 
 const Categories = [
   LayoutScreen,
   LabelScreen,
+  PictureScreen,
   HeadingScreen,
   ParagraphScreen,
   TextAreaScreen,

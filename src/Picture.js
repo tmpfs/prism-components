@@ -9,16 +9,21 @@ import Activity from './Activity'
 
 class Picture extends Component {
 
-  static styleOptions = ({styleSheet}) => {
-    return {
-      //defaultStyles: [styleSheet.absolute]
-    }
+  static mapPropsToStyleObject = {
+    activity: [],
+    image: []
   }
 
   static propTypes = {
     source: Image.propTypes.source,
     width: PropTypes.number.isRequired,
     height: PropTypes.number.isRequired,
+  }
+
+  static defaultProps = {
+    imageStyle: {
+      position: 'absolute'
+    }
   }
 
   state = {
@@ -30,9 +35,12 @@ class Picture extends Component {
   }
 
   render() {
-    const {style, width, height} = this.props
+    const {style, activityStyle, imageStyle, width, height} = this.props
+
+    // FIXME: MODIFYING STYLES IN RENDER
     const dimensions = {width, height}
     style.push(dimensions)
+    imageStyle.push(dimensions)
 
     let {source} = this.props
 
@@ -42,7 +50,7 @@ class Picture extends Component {
 
     if (this.state.loading) {
       activity = (
-        <Activity flex={0} />
+        <Activity flex={0} style={activityStyle} />
       )
     }
 
@@ -66,8 +74,10 @@ class Picture extends Component {
       <Layout center={true} flex={0} style={dimensions}>
         <Image
           ref='image'
+          width={width}
+          height={height}
           {...handlers}
-          style={style}
+          style={imageStyle}
           source={source} />
         {activity}
       </Layout>

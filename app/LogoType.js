@@ -6,8 +6,6 @@ import Layout from '../src/Layout'
 import Picture from '../src/Picture'
 import ScrollPane from '../src/ScrollPane'
 
-const image = 'https://raw.githubusercontent.com/fika-community/prism/master/prism.png'
-
 class LogoType extends Component {
   render () {
     return (
@@ -19,7 +17,7 @@ class LogoType extends Component {
         <Picture
           width={128}
           height={128}
-          source={{uri: image}}
+          source={require('../src/images/prism.png')}
         />
         <Heading font={{size: 'large'}}>Prism</Heading>
       </Layout>
