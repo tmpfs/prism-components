@@ -53,99 +53,8 @@ export default class App extends Component<{}> {
     return (
       <Layout background='background'>
         <ScrollPane>
-          <Layout
-            center
-            margin={20}
-            padding={10}>
-            <Picture
-              width={128}
-              height={128}
-              source={{uri: image}}
-            />
-            <Heading font={{size: 'large'}}>Prism</Heading>
-          </Layout>
 
           <List space={30}>
-            <Panel
-              label='Heading'>
-
-              <List>
-                <Heading font={{size: 'xx-small'}}>
-                  Heading
-                </Heading>
-                <Heading font={{size: 'x-small'}}>
-                  Heading
-                </Heading>
-                <Heading font={{size: 'small'}}>
-                  Heading
-                </Heading>
-                <Heading font={{size: 'medium'}}>
-                  Heading
-                </Heading>
-                <Heading font={{size: 'large'}}>
-                  Heading
-                </Heading>
-                <Heading font={{size: 'x-large'}}>
-                  Heading
-                </Heading>
-                <Heading font={{size: 'xx-large'}}>
-                  Heading
-                </Heading>
-              </List>
-            </Panel>
-            <Panel
-              label='Label'>
-              <List space={5}>
-                <Label font={{size: 'xx-small'}}>
-                  Minimal, idiomatic style management for React Native.
-                </Label>
-                <Label font={{size: 'x-small'}}>
-                  Minimal, idiomatic style management for React Native.
-                </Label>
-                <Label font={{size: 'small'}}>
-                  Minimal, idiomatic style management for React Native.
-                </Label>
-                <Label font={{size: 'medium'}}>
-                  Minimal, idiomatic style management for React Native.
-                </Label>
-                <Label font={{size: 'large'}}>
-                  Minimal, idiomatic style management for React Native.
-                </Label>
-                <Label font={{size: 'x-large'}}>
-                  Minimal, idiomatic style management for React Native.
-                </Label>
-                <Label font={{size: 'xx-large'}}>
-                  Minimal, idiomatic style management for React Native.
-                </Label>
-              </List>
-            </Panel>
-            <Panel
-              label='Paragraph'>
-              <List space={5}>
-                <Paragraph font={{size: 'xx-small'}}>
-                  Minimal, idiomatic style management for React Native.
-                </Paragraph>
-                <Paragraph font={{size: 'x-small'}}>
-                  Minimal, idiomatic style management for React Native.
-                </Paragraph>
-                <Paragraph font={{size: 'small'}}>
-                  Minimal, idiomatic style management for React Native.
-                </Paragraph>
-                <Paragraph font={{size: 'medium'}}>
-                  Minimal, idiomatic style management for React Native.
-                </Paragraph>
-                <Paragraph font={{size: 'large'}}>
-                  Minimal, idiomatic style management for React Native.
-                </Paragraph>
-                <Paragraph font={{size: 'x-large'}}>
-                  Minimal, idiomatic style management for React Native.
-                </Paragraph>
-                <Paragraph font={{size: 'xx-large'}}>
-                  Minimal, idiomatic style management for React Native.
-                </Paragraph>
-              </List>
-
-            </Panel>
             <Panel
               label='Number Stack'>
               <List space={30} all={{row: true}}>
@@ -225,44 +134,6 @@ export default class App extends Component<{}> {
                 numerical={true}
                 items={['Document', 'Test', 'Iterate']} />
             </Panel>
-
-            <Panel
-              label='Activity'>
-              <List
-                space={20}
-                all={{
-                  row: true,
-                  padding: [10],
-                  background: 'dodgerblue',
-                  radius: 5}}
-                >
-                <Layout>
-                  <Layout center>
-                    <Activity large />
-                  </Layout>
-                  <Layout center>
-                    <Activity />
-                  </Layout>
-                </Layout>
-                <Layout>
-                  <Activity stacked large>
-                    LOADING
-                  </Activity>
-                  <Activity stacked>
-                    LOADING
-                  </Activity>
-                </Layout>
-                <Layout>
-                  <Activity large>
-                    LOADING
-                  </Activity>
-                  <Activity>
-                    LOADING
-                  </Activity>
-                </Layout>
-              </List>
-            </Panel>
-
 
           </List>
         </ScrollPane>

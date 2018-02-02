@@ -8,11 +8,13 @@ import ListItem from '../src/ListItem'
 
 import LogoType from './LogoType'
 import ActivityScreen from './screens/ActivityScreen'
+import HeadingScreen from './screens/HeadingScreen'
 import LabelScreen from './screens/LabelScreen'
 import ParagraphScreen from './screens/ParagraphScreen'
 
 const Categories = [
   ActivityScreen,
+  HeadingScreen,
   LabelScreen,
   ParagraphScreen
 ]
