@@ -3,18 +3,18 @@ import PropTypes from 'prop-types'
 import {Prism} from 'react-native-prism'
 
 import ScreenRenderer from './ScreenRenderer'
-import Colors from '../Colors'
 
 import BackNavigationHeader from '../../src/BackNavigationHeader'
 
 import List from '../../src/List'
 import Layout from '../../src/Layout'
+import colors from '../../src/colors'
 
 const CenterStyle = {
   width: 50,
   height: 50,
   flex: 0,
-  backgroundColor: Colors.background
+  backgroundColor: colors.background
 }
 
 class Rectangle extends Component {
@@ -30,7 +30,7 @@ class Rectangle extends Component {
       flex: 0,
       width: 20,
       height: 20,
-      backgroundColor: Colors.cream
+      backgroundColor: colors.cream
     }
   }
 

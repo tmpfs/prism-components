@@ -1,12 +1,25 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
-import {Prism} from 'react-native-prism'
+import {Prism, StyleRegistry} from 'react-native-prism'
 import {View} from 'react-native-prism-primitives'
 import Namespace from './Namespace'
+
+import colors from './colors'
+import fonts from './fonts'
+import stylesheet from './stylesheet'
+
+// Configure the library style registry
+const registry = new StyleRegistry()
+registry.addColors(colors)
+registry.addFonts(fonts)
+registry.addStyleSheet(stylesheet)
+
+// TODO: implement component library style registry!
 
 class Layout extends Component {
   static styleOptions = ({compile}) => {
     return {
+      registry: registry,
       supportsDimension: true,
       mapPropsToStyle: {
         center: ({prop}) => {
