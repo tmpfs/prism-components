@@ -19,6 +19,11 @@ class Activity extends Component {
       colors: colors,
       mapPropsToStyleObject: {
         activityIndicator: []
+      },
+      mapStyleToProps: {
+        activityIndicator: {
+          tintColor: true
+        }
       }
     }
   }
@@ -26,7 +31,7 @@ class Activity extends Component {
   static propTypes = {
     labelProps: PropTypes.object,
     large: PropTypes.bool,
-    tint: PropTypes.string,
+    tintColor: PropTypes.string,
     space: PropTypes.number,
     stacked: PropTypes.bool
   }
@@ -40,7 +45,7 @@ class Activity extends Component {
       flex: 1
     },
     activityIndicatorStyle: {
-      color: colors.tint
+      tintColor: colors.tint
     }
   }
 
@@ -50,6 +55,7 @@ class Activity extends Component {
       activityIndicatorStyle,
       large,
       children,
+      tintColor,
       stacked,
       space,
       labelProps
@@ -57,17 +63,12 @@ class Activity extends Component {
 
     const activitySize = large ? 'large' : 'small'
 
-    // TODO: implement and use mapStyleToProp
-    const flat = StyleSheet.flatten(activityIndicatorStyle)
-    const tintColor = flat.color
-    delete flat.color
-
     // Default is no label
     let activity = (
       <ActivityIndicator
         size={activitySize}
         color={tintColor}
-        style={flat} />
+        style={activityIndicatorStyle} />
     )
 
     let element = activity

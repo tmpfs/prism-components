@@ -147,7 +147,7 @@ export default ({colors, fonts}) => {
     },
     'com.prism.ui.Activity.ActivityIndicator': {
       flex: 0,
-      color: colors.tint
+      tintColor: colors.cream
     },
 
     // Utils
