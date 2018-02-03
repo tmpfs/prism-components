@@ -16,8 +16,9 @@ class NumberStack extends Component {
       mapPropsToStyleState: ({props}) => {
         const {size} = props
         if (size) {
-          const stateName = size.charAt(0).toUpperCase() + size.substr(1)
-          return stateName
+          return size
+          //const stateName = size.charAt(0).toUpperCase() + size.substr(1)
+          //return stateName
         }
       }
     }

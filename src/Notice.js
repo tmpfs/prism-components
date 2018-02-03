@@ -12,7 +12,7 @@ class Notice extends Component {
     return {
       mapPropsToStyleState: ({props}) => {
         if (props.error !== undefined) {
-          return 'Error'
+          return 'error'
         }
       },
       mapPropsToStyleObject: {

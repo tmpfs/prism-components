@@ -8,15 +8,15 @@ import Label from './Label'
 
 import {StyleSheet} from 'react-native'
 
+// TODO: use colors.js
 const colors = {
   tint: '#5affda'
 }
 
 class Activity extends Component {
 
-  static styleOptions = ({compile}) => {
+  static styleOptions = () => {
     return {
-      colors: colors,
       mapPropsToStyleObject: {
         activityIndicator: []
       },

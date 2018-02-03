@@ -74,10 +74,10 @@ export default ({colors, fonts}) => {
       color: colors.cream,
       fontSize: 15
     },
-    'com.prism.ui.Notice.Error': {
+    'com.prism.ui.Notice:error': {
       backgroundColor: 'red',
     },
-    'com.prism.ui.Notice.Label.Error': {
+    'com.prism.ui.Notice.Label:error': {
       color: colors.cream
     },
     'com.prism.ui.Button': {
@@ -90,7 +90,7 @@ export default ({colors, fonts}) => {
       height: 45,
       width: '100%'
     },
-    'com.prism.ui.Button.Disabled': {
+    'com.prism.ui.Button:disabled': {
       //backgroundColor: 'rgba(248, 231, 29, 1.0)',
       //opacity: 0.2
     },
@@ -111,7 +111,7 @@ export default ({colors, fonts}) => {
       borderColor: 'rgba(255, 255, 255, 0.5)',
       borderWidth: 1
     },
-    'com.prism.ui.TextArea.Disabled': {
+    'com.prism.ui.TextArea:disabled': {
       color: '#9e9e9e'
     },
 
@@ -125,22 +125,22 @@ export default ({colors, fonts}) => {
       flex: 1
     },
 
-    'com.prism.ui.NumberStack.Title.Small': {
+    'com.prism.ui.NumberStack.Title:small': {
       fontSize: 16
     },
-    'com.prism.ui.NumberStack.Number.Small': {
+    'com.prism.ui.NumberStack.Number:small': {
       fontSize: 40
     },
-    'com.prism.ui.NumberStack.Title.Medium': {
+    'com.prism.ui.NumberStack.Title:medium': {
       fontSize: 20
     },
-    'com.prism.ui.NumberStack.Number.Medium': {
+    'com.prism.ui.NumberStack.Number:medium': {
       fontSize: 55
     },
-    'com.prism.ui.NumberStack.Title.Large': {
+    'com.prism.ui.NumberStack.Title:large': {
       fontSize: 24
     },
-    'com.prism.ui.NumberStack.Number.Large': {
+    'com.prism.ui.NumberStack.Number:large': {
       fontSize: 70
     },
 

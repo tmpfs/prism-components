@@ -16,7 +16,7 @@ class TouchButton extends Component {
       },
       mapPropsToStyleState: ({props}) => {
         if (props.disabled) {
-          return 'Disabled'
+          return 'disabled'
         }
       }
     }

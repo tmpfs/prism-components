@@ -10,7 +10,7 @@ class TextArea extends Component {
     return {
       mapPropsToStyleState: ({props}) => {
         if (props.disabled) {
-          return 'Disabled'
+          return 'disabled'
         }
       }
     }
