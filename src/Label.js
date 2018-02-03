@@ -10,9 +10,6 @@ class Label extends Component {
     return {
       supportsText: true,
       supportsTextTransform: true,
-      //mapStyleToProps: {
-        //textTransform: {text: 'transform'}
-      //},
       mapPropsToStyle: {
         align: ({prop, styleSheet}) => {
           return {textAlign: prop}

@@ -20,10 +20,8 @@ class Activity extends Component {
       mapPropsToStyleObject: {
         activityIndicator: []
       },
-      mapStyleToProps: {
-        activityIndicator: {
-          tintColor: true
-        }
+      mapStyleToProp: {
+        tintColor: true,
       }
     }
   }
