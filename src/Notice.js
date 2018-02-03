@@ -11,7 +11,7 @@ class Notice extends Component {
   static styleOptions = () => {
     return {
       mapPropsToStyleState: ({props}) => {
-        if (props.error !== undefined) {
+        if (props.error) {
           return 'error'
         }
       },
