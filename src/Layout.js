@@ -38,4 +38,11 @@ class Layout extends Component {
   }
 }
 
-export default Prism(Layout, Namespace)
+const requirements = ({config}) => {
+  if (config.extendedProperties !== true) {
+    return `extendedProperties must be set in config ` +
+      `to use the ${Namespace} component library`
+  }
+}
+
+export default Prism(Layout, Namespace, requirements)

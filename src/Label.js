@@ -9,6 +9,7 @@ class Label extends Component {
   static styleOptions = ({styleSheet, sizes}) => {
     return {
       supportsText: true,
+      supportsTextTransform: true,
       mapPropsToStyle: {
         align: ({prop, styleSheet}) => {
           return {textAlign: prop}
@@ -42,18 +43,11 @@ class Label extends Component {
   render() {
     const {
       style,
-      text,
       textProps,
       lines,
       ellipsis,
       color
     } = this.props
-
-    let {children} = this.props
-
-    if (text && text.transformedText) {
-      children = text.transformedText
-    }
 
     return (
       <Text
@@ -61,7 +55,7 @@ class Label extends Component {
         ellipsizeMode={ellipsis}
         color={color}
         style={style}
-        {...textProps}>{children}</Text>
+        {...textProps}>{this.props.children}</Text>
     )
   }
 }
