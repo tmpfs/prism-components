@@ -27,7 +27,8 @@ export default ({colors, fonts}) => {
     'com.prism.ui.Panel.Header': {
       backgroundColor: '#336699',
       paddingVertical: 10,
-      paddingHorizontal: 20
+      paddingHorizontal: 20,
+      textTransform: 'uppercase'
     },
     'com.prism.ui.Panel.Body': {
       backgroundColor: '#335599',

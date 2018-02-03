@@ -11,13 +11,13 @@ class Panel extends Component {
     return {
       mapPropsToStyleObject: {
         header: [],
-        body: []
+        body: [],
+        label: []
       }
     }
   }
 
   static propTypes = {
-    space: PropTypes.number,
     label: PropTypes.string,
     layoutProps: PropTypes.object,
     labelProps: PropTypes.object,
@@ -27,7 +27,7 @@ class Panel extends Component {
   render () {
     const {styleSheet, style} = this.props
     let {
-      space,
+      headerText,
       labelProps,
       labelStyle,
       headerStyle,
@@ -35,7 +35,6 @@ class Panel extends Component {
     } = this.props
 
     let {label, header, layoutProps} = this.props
-    layoutProps = {space, ...layoutProps}
 
     if (label && !header) {
       header = (
@@ -44,9 +43,10 @@ class Panel extends Component {
           style={labelStyle}>{label}</Label>
       )
     }
+
     return (
       <Layout {...layoutProps} style={style}>
-        <Layout style={headerStyle}>
+        <Layout text={headerText} style={headerStyle}>
           {header}
         </Layout>
         <Layout style={bodyStyle}>
