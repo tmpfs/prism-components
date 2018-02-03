@@ -9,7 +9,7 @@ class NumberStack extends Component {
 
   static styleOptions = () => {
     return {
-      mapPropsToStyleObject: {
+      mapPropsToComponent: {
         title: ['color'],
         number: ['color']
       },

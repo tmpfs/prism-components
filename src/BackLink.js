@@ -12,7 +12,7 @@ class BackLink extends Component {
     onPress: PropTypes.func
   }
 
-  static mapPropsToStyleObject = {
+  static mapPropsToComponent = {
     image: [],
     label: []
   }

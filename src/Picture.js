@@ -12,7 +12,7 @@ class Picture extends Component {
   static styleOptions = () => {
     return {
       supportsDimension: true,
-      mapPropsToStyleObject: {
+      mapPropsToComponent: {
         activity: [],
         image: []
       }

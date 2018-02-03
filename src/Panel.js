@@ -9,7 +9,7 @@ class Panel extends Component {
 
   static styleOptions = () => {
     return {
-      mapPropsToStyleObject: {
+      mapPropsToComponent: {
         header: [],
         body: [],
         label: []
