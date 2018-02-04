@@ -9,9 +9,10 @@ class NumberStack extends Component {
 
   static styleOptions = () => {
     return {
+      supportsColor: true,
       mapPropsToComponent: {
-        title: ['color'],
-        number: ['color']
+        titleStyle: ['color'],
+        numberStyle: ['color']
       },
       mapPropsToStyleState: ({props}) => {
         const {size} = props
@@ -35,7 +36,6 @@ class NumberStack extends Component {
     bold: true,
     size: 'medium',
     align: 'center'
-    //transform: 'upper'
   }
 
   render() {

@@ -13,8 +13,8 @@ class BackLink extends Component {
   }
 
   static mapPropsToComponent = {
-    image: [],
-    label: []
+    imageStyle: [],
+    labelStyle: []
   }
 
   render() {

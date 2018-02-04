@@ -13,8 +13,8 @@ class Picture extends Component {
     return {
       supportsDimension: true,
       mapPropsToComponent: {
-        activity: [],
-        image: []
+        activityStyle: [],
+        imageStyle: []
       }
     }
   }
@@ -26,6 +26,9 @@ class Picture extends Component {
   }
 
   static defaultProps = {
+    activityStyle: {
+      flex: 0
+    },
     imageStyle: {
       position: 'absolute'
     }
@@ -50,7 +53,7 @@ class Picture extends Component {
 
     if (this.state.loading) {
       activity = (
-        <Activity flex={0} style={activityStyle} />
+        <Activity style={activityStyle} />
       )
     }
 

@@ -9,7 +9,7 @@ import BackLink from './BackLink'
 class BackNavigation extends Component {
 
   static mapPropsToComponent = {
-    link: []
+    linkStyle: []
   }
 
   static propTypes = {

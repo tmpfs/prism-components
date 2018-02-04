@@ -18,7 +18,7 @@ class Activity extends Component {
   static styleOptions = () => {
     return {
       mapPropsToComponent: {
-        activityIndicator: []
+        activityIndicatorStyle: []
       },
       mapStyleToProp: {
         tintColor: true,
@@ -68,6 +68,12 @@ class Activity extends Component {
     )
 
     let element = activity
+
+    console.log('activity layout style: ')
+    console.log(style)
+
+    console.log('activity indicator style: ')
+    console.log(activityIndicatorStyle)
 
     if (children) {
       element = stacked ? (
