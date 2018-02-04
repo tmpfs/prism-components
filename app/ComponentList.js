@@ -2,7 +2,8 @@ import React, {Component} from 'react'
 import {StackNavigator} from 'react-navigation'
 import {Index, Categories} from './ComponentIndex'
 
-import colors from '../src/colors'
+import theme from '../src/theme'
+const {colors} = theme
 
 const screens = {
   Home: {screen: Index}

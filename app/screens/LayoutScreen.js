@@ -8,7 +8,8 @@ import BackNavigationHeader from '../../src/BackNavigationHeader'
 
 import List from '../../src/List'
 import Layout from '../../src/Layout'
-import colors from '../../src/colors'
+import theme from '../../src/theme'
+const {colors} = theme
 
 const CenterStyle = {
   width: 50,

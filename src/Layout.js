@@ -4,17 +4,11 @@ import {Prism, StyleRegistry} from 'react-native-prism'
 import {View} from 'react-native-prism-primitives'
 import Namespace from './Namespace'
 
-import colors from './colors'
-import fonts from './fonts'
-import stylesheet from './stylesheet'
+import theme from './theme'
 
 // Configure the library style registry
 const registry = new StyleRegistry()
-registry.addColors(colors)
-registry.addFonts(fonts)
-registry.addStyleSheet(stylesheet)
-
-// TODO: implement component library style registry!
+registry.addTheme(theme)
 
 class Layout extends Component {
   static styleOptions = ({compile}) => {
