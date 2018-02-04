@@ -32,6 +32,8 @@ import {
 } from 'react-native-prism-components'
 ```
 
+To view the components in action clone the repo, install dependencies and run the RN app.
+
 ## Getting Started
 
 Configure your application (see the Prism [Getting Started][] guide) and then you can import the components from `react-native-prism-components` to use them in your application.
