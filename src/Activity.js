@@ -17,7 +17,7 @@ class Activity extends Component {
 
   static styleOptions = () => {
     return {
-      mapPropsToComponent: {
+      mapStyleToComponent: {
         activityIndicatorStyle: []
       },
       mapStyleToProp: {

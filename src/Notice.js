@@ -15,7 +15,7 @@ class Notice extends Component {
           return 'error'
         }
       },
-      mapPropsToComponent: {
+      mapStyleToComponent: {
         labelStyle: ['color']
       }
     }
