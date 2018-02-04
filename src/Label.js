@@ -6,7 +6,7 @@ import Namespace from './Namespace'
 
 class Label extends Component {
 
-  static styleOptions = ({styleSheet, sizes}) => {
+  static styleOptions = ({styleSheet}) => {
     return {
       supportsText: true,
       supportsTextTransform: true,
@@ -45,15 +45,14 @@ class Label extends Component {
       style,
       textProps,
       lines,
-      ellipsis,
-      color
+      ellipsis
     } = this.props
 
+    // TODO: DO NOT PASS COLOR TO TEXT
     return (
       <Text
         numberOfLines={lines}
         ellipsizeMode={ellipsis}
-        color={color}
         style={style}
         {...textProps}>{this.props.children}</Text>
     )
