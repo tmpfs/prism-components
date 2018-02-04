@@ -21,26 +21,29 @@ yarn add react-native-prism-components
 
 Component library for [Prism][] using the namespace `com.prism.ui`.
 
-## Getting Started
-
-Configure your application (see the Prism [Getting Started][] guide) and then you can import the components from `react-native-prism-components` to use the [Prism Properties][] in your application.
+This library extends the [Prism Primitives][] library, re-exporting all the underlying primitive components so you have a clear upgrade path if you want to use this library.
 
 ```javascript
 import {
+  View,
   Label,
   Heading,
   Panel
 } from 'react-native-prism-components'
 ```
 
-You can now define default style declarations for the primitive components in your style sheet:
+## Getting Started
 
-<? @source {javascript} ../app/StyleSheet.js ?>
+Configure your application (see the Prism [Getting Started][] guide) and then you can import the components from `react-native-prism-components` to use them in your application.
+
+And then define style declarations for the components in your style sheet:
+
+<? @source {javascript} ../src/theme.js ?>
 
 ## License
 
 MIT
 
 [Prism]: https://github.com/fika-community/prism
+[Prism Primitives]: https://github.com/fika-community/prism#properties
 [Getting Started]: https://github.com/fika-community/prism#getting-started
-[Prism Properties]: https://github.com/fika-community/prism#properties
