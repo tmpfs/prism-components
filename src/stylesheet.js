@@ -145,10 +145,10 @@ export default ({colors, fonts}) => {
     },
 
     'com.prism.ui.Activity': {
+      tintColor: colors.cream
     },
     'com.prism.ui.Activity.ActivityIndicator': {
-      flex: 0,
-      tintColor: colors.cream
+      flex: 0
     },
 
     // Utils

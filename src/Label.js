@@ -44,6 +44,7 @@ class Label extends Component {
     const {
       style,
       textProps,
+      color,
       lines,
       ellipsis
     } = this.props
@@ -54,6 +55,7 @@ class Label extends Component {
         numberOfLines={lines}
         ellipsizeMode={ellipsis}
         style={style}
+        color={color}
         {...textProps}>{this.props.children}</Text>
     )
   }

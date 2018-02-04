@@ -42,9 +42,7 @@ class Activity extends Component {
     style: {
       flex: 1
     },
-    activityIndicatorStyle: {
-      tintColor: colors.tint
-    }
+    tintColor: colors.tint
   }
 
   render() {
