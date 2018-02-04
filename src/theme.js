@@ -7,12 +7,8 @@ export default {
     tint: '#5affda'
   },
   fonts: {
-    regular: (os) => {
-      return os === 'ios' ? 'WorkSans-Regular' : 'worksans'
-    },
-    medium: (os) => {
-      return os === 'ios' ? 'WorkSans-Medium' : 'worksans_medium'
-    }
+    regular: 'WorkSans-Regular',
+    medium: 'WorkSans-Medium'
   },
   styles: ({colors, fonts}) => {
     return {
