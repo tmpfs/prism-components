@@ -9,6 +9,7 @@
 - [Installation](#installation)
 - [Synopsis](#synopsis)
 - [Getting Started](#getting-started)
+- [Component Styles](#component-styles)
 - [License](#license)
 
 ---
@@ -41,7 +42,9 @@ import {
 
 Configure your application (see the Prism [Getting Started](https://github.com/fika-community/prism#getting-started) guide) and then you can import the components from `react-native-prism-components` to use them in your application.
 
-And then define style declarations for the components in your style sheet:
+## Component Styles
+
+These are the component styles bundled with the library for reference, override them in your application styles.
 
 ```javascript
 export default {
