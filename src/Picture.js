@@ -13,8 +13,9 @@ class Picture extends Component {
     return {
       supportsDimension: true,
       mapStyleToComponent: {
+        style: ['width', 'height'],
         activityStyle: [],
-        imageStyle: []
+        imageStyle: ['width', 'height']
       }
     }
   }

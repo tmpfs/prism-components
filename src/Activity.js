@@ -69,12 +69,6 @@ class Activity extends Component {
 
     let element = activity
 
-    console.log('activity layout style: ')
-    console.log(style)
-
-    console.log('activity indicator style: ')
-    console.log(activityIndicatorStyle)
-
     if (children) {
       element = stacked ? (
         <Layout center style={style}>
