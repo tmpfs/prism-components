@@ -17,7 +17,7 @@ class Notice extends Component {
           }
         }
       },
-      mapStyleToComponent: {
+      mapStyleToProps: {
         labelStyle: ['color']
       }
     }

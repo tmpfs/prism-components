@@ -10,7 +10,7 @@ class BulletList extends Component {
 
   static styleOptions = () => {
     return {
-      mapStyleToComponent: {
+      mapStyleToProps: {
         bulletStyle: ['color'],
         labelStyle: ['color']
       }
