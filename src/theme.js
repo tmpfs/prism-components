@@ -92,7 +92,7 @@ export default {
       'com.prism.ui.Notice.Label:error': {
         color: colors.cream
       },
-      'com.prism.ui.Button': {
+      'com.prism.ui.TouchButton': {
         fontSize: 18,
         paddingTop: 12,
         backgroundColor: 'steelblue',
@@ -102,7 +102,7 @@ export default {
         height: 45,
         width: '100%'
       },
-      'com.prism.ui.Button:disabled': {
+      'com.prism.ui.TouchButton:disabled': {
         //backgroundColor: 'rgba(248, 231, 29, 1.0)',
         //opacity: 0.2
       },

@@ -10,7 +10,6 @@ class TouchButton extends Component {
 
   static styleOptions = () => {
     return {
-      className: 'Button',
       mapStyleToComponent: {
         labelStyle: ['color']
       },
