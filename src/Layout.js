@@ -11,7 +11,7 @@ const registry = new StyleRegistry()
 registry.addTheme(theme)
 
 class Layout extends Component {
-  static styleOptions = ({compile}) => {
+  static styleOptions = () => {
     return {
       registry: registry,
       supportsDimension: true,
