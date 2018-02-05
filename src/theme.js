@@ -155,7 +155,6 @@ export default {
       'com.prism.ui.NumberStack.Number:large': {
         fontSize: 70
       },
-
       'com.prism.ui.Activity': {
         tintColor: colors.cream
       },

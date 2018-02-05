@@ -22,7 +22,7 @@ class ExperimentalScreen extends ScreenRenderer {
               This is some text that illustrates how text style props are inherited
               from the parent hierarchy.
 
-              We add a <Label bold text={{transform: 'uppercase'}}>large</Label> size to the grandparent List which propagates through the children using childContext.
+              We add a <Label bold textTransform='uppercase'>large</Label> size to the grandparent List which propagates through the children using childContext.
             </Paragraph>
 
             <Paragraph font={{size: 'medium'}}>
@@ -39,10 +39,10 @@ class ExperimentalScreen extends ScreenRenderer {
     {
       label: 'Text Transform',
       component: (
-        <List space={5} text={{transform: 'uppercase'}}>
+        <List space={5} textTransform='uppercase'>
           <List space={10}>
             <Paragraph>
-              This is some uppercase text <Label text={{transform: 'lowercase'}}>including some lowercase text in a Label</Label> in a paragraph. <Label text={{transform: 'capitalize'}}>We can capitalize too</Label>.
+              This is some uppercase text <Label textTransform='lowercase'>including some lowercase text in a Label</Label> in a paragraph. <Label textTransform='capitalize'>We can capitalize too</Label>.
             </Paragraph>
           </List>
         </List>

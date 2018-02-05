@@ -8,11 +8,6 @@ import Label from './Label'
 
 import {StyleSheet} from 'react-native'
 
-// TODO: use colors.js
-const colors = {
-  tint: '#5affda'
-}
-
 class Activity extends Component {
 
   static styleOptions = () => {
@@ -41,8 +36,7 @@ class Activity extends Component {
     labelProps: {},
     style: {
       flex: 1
-    },
-    tintColor: colors.tint
+    }
   }
 
   render() {

@@ -3608,9 +3608,9 @@ react-native-prism-primitives@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/react-native-prism-primitives/-/react-native-prism-primitives-1.1.1.tgz#4cbb3d955fea4d6f1a074fc5b1b2d495af997ef4"
 
-react-native-prism@^3.4.2:
-  version "3.4.2"
-  resolved "https://registry.yarnpkg.com/react-native-prism/-/react-native-prism-3.4.2.tgz#1b3e50d8ca9575bb51537162aec1b2a0509e00e8"
+react-native-prism@^3.5.3:
+  version "3.5.3"
+  resolved "https://registry.yarnpkg.com/react-native-prism/-/react-native-prism-3.5.3.tgz#070b67197aab8a6508f4c28772bf3c5bcce7d3c1"
 
 react-native-tab-view@^0.0.74:
   version "0.0.74"
