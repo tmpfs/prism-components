@@ -161,6 +161,10 @@ export default {
       'com.prism.ui.Activity.ActivityIndicator': {
         flex: 0
       },
+      'com.prism.ui.Picture.Activity': {},
+      'com.prism.ui.Picture.Image': {
+        position: 'absolute'
+      },
       bold: {
         fontFamily: fonts.medium
       },

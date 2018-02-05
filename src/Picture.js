@@ -26,15 +26,6 @@ class Picture extends Component {
     height: PropTypes.number.isRequired,
   }
 
-  static defaultProps = {
-    activityStyle: {
-      flex: 0
-    },
-    imageStyle: {
-      position: 'absolute'
-    }
-  }
-
   state = {
     loading: false
   }

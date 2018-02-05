@@ -14,9 +14,6 @@ class Activity extends Component {
     return {
       mapStyleToComponent: {
         activityIndicatorStyle: []
-      },
-      mapStyleToProp: {
-        tintColor: true,
       }
     }
   }
@@ -33,10 +30,7 @@ class Activity extends Component {
     size: 'large',
     space: 10,
     stacked: false,
-    labelProps: {},
-    style: {
-      flex: 1
-    }
+    labelProps: {}
   }
 
   render() {
