@@ -14,9 +14,11 @@ class TouchButton extends Component {
       mapStyleToComponent: {
         labelStyle: ['color']
       },
-      mapPropsToStyleState: ({props}) => {
-        if (props.disabled) {
-          return 'disabled'
+      mapPropsToStyle: {
+        disabled: ({prop}) => {
+          if (prop === true) {
+            return 'disabled'
+          }
         }
       }
     }

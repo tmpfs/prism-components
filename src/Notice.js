@@ -10,9 +10,11 @@ class Notice extends Component {
 
   static styleOptions = () => {
     return {
-      mapPropsToStyleState: ({props}) => {
-        if (props.error) {
-          return 'error'
+      mapPropsToStyle: {
+        error: ({prop}) => {
+          if (prop === true) {
+            return 'error'
+          }
         }
       },
       mapStyleToComponent: {

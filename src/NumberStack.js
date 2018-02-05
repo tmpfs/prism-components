@@ -13,13 +13,8 @@ class NumberStack extends Component {
         titleStyle: ['color'],
         numberStyle: ['color']
       },
-      mapPropsToStyleState: ({props}) => {
-        const {size} = props
-        if (size) {
-          return size
-          //const stateName = size.charAt(0).toUpperCase() + size.substr(1)
-          //return stateName
-        }
+      mapPropsToStyle: {
+        size: ({prop}) => prop
       }
     }
   }
