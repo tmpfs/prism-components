@@ -4,7 +4,7 @@ import {Prism, StyleRegistry} from 'react-native-prism'
 import Layout from './src/Layout'
 import ComponentList from './app/ComponentList'
 
-const registry = new StyleRegistry()
+const registry = new StyleRegistry({})
 // NOTE: we don't need to configure a registry
 // NOTE: as the component set does it (see Layout)
 Prism.configure(

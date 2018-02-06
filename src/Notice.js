@@ -11,15 +11,16 @@ class Notice extends Component {
   static styleOptions = () => {
     return {
       mapPropsToStyle: {
-        error: ({prop}) => {
+        labelStyle: {},
+        error: ({state, prop}) => {
           if (prop === true) {
-            return 'error'
+            return state('error')
           }
         }
       },
-      mapStyleToProps: {
-        labelStyle: ['color']
-      }
+      //mapStyleToProps: {
+        //labelStyle: ['color']
+      //}
     }
   }
 

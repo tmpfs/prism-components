@@ -7,15 +7,12 @@ import Namespace from './Namespace'
 
 class NumberStack extends Component {
 
-  static styleOptions = () => {
-    return {
-      mapStyleToProps: {
-        titleStyle: ['color'],
-        numberStyle: ['color']
-      },
-      mapPropsToStyle: {
-        size: ({prop}) => prop
-      }
+  static mapPropsToStyle = {
+    titleStyle: {
+      size: ({state, prop}) => state(prop)
+    },
+    numberStyle: {
+      size: ({state, prop}) => state(prop)
     }
   }
 

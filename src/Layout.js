@@ -7,8 +7,7 @@ import Namespace from './Namespace'
 import theme from './theme'
 
 // Configure the library style registry
-const registry = new StyleRegistry()
-registry.addTheme(theme)
+const registry = new StyleRegistry({theme})
 
 class Layout extends Component {
   static styleOptions = () => {

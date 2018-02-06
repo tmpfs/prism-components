@@ -10,12 +10,12 @@ import {StyleSheet} from 'react-native'
 
 class Activity extends Component {
 
-  static styleOptions = () => {
-    return {
-      mapStyleToProps: {
-        activityIndicatorStyle: []
-      }
-    }
+  static mapStyleToProps = {
+    tintColor: ({prop}) => prop
+  }
+
+  static mapPropsToStyle = {
+    activityIndicatorStyle: {}
   }
 
   static propTypes = {
@@ -30,7 +30,7 @@ class Activity extends Component {
     size: 'large',
     space: 10,
     stacked: false,
-    labelProps: {}
+    labelProps: {},
   }
 
   render() {

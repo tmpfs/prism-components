@@ -8,8 +8,8 @@ import BackLink from './BackLink'
 
 class BackNavigation extends Component {
 
-  static mapStyleToProps = {
-    linkStyle: []
+  static mapPropsToStyle = {
+    linkStyle: {}
   }
 
   static propTypes = {
