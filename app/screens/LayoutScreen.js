@@ -18,32 +18,17 @@ const CenterStyle = {
   backgroundColor: colors.background
 }
 
-class Rectangle extends Component {
-
-  static styleOptions = () => {
-    return {
-      supportsDimension: true
-    }
+const Square = Prism.fix(
+  Layout,
+  {
+    flex: 0,
+    width: 20,
+    height: 20
+  },
+  {
+    background: colors.cream
   }
-
-  static defaultProps = {
-    style: {
-      flex: 0,
-      width: 20,
-      height: 20,
-      backgroundColor: colors.cream
-    }
-  }
-
-  render () {
-    const {style} = this.props
-    return (
-      <Layout style={style} />
-    )
-  }
-}
-
-const Square = Prism(Rectangle)
+)
 
 class LayoutScreen extends ScreenRenderer {
   static title = 'Layout'
