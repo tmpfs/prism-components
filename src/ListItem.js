@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 import {View} from 'react-native'
 import {Prism} from 'react-native-prism'
-import Namespace from './Namespace'
+import namespace from './namespace'
 import TouchButton from './TouchButton'
 
 class ListItem extends Component {
@@ -20,4 +20,4 @@ class ListItem extends Component {
   }
 }
 
-export default Prism(ListItem, Namespace)
+export default Prism(ListItem, {namespace})

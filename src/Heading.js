@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 import {Prism} from 'react-native-prism'
 import Paragraph from './Paragraph'
-import Namespace from './Namespace'
+import namespace from './namespace'
 
 class Heading extends Component {
 
@@ -33,4 +33,4 @@ class Heading extends Component {
   }
 }
 
-export default Prism(Heading, Namespace)
+export default Prism(Heading, {namespace})

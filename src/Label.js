@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 import {Prism} from 'react-native-prism'
 import {Text} from 'react-native-prism-primitives'
-import Namespace from './Namespace'
+import namespace from './namespace'
 
 class Label extends Component {
 
@@ -57,4 +57,4 @@ class Label extends Component {
   }
 }
 
-export default Prism(Label, Namespace)
+export default Prism(Label, {namespace})

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import {Prism} from 'react-native-prism'
 
 import {TouchableOpacity} from 'react-native-prism-primitives'
-import Namespace from './Namespace'
+import namespace from './namespace'
 import Label from './Label'
 
 class TouchButton extends Component {
@@ -65,4 +65,4 @@ class TouchButton extends Component {
   }
 }
 
-export default Prism(TouchButton, Namespace)
+export default Prism(TouchButton, {namespace})

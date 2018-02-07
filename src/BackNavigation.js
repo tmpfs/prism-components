@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 import {Prism} from 'react-native-prism'
 
-import Namespace from './Namespace'
+import namespace from './namespace'
 import Layout from './Layout'
 import BackLink from './BackLink'
 
@@ -28,4 +28,4 @@ class BackNavigation extends Component {
   }
 }
 
-export default Prism(BackNavigation, Namespace)
+export default Prism(BackNavigation, {namespace})

@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 import {Prism} from 'react-native-prism'
-import Namespace from './Namespace'
+import namespace from './namespace'
 import Layout from './Layout'
 import Label from './Label'
 import List from './List'
@@ -81,4 +81,4 @@ class BulletList extends Component {
   }
 }
 
-export default Prism(BulletList, Namespace)
+export default Prism(BulletList, {namespace})

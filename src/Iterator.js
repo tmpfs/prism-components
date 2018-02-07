@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 import {Prism} from 'react-native-prism'
-import Namespace from './Namespace'
+import namespace from './namespace'
 import Layout from './Layout'
 
 class Iterator extends Component {
@@ -54,4 +54,4 @@ class Iterator extends Component {
   }
 }
 
-export default Prism(Iterator, Namespace)
+export default Prism(Iterator, {namespace})

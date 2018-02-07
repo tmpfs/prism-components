@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import {Prism} from 'react-native-prism'
 import {Image} from 'react-native-prism-primitives'
 
-import Namespace from './Namespace'
+import namespace from './namespace'
 import Layout from './Layout'
 import Activity from './Activity'
 
@@ -84,4 +84,4 @@ class Picture extends Component {
   }
 }
 
-export default Prism(Picture, Namespace)
+export default Prism(Picture, {namespace})

@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 import {Prism, StyleRegistry} from 'react-native-prism'
 import {View} from 'react-native-prism-primitives'
-import Namespace from './Namespace'
+import namespace from './namespace'
 
 import theme from './theme'
 
@@ -47,8 +47,8 @@ class Layout extends Component {
 const requirements = ({config}) => {
   if (config.extendedProperties !== true) {
     return `extendedProperties must be set in config ` +
-      `to use the ${Namespace} component library`
+      `to use the ${namespace} component library`
   }
 }
 
-export default Prism(Layout, Namespace, requirements)
+export default Prism(Layout, {namespace, requirements})

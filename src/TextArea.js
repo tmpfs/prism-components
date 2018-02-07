@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 import {Prism} from 'react-native-prism'
 import {TextInput} from 'react-native-prism-primitives'
-import Namespace from './Namespace'
+import namespace from './namespace'
 
 class TextArea extends Component {
 
@@ -53,4 +53,4 @@ class TextArea extends Component {
   }
 }
 
-export default Prism(TextArea, Namespace)
+export default Prism(TextArea, {namespace})

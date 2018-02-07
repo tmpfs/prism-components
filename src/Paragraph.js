@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import {Text} from 'react-native'
 import {Prism} from 'react-native-prism'
 import Label from './Label'
-import Namespace from './Namespace'
+import namespace from './namespace'
 
 class Paragraph extends Component {
 
@@ -37,4 +37,4 @@ class Paragraph extends Component {
   }
 }
 
-export default Prism(Paragraph, Namespace)
+export default Prism(Paragraph, {namespace})

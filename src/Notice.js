@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 import {Prism} from 'react-native-prism'
 
-import Namespace from './Namespace'
+import namespace from './namespace'
 import Layout from './Layout'
 import Paragraph from './Paragraph'
 
@@ -48,4 +48,4 @@ class Notice extends Component {
   }
 }
 
-export default Prism(Notice, Namespace)
+export default Prism(Notice, {namespace})

@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 import {ActivityIndicator} from 'react-native-prism-primitives'
 import {Prism} from 'react-native-prism'
-import Namespace from './Namespace'
+import namespace from './namespace'
 import Layout from './Layout'
 import Label from './Label'
 
@@ -83,4 +83,4 @@ class Activity extends Component {
   }
 }
 
-export default Prism(Activity, Namespace)
+export default Prism(Activity, {namespace})

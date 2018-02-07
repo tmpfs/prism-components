@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import {Prism} from 'react-native-prism'
 import {Image, TouchableOpacity} from 'react-native-prism-primitives'
 
-import Namespace from './Namespace'
+import namespace from './namespace'
 import Label from './Label'
 
 class BackLink extends Component {
@@ -35,4 +35,4 @@ class BackLink extends Component {
   }
 }
 
-export default Prism(BackLink, Namespace)
+export default Prism(BackLink, {namespace})

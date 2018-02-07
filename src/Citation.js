@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 import {Prism} from 'react-native-prism'
 import Label from './Label'
-import Namespace from './Namespace'
+import namespace from './namespace'
 
 class Citation extends Component {
   static propTypes = {
@@ -30,4 +30,4 @@ class Citation extends Component {
   }
 }
 
-export default Prism(Citation, Namespace)
+export default Prism(Citation, {namespace})

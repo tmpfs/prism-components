@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 import {Prism} from 'react-native-prism'
 import Paragraph from './Paragraph'
-import Namespace from './Namespace'
+import namespace from './namespace'
 
 class BlockQuote extends Component {
   static propTypes = {
@@ -26,4 +26,4 @@ class BlockQuote extends Component {
   }
 }
 
-export default Prism(BlockQuote, Namespace)
+export default Prism(BlockQuote, {namespace})

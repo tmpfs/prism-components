@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 import {Prism} from 'react-native-prism'
-import Namespace from './Namespace'
+import namespace from './namespace'
 import Iterator from './Iterator'
 
 class List extends Component {
@@ -39,4 +39,4 @@ class List extends Component {
   }
 }
 
-export default Prism(List, Namespace)
+export default Prism(List, {namespace})
