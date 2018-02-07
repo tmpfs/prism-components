@@ -18,7 +18,7 @@ const CenterStyle = {
   backgroundColor: colors.background
 }
 
-const Square = Prism.fix(
+const Square = Prism.style(
   Layout,
   {
     flex: 0,

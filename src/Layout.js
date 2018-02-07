@@ -7,7 +7,7 @@ import namespace from './namespace'
 import theme from './theme'
 
 // Configure the library style registry
-const registry = new StyleRegistry({theme})
+const registry = new StyleRegistry({theme, bundle: true})
 
 class Layout extends Component {
   static styleOptions = () => {
