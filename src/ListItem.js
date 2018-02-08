@@ -7,12 +7,17 @@ import TouchButton from './TouchButton'
 
 class ListItem extends Component {
 
+  static mapPropsToStyle = {
+    labelStyle: {}
+  }
+
   render () {
-    const {style, title, onPress} = this.props
+    const {style, labelStyle, title, onPress} = this.props
     return (
       <TouchButton
         onPress={onPress}
         title={title}
+        labelStyle={labelStyle}
         style={style}>
         {this.props.children}
       </TouchButton>
