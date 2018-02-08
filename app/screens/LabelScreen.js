@@ -34,25 +34,25 @@ class LabelScreen extends ScreenRenderer {
       label: 'Font Size',
       component: (
         <List space={5}>
-          <Label font={{size: 'xx-small'}}>
+          <Label size='xx-small'>
             {copy}
           </Label>
-          <Label font={{size: 'x-small'}}>
+          <Label size='x-small'>
             {copy}
           </Label>
-          <Label font={{size: 'small'}}>
+          <Label size='small'>
             {copy}
           </Label>
-          <Label font={{size: 'medium'}}>
+          <Label size='medium'>
             {copy}
           </Label>
-          <Label font={{size: 'large'}}>
+          <Label size='large'>
             {copy}
           </Label>
-          <Label font={{size: 'x-large'}}>
+          <Label size='x-large'>
             {copy}
           </Label>
-          <Label font={{size: 'xx-large'}}>
+          <Label size='xx-large'>
             {copy}
           </Label>
         </List>

@@ -6,30 +6,15 @@ import namespace from './namespace'
 
 class Label extends Component {
 
-  static styleOptions = ({styleSheet}) => {
-    return {
-      supportsText: true,
-      mapPropsToStyle: {
-        align: ({prop, styleSheet}) => {
-          return {textAlign: prop}
-        },
-        bold: ({prop, styleSheet}) => {
-          if (styleSheet.bold !== undefined) {
-            return styleSheet.bold
-          }
-          return {fontWeight: 'bold'}
-        }
-      }
-    }
+  static styleOptions = {
+    supportsText: true
   }
 
   static propTypes = {
     textProps: PropTypes.object,
     lines: PropTypes.number,
-    ellipsis: PropTypes.oneOf(['head', 'middle', 'tail', 'clip']),
-    align: PropTypes.oneOf(['left', 'center', 'right']),
-    bold: PropTypes.bool,
-    color: PropTypes.string
+    ellipsis: PropTypes.oneOf(
+      ['head', 'middle', 'tail', 'clip'])
   }
 
   static defaultProps = {
@@ -39,19 +24,18 @@ class Label extends Component {
   render() {
     const {
       style,
+      size,
       textProps,
       color,
       lines,
       ellipsis
     } = this.props
 
-    // TODO: DO NOT PASS COLOR TO TEXT
     return (
       <Text
         numberOfLines={lines}
         ellipsizeMode={ellipsis}
         style={style}
-        color={color}
         {...textProps}>{this.props.children}</Text>
     )
   }

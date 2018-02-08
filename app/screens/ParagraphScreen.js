@@ -19,25 +19,25 @@ class ParagraphScreen extends ScreenRenderer {
       label: 'Sizes',
       component: (
         <List space={5}>
-          <Paragraph font={{size: 'xx-small'}}>
+          <Paragraph size='xx-small'>
             {copy}
           </Paragraph>
-          <Paragraph font={{size: 'x-small'}}>
+          <Paragraph size='x-small'>
             {copy}
           </Paragraph>
-          <Paragraph font={{size: 'small'}}>
+          <Paragraph size='small'>
             {copy}
           </Paragraph>
-          <Paragraph font={{size: 'medium'}}>
+          <Paragraph size='medium'>
             {copy}
           </Paragraph>
-          <Paragraph font={{size: 'large'}}>
+          <Paragraph size='large'>
             {copy}
           </Paragraph>
-          <Paragraph font={{size: 'x-large'}}>
+          <Paragraph size='x-large'>
             {copy}
           </Paragraph>
-          <Paragraph font={{size: 'xx-large'}}>
+          <Paragraph size='xx-large'>
             {copy}
           </Paragraph>
         </List>

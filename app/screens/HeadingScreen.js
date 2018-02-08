@@ -18,25 +18,25 @@ class HeadingScreen extends ScreenRenderer {
       label: 'Sizes',
       component: (
         <List space={5}>
-          <Heading font={{size: 'xx-small'}}>
+          <Heading size='xx-small'>
             {copy}
           </Heading>
-          <Heading font={{size: 'x-small'}}>
+          <Heading size='x-small'>
             {copy}
           </Heading>
-          <Heading font={{size: 'small'}}>
+          <Heading size='small'>
             {copy}
           </Heading>
-          <Heading font={{size: 'medium'}}>
+          <Heading size='medium'>
             {copy}
           </Heading>
-          <Heading font={{size: 'large'}}>
+          <Heading size='large'>
             {copy}
           </Heading>
-          <Heading font={{size: 'x-large'}}>
+          <Heading size='x-large'>
             {copy}
           </Heading>
-          <Heading font={{size: 'xx-large'}}>
+          <Heading size='xx-large'>
             {copy}
           </Heading>
         </List>
