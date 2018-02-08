@@ -93,14 +93,16 @@ export default {
         color: colors.cream
       },
       'com.prism.ui.TouchButton': {
-        fontSize: 18,
         paddingTop: 12,
         backgroundColor: 'steelblue',
         borderRadius: 4,
         overflow: 'hidden',
-        textAlign: 'center',
         height: 45,
         width: '100%'
+      },
+      'com.prism.ui.TouchButton.Label': {
+        fontSize: 18,
+        textAlign: 'center'
       },
       'com.prism.ui.TouchButton:disabled': {
         //backgroundColor: 'rgba(248, 231, 29, 1.0)',
@@ -109,10 +111,14 @@ export default {
       'com.prism.ui.List': {},
       'com.prism.ui.ListItem': {
         backgroundColor: colors.backgroundDark,
-        textAlign: 'left',
+        //textAlign: 'left',
         borderRadius: 0,
         paddingHorizontal: 12,
         height: 45
+      },
+      'com.prism.ui.ListItem.Label': {
+        color: colors.cream,
+        textAlign: 'left'
       },
       'com.prism.ui.TextArea': {
         textAlignVertical: 'top',

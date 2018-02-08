@@ -10,9 +10,6 @@ class TouchButton extends Component {
 
   static styleOptions = () => {
     return {
-      //mapStyleToProps: {
-        //labelStyle: ['color']
-      //},
       mapPropsToStyle: {
         labelStyle: {},
         disabled: ({state, prop}) => {
@@ -51,13 +48,17 @@ class TouchButton extends Component {
 
   render() {
     const {style, title, labelStyle, color, onPress} = this.props
+
+    // TODO: move to state management?
+    style.push({opacity: this.state.opacity})
+
     return (
       <TouchableOpacity
         onPress={onPress}
-        style={{opacity: this.state.opacity}}>
+        style={style}>
         <Label
           color={color}
-          style={style}>
+          style={labelStyle}>
           {this.props.children || title}
         </Label>
       </TouchableOpacity>
