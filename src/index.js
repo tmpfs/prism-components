@@ -1,4 +1,7 @@
 import Activity from './Activity'
+import BackLink from './BackLink'
+import BackNavigation from './BackNavigation'
+import BackNavigationHeader from './BackNavigationHeader'
 import BlockQuote from './BlockQuote'
 import BulletList from './BulletList'
 import Citation from './Citation'
@@ -19,6 +22,9 @@ import TouchButton from './TouchButton'
 
 export {
   Activity,
+  BackLink,
+  BackNavigation,
+  BackNavigationHeader,
   BlockQuote,
   BulletList,
   Citation,
