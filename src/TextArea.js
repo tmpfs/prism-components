@@ -9,9 +9,9 @@ class TextArea extends Component {
   static styleOptions = () => {
     return {
       mapPropsToStyle: {
-        disabled: ({state, prop}) => {
+        disabled: ({css, prop}) => {
           if (prop === true) {
-            return state('disabled')
+            return css.pseudo('disabled')
           }
         }
       }

@@ -12,9 +12,9 @@ class Notice extends Component {
     return {
       mapPropsToStyle: {
         labelStyle: {},
-        error: ({state, prop}) => {
+        error: ({css, prop}) => {
           if (prop === true) {
-            return state('error')
+            return css.pseudo('error')
           }
         }
       },

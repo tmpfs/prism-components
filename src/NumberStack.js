@@ -9,10 +9,10 @@ class NumberStack extends Component {
 
   static mapPropsToStyle = {
     titleStyle: {
-      size: ({state, prop}) => state(prop)
+      size: ({css, prop}) => css.pseudo(prop)
     },
     numberStyle: {
-      size: ({state, prop}) => state(prop)
+      size: ({css, prop}) => css.pseudo(prop)
     }
   }
 
