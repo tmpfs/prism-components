@@ -1,1 +1,1 @@
-export default 'com.prism.ui'
+export default 'prism'

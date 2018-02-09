@@ -23,40 +23,40 @@ export default {
         fontSize: 16,
         color: colors.cream
       },
-      'com.prism.ui.Layout': {
+      'prism|Layout': {
         flex: 1
       },
-      'com.prism.ui.Label': {
+      'prism|Label': {
         fontFamily: fonts.regular,
         fontSize: 18,
         //color: colors.cream
       },
-      'com.prism.ui.Paragraph': {},
-      'com.prism.ui.ScrollPane': {
+      'prism|Paragraph': {},
+      'prism|ScrollPane': {
         flex: 1,
         //padding: 20
       },
-      'com.prism.ui.Panel.Header': {
+      'prism|Panel Header': {
         backgroundColor: '#336699',
         paddingVertical: 10,
         paddingHorizontal: 20,
         textTransform: 'uppercase'
       },
-      'com.prism.ui.Panel.Body': {
+      'prism|Panel Body': {
         backgroundColor: '#335599',
         padding: 20
       },
-      'com.prism.ui.BulletList': {
+      'prism|BulletList': {
         color: colors.cream
       },
-      'com.prism.ui.BulletList.Bullet': {
+      'prism|BulletList Bullet': {
         marginRight: 5
       },
-      'com.prism.ui.BackNavigation': {
+      'prism|BackNavigation': {
         flex: 0,
         backgroundColor: colors.backgroundDark
       },
-      'com.prism.ui.BackLink': {
+      'prism|BackLink': {
         flexDirection: 'row',
         width: '100%',
         //alignContent: 'center',
@@ -64,12 +64,12 @@ export default {
         padding: 12,
       },
 
-      'com.prism.ui.BackLink.Image': {
+      'prism|BackLink Image': {
         marginRight: 15,
         tintColor: colors.cream
       },
 
-      'com.prism.ui.BackLink.Label': {
+      'prism|BackLink Label': {
         fontFamily: fonts.regular,
         // NOTE: must reset the font weight
         fontWeight: 'normal',
@@ -77,22 +77,22 @@ export default {
         fontSize: 18,
       },
 
-      'com.prism.ui.Notice': {
+      'prism|Notice': {
         padding: 10,
         borderRadius: 2,
         backgroundColor: '#336699',
       },
-      'com.prism.ui.Notice.Label': {
+      'prism|Notice Label': {
         color: colors.cream,
         fontSize: 15
       },
-      'com.prism.ui.Notice:error': {
+      'prism|Notice:error': {
         backgroundColor: 'red',
       },
-      'com.prism.ui.Notice.Label:error': {
+      'prism|Notice Label:error': {
         color: colors.cream
       },
-      'com.prism.ui.TouchButton': {
+      'prism|TouchButton': {
         paddingTop: 12,
         backgroundColor: 'steelblue',
         borderRadius: 4,
@@ -100,27 +100,27 @@ export default {
         height: 45,
         width: '100%'
       },
-      'com.prism.ui.TouchButton.Label': {
+      'prism|TouchButton Label': {
         fontSize: 18,
         textAlign: 'center'
       },
-      'com.prism.ui.TouchButton:disabled': {
+      'prism|TouchButton:disabled': {
         //backgroundColor: 'rgba(248, 231, 29, 1.0)',
         //opacity: 0.2
       },
-      'com.prism.ui.List': {},
-      'com.prism.ui.ListItem': {
+      'prism|List': {},
+      'prism|ListItem': {
         backgroundColor: colors.backgroundDark,
         //textAlign: 'left',
         borderRadius: 0,
         paddingHorizontal: 12,
         height: 45
       },
-      'com.prism.ui.ListItem.Label': {
+      'prism|ListItem Label': {
         color: colors.cream,
         textAlign: 'left'
       },
-      'com.prism.ui.TextArea': {
+      'prism|TextArea': {
         textAlignVertical: 'top',
         height: 100,
         paddingHorizontal: 10,
@@ -129,49 +129,49 @@ export default {
         borderColor: 'rgba(255, 255, 255, 0.5)',
         borderWidth: 1
       },
-      'com.prism.ui.TextArea:disabled': {
+      'prism|TextArea:disabled': {
         color: '#9e9e9e'
       },
 
-      'com.prism.ui.NumberStack': {
+      'prism|NumberStack': {
         flex: 1
       },
-      'com.prism.ui.NumberStack.Title': {
+      'prism|NumberStack Title': {
         flex: 1
       },
-      'com.prism.ui.NumberStack.Number': {
+      'prism|NumberStack Number': {
         flex: 1
       },
 
-      'com.prism.ui.NumberStack.Title:small': {
+      'prism|NumberStack Title:small': {
         fontSize: 16
       },
-      'com.prism.ui.NumberStack.Number:small': {
+      'prism|NumberStack Number:small': {
         fontSize: 40
       },
-      'com.prism.ui.NumberStack.Title:medium': {
+      'prism|NumberStack Title:medium': {
         fontSize: 20
       },
-      'com.prism.ui.NumberStack.Number:medium': {
+      'prism|NumberStack Number:medium': {
         fontSize: 55
       },
-      'com.prism.ui.NumberStack.Title:large': {
+      'prism|NumberStack Title:large': {
         fontSize: 24
       },
-      'com.prism.ui.NumberStack.Number:large': {
+      'prism|NumberStack Number:large': {
         fontSize: 70
       },
-      'com.prism.ui.Activity': {
+      'prism|Activity': {
         tintColor: colors.cream
       },
-      'com.prism.ui.Activity.ActivityIndicator': {
+      'prism|Activity ActivityIndicator': {
         flex: 0
       },
-      'com.prism.ui.Picture.Activity': {
+      'prism|Picture Activity': {
         // Can overwrite invariant for child component
         //tintColor: 'blue'
       },
-      'com.prism.ui.Picture.Image': {
+      'prism|Picture Image': {
         position: 'absolute'
       },
       bold: {
