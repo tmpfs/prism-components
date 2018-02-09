@@ -38,7 +38,7 @@ class Iterator extends Component {
       when
     } = this.props
     const children = React.Children.toArray(this.props.children)
-    all.row = row
+    all.isRow = row
     return (
       <Layout row={row} style={style}>
       {

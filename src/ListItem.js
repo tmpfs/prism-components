@@ -8,7 +8,7 @@ import TouchButton from './TouchButton'
 class ListItem extends Component {
 
   static mapPropsToStyle = {
-    row: ({prop}) => {
+    isRow: ({prop}) => {
       if (prop === true) {
         return {flex: 0, width: 'auto'}
       }
