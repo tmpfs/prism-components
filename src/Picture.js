@@ -14,13 +14,13 @@ class Picture extends Component {
       supportsDimension: true,
       mapPropsToStyle: {
         activityStyle: {},
-        imageStyle: {}
+        imageStyle: {
+          width: ({prop}) => prop,
+          height: ({prop}) => prop
+        },
+        width: ({prop}) => prop,
+        height: ({prop}) => prop
       }
-      //mapStyleToProps: {
-        //style: ['width', 'height'],
-        //activityStyle: [],
-        //imageStyle: ['width', 'height']
-      //}
     }
   }
 
