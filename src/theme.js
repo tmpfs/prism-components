@@ -134,13 +134,13 @@ export default {
       },
 
       'prism|NumberStack': {
-        flex: 1
+        flex: 0
       },
       'prism|NumberStack title': {
-        flex: 1
+        flex: 0
       },
       'prism|NumberStack number': {
-        flex: 1
+        flex: 0
       },
 
       'prism|NumberStack title:small': {
