@@ -46,7 +46,7 @@ class NumberStack extends Component {
       ellipsis='head'
     }
 
-    const title = (
+    const title = this.props.children ? (
       <Label
         align={align}
         bold={bold}
@@ -55,7 +55,7 @@ class NumberStack extends Component {
         style={titleStyle}>
         {this.props.children}
       </Label>
-    )
+    ) : null
 
     const num = (
       <Label
