@@ -80,19 +80,22 @@ class LayoutScreen extends ScreenRenderer {
       component: (
         <Layout row justify='between'>
           <Layout
-            center={true}
-            start={true}
+            center
+            start
+            justify='center'
             style={CenterStyle}>
             <Square />
           </Layout>
           <Layout
-            center={true}
+            center
+            justify='center'
             style={CenterStyle}>
             <Square />
           </Layout>
           <Layout
-            center={true}
-            end={true}
+            center
+            end
+            justify='center'
             style={CenterStyle}>
             <Square />
           </Layout>

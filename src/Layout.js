@@ -16,15 +16,19 @@ class Layout extends Component {
       supportsDimension: true,
       mapPropsToStyle: {
         center: ({prop}) => {
-          if (prop === true) {
-            return {alignItems: 'center', justifyContent: 'center'}
+          if (prop) {
+            return {alignItems: 'center'}
           }
         },
         start: ({prop}) => {
-          return {alignItems: 'flex-start'}
+          if (prop) {
+            return {alignItems: 'flex-start'}
+          }
         },
         end: ({prop}) => {
-          return {alignItems: 'flex-end'}
+          if (prop) {
+            return {alignItems: 'flex-end'}
+          }
         }
       }
     }
