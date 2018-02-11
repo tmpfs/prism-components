@@ -27,14 +27,6 @@ class TouchButton extends Component {
     onPress: PropTypes.func
   }
 
-  static defaultProps = {
-    disabled: false
-  }
-
-  state = {
-    disabled: false
-  }
-
   render() {
     const {style, title, labelStyle, onPress} = this.props
     return (

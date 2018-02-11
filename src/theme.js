@@ -95,6 +95,9 @@ export default {
       'prism|TouchButton': {
         paddingTop: 12,
         backgroundColor: 'rgba(70, 130, 180, 1.0)',
+        // NOTE: must use opacity in backgroundColor
+        //backgroundColor: 'steelblue',
+        //opacity: 1,
         borderRadius: 4,
         overflow: 'hidden',
         height: 45,
@@ -105,6 +108,8 @@ export default {
         textAlign: 'center'
       },
       'prism|TouchButton:disabled': {
+        // NOTE: must use opacity in backgroundColor
+        //opacity: 0.2,
         backgroundColor: 'rgba(70, 130, 180, 0.2)'
       },
       'prism|List': {},
