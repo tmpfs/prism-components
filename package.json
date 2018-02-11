@@ -1,6 +1,6 @@
 {
   "name": "react-native-prism-components",
-  "version": "1.4.14",
+  "version": "1.4.15",
   "description": "Component library for Prism",
   "main": "src/index.js",
   "scripts": {
