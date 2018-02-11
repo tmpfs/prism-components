@@ -5,9 +5,9 @@ import BackNavigation from './BackNavigation'
 
 // Small utility to render a styled back navigation
 // in StackNavigator, TabNavigator etc
-const BackNavigationHeader = (title, screen, props = {}) => {
-  return () => {
-    let {onPress, dismissKeyboard} = props
+const BackNavigationHeader = (title, screen, options = {}) => {
+  return (props) => {
+    let {onPress, dismissKeyboard} = options
     if (dismissKeyboard === undefined) {
       dismissKeyboard = true
     }
