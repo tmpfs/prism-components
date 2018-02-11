@@ -24,16 +24,26 @@ class TouchButton extends Component {
   static propTypes = {
     title: PropTypes.string,
     disabled: PropTypes.bool,
-    onPress: PropTypes.func
+    onPress: PropTypes.func,
+    multiline: PropTypes.oneOfType([
+      PropTypes.bool,
+      PropTypes.number
+    ])
   }
 
   render() {
     const {style, title, labelStyle, onPress} = this.props
+    let {multiline} = this.props
+    if (typeof(multiline) === 'boolean') {
+      multiline = parseInt(multiline) === 0 ? 1 : 0
+    }
     return (
       <TouchableOpacity
         onPress={onPress}
         style={style}>
         <Label
+          {...this.props}
+          lines={multiline}
           style={labelStyle}>
           {this.props.children || title}
         </Label>

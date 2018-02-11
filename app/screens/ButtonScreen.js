@@ -51,6 +51,22 @@ class ButtonScreen extends ScreenRenderer {
         <ExampleButtonStateChange />
       )
     },
+    {
+      label: 'Overflow',
+      component: (
+        <Button>
+          This is some text that is really long just to annoy the button.
+        </Button>
+      )
+    },
+    {
+      label: 'Multiline',
+      component: (
+        <Button multiline>
+          This is some text that is really long just to annoy the button.
+        </Button>
+      )
+    },
   ]
 }
 
