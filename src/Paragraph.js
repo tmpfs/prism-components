@@ -7,19 +7,8 @@ import namespace from './namespace'
 
 class Paragraph extends Component {
 
-  static styleOptions = () => {
-    return {
-      //supportsText: true,
-      //sizes: {
-        //'xx-small': 13,
-        //'x-small': 14,
-        //'small': 16,
-        //'medium': 18,
-        //'large': 22,
-        //'x-large': 26,
-        //'xx-large': 30
-      //}
-    }
+  static styleOptions = {
+    supportsText: true
   }
 
   static propTypes = {
