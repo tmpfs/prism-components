@@ -96,7 +96,10 @@ export default {
         // NOTE: must use opacity in backgroundColor
         backgroundColor: 'rgba(70, 130, 180, 1.0)',
         padding: 12,
-        borderRadius: 4
+        borderRadius: 4,
+        // For flex layouts and keyboard view we don't
+        // want our buttons squashed
+        minHeight: 45
       },
       'prism|TouchButton label': {
         fontSize: 18,
@@ -112,7 +115,7 @@ export default {
         //textAlign: 'left',
         borderRadius: 0,
         paddingHorizontal: 12,
-        height: 45
+        minHeight: 45
       },
       'prism|ListItem label': {
         color: colors.cream,
