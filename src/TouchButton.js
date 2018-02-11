@@ -24,40 +24,24 @@ class TouchButton extends Component {
   static propTypes = {
     title: PropTypes.string,
     disabled: PropTypes.bool,
-    onPress: PropTypes.func,
-    disabledOpacity: PropTypes.number,
+    onPress: PropTypes.func
   }
 
   static defaultProps = {
-    disabled: false,
-    disabledOpacity: 0.2
+    disabled: false
   }
 
   state = {
-    disabled: false,
-    opacity: 1
-  }
-
-  componentWillMount () {
-    const {disabled, disabledOpacity} = this.props
-    if (disabled) {
-      this.setState(
-        {disabled: true, opacity: disabledOpacity})
-    }
+    disabled: false
   }
 
   render() {
-    const {style, title, labelStyle, color, onPress} = this.props
-
-    // TODO: move to state management?
-    style.push({opacity: this.state.opacity})
-
+    const {style, title, labelStyle, onPress} = this.props
     return (
       <TouchableOpacity
         onPress={onPress}
         style={style}>
         <Label
-          color={color}
           style={labelStyle}>
           {this.props.children || title}
         </Label>
