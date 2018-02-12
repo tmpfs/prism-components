@@ -48,7 +48,6 @@ class NumberStack extends Component {
 
     const title = this.props.children ? (
       <Label
-        flex={0}
         align={align}
         bold={bold}
         color={color}
