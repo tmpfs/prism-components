@@ -33,7 +33,7 @@ const Square = Prism.style(
 class LayoutScreen extends ScreenRenderer {
   static title = 'Layout'
   static navigationOptions = {
-    header: BackNavigationHeader(LayoutScreen.title)
+    header: BackNavigationHeader()
   }
   list = [
     {

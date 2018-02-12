@@ -70,7 +70,7 @@ class Picture extends Component {
     }
 
     return (
-      <Layout center={true} flex={0} style={style}>
+      <Layout center justify='center' flex={0} style={style}>
         <Image
           ref='image'
           width={width}

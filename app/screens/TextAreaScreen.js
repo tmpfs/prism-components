@@ -8,7 +8,7 @@ import TextArea from '../../src/TextArea'
 class TextAreaScreen extends ScreenRenderer {
   static title = 'Text Area'
   static navigationOptions = {
-    header: BackNavigationHeader(TextAreaScreen.title)
+    header: BackNavigationHeader()
   }
   list = [
     {

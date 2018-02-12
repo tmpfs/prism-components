@@ -9,13 +9,13 @@ import Picture from '../../src/Picture'
 class PictureScreen extends ScreenRenderer {
   static title = 'Image'
   static navigationOptions = {
-    header: BackNavigationHeader(PictureScreen.title)
+    header: BackNavigationHeader()
   }
   list = [
     {
       label: 'Embedded Image',
       component: (
-        <Layout center={true} style={{height: 128}}>
+        <Layout center justify='center' style={{height: 128}}>
           <Picture
             width={96}
             height={96}
@@ -26,7 +26,7 @@ class PictureScreen extends ScreenRenderer {
     {
       label: 'Remote Image',
       component: (
-        <Layout center={true} style={{height: 128}}>
+        <Layout center justify='center' style={{height: 128}}>
           <Picture
             width={96}
             height={96}

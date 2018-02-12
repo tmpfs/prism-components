@@ -32,7 +32,7 @@ class NoticeStateExample extends Component {
 class NoticeScreen extends ScreenRenderer {
   static title = 'Notice'
   static navigationOptions = {
-    header: BackNavigationHeader(NoticeScreen.title)
+    header: BackNavigationHeader()
   }
   list = [
     {

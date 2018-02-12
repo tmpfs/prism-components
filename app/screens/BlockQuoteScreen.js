@@ -12,7 +12,7 @@ const copy = `Minimal, idiomatic style management for React Native.`
 class BlockQuoteScreen extends ScreenRenderer {
   static title = 'Block Quote'
   static navigationOptions = {
-    header: BackNavigationHeader(BlockQuoteScreen.title)
+    header: BackNavigationHeader()
   }
   list = [
     {

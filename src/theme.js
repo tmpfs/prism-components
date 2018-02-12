@@ -135,7 +135,7 @@ export default {
       },
 
       'prism|NumberStack': {
-        flex: 0
+        flex: 1
       },
       'prism|NumberStack title': {
         flex: 0

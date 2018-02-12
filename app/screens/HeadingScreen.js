@@ -11,7 +11,7 @@ const copy = `Heading`
 class HeadingScreen extends ScreenRenderer {
   static title = 'Heading'
   static navigationOptions = {
-    header: BackNavigationHeader(HeadingScreen.title)
+    header: BackNavigationHeader()
   }
   list = [
     {

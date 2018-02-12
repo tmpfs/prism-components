@@ -48,6 +48,7 @@ class NumberStack extends Component {
 
     const title = this.props.children ? (
       <Label
+        flex={0}
         align={align}
         bold={bold}
         color={color}
@@ -69,7 +70,7 @@ class NumberStack extends Component {
     )
 
     return (
-      <Layout center={center} style={style}>
+      <Layout justify='center' style={style}>
         {title}
         {num}
       </Layout>

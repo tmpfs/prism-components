@@ -12,7 +12,7 @@ const copy = `Minimal, idiomatic style management for React Native.`
 class ParagraphScreen extends ScreenRenderer {
   static title = 'Paragraph'
   static navigationOptions = {
-    header: BackNavigationHeader(ParagraphScreen.title)
+    header: BackNavigationHeader()
   }
   list = [
     {

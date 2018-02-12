@@ -10,7 +10,7 @@ import Label from '../../src/Label'
 class ExperimentalScreen extends ScreenRenderer {
   static title = 'Font / Text Transform'
   static navigationOptions = {
-    header: BackNavigationHeader(ExperimentalScreen.title)
+    header: BackNavigationHeader()
   }
   list = [
     {

@@ -8,7 +8,7 @@ import BulletList from '../../src/BulletList'
 class BulletListScreen extends ScreenRenderer {
   static title = 'Bullet List'
   static navigationOptions = {
-    header: BackNavigationHeader(BulletListScreen.title)
+    header: BackNavigationHeader()
   }
   list = [
     {
