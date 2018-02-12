@@ -20,6 +20,7 @@ class ListItem extends Component {
     const {style, labelStyle, title, onPress} = this.props
     return (
       <TouchButton
+        {...this.props}
         onPress={onPress}
         title={title}
         labelStyle={labelStyle}
