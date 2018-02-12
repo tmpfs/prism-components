@@ -54,3 +54,10 @@ buck-out/
 
 *.bak
 *.log
+*.keystore
+.env
+
+*.bundle
+*.bundle.meta
+
+android/app/src/main/res/drawable-*
