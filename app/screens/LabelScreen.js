@@ -11,7 +11,8 @@ const copy = `Minimal, idiomatic style management for React Native.`
 class LabelScreen extends ScreenRenderer {
   static title = 'Label'
   static navigationOptions = {
-    header: BackNavigationHeader()
+    name: 'LabelScreen',
+    header: BackNavigationHeader('Home')
   }
   list = [
     {

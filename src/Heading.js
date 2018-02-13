@@ -6,6 +6,8 @@ import namespace from './namespace'
 
 class Heading extends Component {
 
+  static styleName = 'Heading'
+
   static styleOptions = () => {
     return {
       supportsText: true,

@@ -1,6 +1,8 @@
 import React, {Component} from 'react'
 import {Prism, StyleRegistry} from 'react-native-prism'
 
+import {Text as NativeText} from 'react-native'
+
 import Layout from './src/Layout'
 import ComponentList from './app/ComponentList'
 
@@ -17,11 +19,13 @@ Prism.configure(
     experimentalPlugins: true,
     textTransform: true,
     colorNames: true,
-    tintColor: true
+    tintColor: true,
+    debug: true
   }
 )
 
 export default class App extends Component<{}> {
+
   render () {
     return (
       <ComponentList />

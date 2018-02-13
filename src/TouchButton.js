@@ -8,6 +8,8 @@ import Label from './Label'
 
 class TouchButton extends Component {
 
+  static styleName = 'TouchButton'
+
   static styleOptions = () => {
     return {
       mapPropsToStyle: {

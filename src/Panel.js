@@ -7,6 +7,8 @@ import namespace from './namespace'
 
 class Panel extends Component {
 
+  static styleName = 'Panel'
+
   static styleOptions = () => {
     return {
       mapPropsToStyle: {

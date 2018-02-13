@@ -9,6 +9,8 @@ import Activity from './Activity'
 
 class Picture extends Component {
 
+  static styleName = 'Picture'
+
   static styleOptions = () => {
     return {
       supportsDimension: true,

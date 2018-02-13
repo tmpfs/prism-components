@@ -30,7 +30,8 @@ class ExampleButtonStateChange extends Component {
 class ButtonScreen extends ScreenRenderer {
   static title = 'Button'
   static navigationOptions = {
-    header: BackNavigationHeader()
+    name: 'ButtonScreen',
+    header: BackNavigationHeader('Home')
   }
   list = [
     {

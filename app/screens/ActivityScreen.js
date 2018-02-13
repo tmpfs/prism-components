@@ -11,7 +11,8 @@ const copy = `LOADING`
 class ActivityScreen extends ScreenRenderer {
   static title = 'Activity'
   static navigationOptions = {
-    header: BackNavigationHeader()
+    name: 'ActivityScreen',
+    header: BackNavigationHeader('Home')
   }
   list = [
     {

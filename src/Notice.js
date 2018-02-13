@@ -8,6 +8,8 @@ import Paragraph from './Paragraph'
 
 class Notice extends Component {
 
+  static styleName = 'Notice'
+
   static styleOptions = () => {
     return {
       mapPropsToStyle: {

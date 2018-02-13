@@ -9,7 +9,8 @@ import Picture from '../../src/Picture'
 class PictureScreen extends ScreenRenderer {
   static title = 'Image'
   static navigationOptions = {
-    header: BackNavigationHeader()
+    name: 'PictureScreen',
+    header: BackNavigationHeader('Home')
   }
   list = [
     {

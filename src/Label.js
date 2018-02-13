@@ -6,6 +6,8 @@ import namespace from './namespace'
 
 class Label extends Component {
 
+  static styleName = 'Label'
+
   static styleOptions = {
     supportsText: true
   }

@@ -6,6 +6,8 @@ import namespace from './namespace'
 
 class TextArea extends Component {
 
+  static styleName = 'TextArea'
+
   static styleOptions = () => {
     return {
       mapPropsToStyle: {

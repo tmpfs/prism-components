@@ -5,6 +5,9 @@ import {Prism} from 'react-native-prism'
 import namespace from './namespace'
 
 class ScrollPane extends Component {
+
+  static styleName = 'ScrollPane'
+
   render () {
     return (
       <ScrollView {...this.props}>{this.props.children}</ScrollView>

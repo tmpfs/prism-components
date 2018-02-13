@@ -7,6 +7,8 @@ import namespace from './namespace'
 
 class NumberStack extends Component {
 
+  static styleName = 'NumberStack'
+
   static mapPropsToStyle = {
     titleStyle: {
       size: ({css, prop}) => css.pseudo(prop)

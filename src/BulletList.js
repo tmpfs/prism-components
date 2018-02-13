@@ -8,6 +8,8 @@ import List from './List'
 
 class BulletList extends Component {
 
+  static styleName = 'BulletList'
+
   static styleOptions = () => {
     return {
       mapPropsToStyle: {

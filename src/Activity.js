@@ -10,6 +10,8 @@ import {StyleSheet} from 'react-native'
 
 class Activity extends Component {
 
+  static styleName = 'Activity'
+
   static mapStyleToProps = {
     tintColor: ({prop}) => prop
   }

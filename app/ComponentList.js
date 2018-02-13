@@ -10,7 +10,10 @@ const screens = {
 }
 
 Categories.forEach((Type) => {
-  const nm = Type.name
+  const nm = Type.navigationOptions.name
+  if (!nm) {
+    throw new Error(`Navigation options name is required`)
+  }
   screens[nm] = {screen: Type}
 })
 

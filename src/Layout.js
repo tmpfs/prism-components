@@ -10,6 +10,9 @@ import theme from './theme'
 const registry = new StyleRegistry({theme, bundle: true})
 
 class Layout extends Component {
+
+  static styleName = 'Layout'
+
   static styleOptions = () => {
     return {
       registry: registry,

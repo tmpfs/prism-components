@@ -6,6 +6,8 @@ import Iterator from './Iterator'
 
 class List extends Component {
 
+  static styleName = 'List'
+
   static propTypes = {
     all: PropTypes.object,
     space: PropTypes.number,

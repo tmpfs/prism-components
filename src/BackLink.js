@@ -8,6 +8,8 @@ import Label from './Label'
 
 class BackLink extends Component {
 
+  static styleName = 'BackLink'
+
   static propTypes = {
     onPress: PropTypes.func
   }

@@ -5,6 +5,9 @@ import Label from './Label'
 import namespace from './namespace'
 
 class Citation extends Component {
+
+  static styleName = 'Citation'
+
   static propTypes = {
     emdash: PropTypes.bool,
     spacer: PropTypes.bool

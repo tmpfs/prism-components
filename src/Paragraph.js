@@ -7,6 +7,8 @@ import namespace from './namespace'
 
 class Paragraph extends Component {
 
+  static styleName = 'Paragraph'
+
   static styleOptions = {
     supportsText: true
   }

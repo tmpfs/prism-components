@@ -6,6 +6,8 @@ import Layout from './Layout'
 
 class Iterator extends Component {
 
+  static styleName = 'Iterator'
+
   static propTypes = {
     all: PropTypes.object,
     item: PropTypes.object,

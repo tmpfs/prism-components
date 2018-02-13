@@ -7,6 +7,9 @@ import Picture from '../src/Picture'
 import ScrollPane from '../src/ScrollPane'
 
 class LogoType extends Component {
+
+  static styleName = 'LogoType'
+
   render () {
     return (
       <Layout

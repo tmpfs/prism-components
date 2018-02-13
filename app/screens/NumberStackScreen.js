@@ -9,7 +9,8 @@ import NumberStack from '../../src/NumberStack'
 class NumberStackScreen extends ScreenRenderer {
   static title = 'Number Stack'
   static navigationOptions = {
-    header: BackNavigationHeader()
+    name: 'NumberStackScreen',
+    header: BackNavigationHeader('Home')
   }
   list = [
     {

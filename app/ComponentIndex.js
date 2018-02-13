@@ -52,13 +52,13 @@ class Index extends Component {
         <List padding={[0, 20]} space={1} margin={{bottom: 20}}>
           {
             Categories.map((item, i) => {
-              //console.log(item.name)
+              const {name} = item.navigationOptions
               return (
                 <Layout key={i}>
                   <ListItem
                     onPress={
                       () => {
-                        this.props.navigation.navigate(item.name)
+                        this.props.navigation.navigate(name)
                       }
                     }
                     >

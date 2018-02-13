@@ -9,7 +9,8 @@ import ListItem from '../../src/ListItem'
 class ListScreen extends ScreenRenderer {
   static title = 'List Menu'
   static navigationOptions = {
-    header: BackNavigationHeader()
+    name: 'ListScreen',
+    header: BackNavigationHeader('Home')
   }
   list = [
     {

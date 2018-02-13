@@ -5,6 +5,9 @@ import Paragraph from './Paragraph'
 import namespace from './namespace'
 
 class BlockQuote extends Component {
+
+  static styleName = 'BlockQuote'
+
   static propTypes = {
     quote: PropTypes.bool
   }

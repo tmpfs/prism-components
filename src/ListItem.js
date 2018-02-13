@@ -7,6 +7,8 @@ import TouchButton from './TouchButton'
 
 class ListItem extends Component {
 
+  static styleName = 'ListItem'
+
   static mapPropsToStyle = {
     isRow: ({prop}) => {
       if (prop === true) {
