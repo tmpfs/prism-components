@@ -99,7 +99,7 @@ export default {
         borderRadius: 4,
         // For flex layouts and keyboard view we don't
         // want our buttons squashed
-        minHeight: 45
+        minHeight: 48
       },
       'prism|TouchButton label': {
         fontSize: 18,
