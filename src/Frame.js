@@ -47,11 +47,13 @@ class Frame extends Component {
       }
     }
 
+
+        //scalesPageToFit={false}
+
     return (
       <WebView
         renderLoading={renderLoading}
         startInLoadingState={true}
-        scalesPageToFit={false}
         {...this.props}
         source={source}
         style={style}>
