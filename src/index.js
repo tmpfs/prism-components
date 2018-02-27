@@ -5,6 +5,7 @@ import BackNavigationHeader from './BackNavigationHeader'
 import BlockQuote from './BlockQuote'
 import BulletList from './BulletList'
 import Citation from './Citation'
+import Frame from './Frame'
 import Heading from './Heading'
 import Iterator from './Iterator'
 import Label from './Label'
@@ -28,6 +29,7 @@ export {
   BlockQuote,
   BulletList,
   Citation,
+  Frame,
   Heading,
   Iterator,
   Label,
