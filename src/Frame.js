@@ -27,14 +27,11 @@ class Frame extends Component {
     }
 
     if (!renderLoading) {
+      // TODO: validate activity indicator is shown and centred
       renderLoading = () => {
         return <Activity />
       }
     }
-
-    console.log(source)
-    console.log(style)
-
 
     return (
       <WebView
