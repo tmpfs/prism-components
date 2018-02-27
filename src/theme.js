@@ -15,6 +15,10 @@ export default {
       'View': {
         backgroundColor: 'transparent'
       },
+      'WebView': {
+        backgroundColor: 'transparent',
+        flex: 1
+      },
       'Text': {
         fontSize: 16,
         color: colors.cream
@@ -174,6 +178,9 @@ export default {
       },
       'prism|Picture image': {
         position: 'absolute'
+      },
+      'prism|Frame': {
+        flex: 1
       },
       bold: {
         fontFamily: fonts.medium
