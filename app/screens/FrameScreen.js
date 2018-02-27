@@ -17,7 +17,7 @@ class FrameScreen extends ScreenRenderer {
       label: 'Remote Page',
       component: (
         <Layout height={200}>
-          <Frame src='https://cdn.fika.community/doc/terms.html'></Frame>
+          <Frame src={'https://cdn.fika.community/doc/terms.html?v=' + Date.now()}></Frame>
         </Layout>
       )
     }
