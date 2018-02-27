@@ -21,7 +21,7 @@ const BackNavigationHeader = (screen, options = {title: 'Back'}) => {
           if (screen) {
             return props.navigation.navigate(screen)
           }
-          props.navigation.goBack()
+          props.navigation.pop()
         }
     }
     return (
