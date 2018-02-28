@@ -7,6 +7,10 @@ import BackNavigation from './BackNavigation'
 // in StackNavigator, TabNavigator etc
 const BackNavigationHeader = (screen, options = {title: 'Back'}) => {
   const {title} = options
+  if (typeof(screen) === 'function') {
+    options.onPress = screen
+    screen = null
+  }
   return (props) => {
     let {onPress, dismissKeyboard} = options
     if (dismissKeyboard === undefined) {
@@ -23,6 +27,14 @@ const BackNavigationHeader = (screen, options = {title: 'Back'}) => {
           }
           props.navigation.pop()
         }
+    } else {
+      const parentOnPress = onPress
+      onPress = () => {
+        if (dismissKeyboard) {
+          Keyboard.dismiss()
+        }
+        parentOnPress(props)
+      }
     }
     return (
       <BackNavigation onPress={onPress}>
