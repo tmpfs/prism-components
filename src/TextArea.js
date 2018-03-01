@@ -43,10 +43,19 @@ class TextArea extends Component {
     this.setState({disabled})
   }
 
+  focus () {
+    this.refs.input.focus()
+  }
+
+  blur () {
+    this.refs.input.blur()
+  }
+
   render() {
     const {style, disabled} = this.props
     return (
       <TextInput
+        ref='input'
         underlineColorAndroid='transparent'
         {...this.props}
         editable={!this.state.disabled}
