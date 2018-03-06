@@ -57,8 +57,8 @@ class TextArea extends Component {
       <TextInput
         ref='input'
         underlineColorAndroid='transparent'
+        editable={!disabled}
         {...this.props}
-        editable={!this.state.disabled}
         style={style} />
     )
   }
