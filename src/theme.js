@@ -19,6 +19,10 @@ export default {
         backgroundColor: 'transparent',
         flex: 1
       },
+      'SafeAreaView': {
+        backgroundColor: 'transparent',
+        flex: 1
+      },
       'Text': {
         fontSize: 16,
         color: colors.cream

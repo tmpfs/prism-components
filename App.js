@@ -1,9 +1,7 @@
 import React, {Component} from 'react'
 import {Prism, StyleRegistry} from 'react-native-prism'
 
-import {Text as NativeText} from 'react-native'
-
-import Layout from './src/Layout'
+import {Layout, SafeAreaView} from './src'
 import ComponentList from './app/ComponentList'
 
 import theme from './app/theme'
@@ -28,7 +26,9 @@ export default class App extends Component<{}> {
 
   render () {
     return (
-      <ComponentList />
+      <SafeAreaView>
+        <ComponentList />
+      </SafeAreaView>
     )
   }
 }
