@@ -16,6 +16,9 @@ class TextArea extends Component {
             return css.pseudo('disabled')
           }
         }
+      },
+      mapStyleToProps: {
+        placeholderColor: ({prop}) => prop
       }
     }
   }
@@ -42,21 +45,14 @@ class TextArea extends Component {
     this.setState({disabled})
   }
 
-  focus () {
-    this.refs.input.focus()
-  }
-
-  blur () {
-    this.refs.input.blur()
-  }
-
   render() {
-    const {style, disabled} = this.props
+    const {style, disabled, placeholderColor} = this.props
     return (
       <TextInput
         ref='input'
         underlineColorAndroid='transparent'
         editable={!disabled}
+        placeholderTextColor={placeholderColor}
         {...this.props}
         style={style} />
     )

@@ -134,17 +134,20 @@ export default {
         textAlignVertical: 'top',
         height: 100,
         paddingHorizontal: 10,
+        placeholderColor: colors.cream,
         backgroundColor: 'rgba(51, 102, 153, 0.75)',
         borderColor: 'rgba(255, 255, 255, 0.5)',
+        //borderRadius: 6,
         borderWidth: 1
       },
       'prism|TextArea:disabled': {
+        placeholderColor: colors.disabled,
         color: colors.disabled
       },
       'prism|Input': {
         fontSize: 16,
         color: colors.cream,
-        borderRadius: 6,
+        //borderRadius: 6,
         borderWidth: 1,
         backgroundColor: 'rgba(51, 102, 153, 0.75)',
         borderColor: 'rgba(255, 255, 255, 0.5)',
@@ -153,6 +156,7 @@ export default {
         paddingHorizontal: 10
       },
       'prism|Input:disabled': {
+        placeholderColor: colors.disabled,
         color: colors.disabled
       },
       'prism|NumberStack': {

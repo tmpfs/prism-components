@@ -15,7 +15,7 @@ class InputScreen extends ScreenRenderer {
     {
       label: 'Text',
       component: (
-        <Input placeholder='Text entry' />
+        <Input autoFocus placeholder='Text entry' />
       )
     },
     {

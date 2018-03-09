@@ -15,7 +15,7 @@ class TextAreaScreen extends ScreenRenderer {
     {
       label: 'Enabled',
       component: (
-        <TextArea>Enter your comment</TextArea>
+        <TextArea placeholder='Enter your comment'></TextArea>
       )
     },
     {
