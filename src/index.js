@@ -7,6 +7,7 @@ import BulletList from './BulletList'
 import Citation from './Citation'
 import Frame from './Frame'
 import Heading from './Heading'
+import Input from './Input'
 import Iterator from './Iterator'
 import Label from './Label'
 import Layout from './Layout'
@@ -31,6 +32,7 @@ export {
   Citation,
   Frame,
   Heading,
+  Input,
   Iterator,
   Label,
   Layout,
