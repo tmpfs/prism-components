@@ -14,6 +14,7 @@ import ButtonScreen from './screens/ButtonScreen'
 import HeadingScreen from './screens/HeadingScreen'
 import LabelScreen from './screens/LabelScreen'
 import ParagraphScreen from './screens/ParagraphScreen'
+import InputScreen from './screens/InputScreen'
 import TextAreaScreen from './screens/TextAreaScreen'
 import FrameScreen from './screens/FrameScreen'
 import BlockQuoteScreen from './screens/BlockQuoteScreen'
@@ -30,6 +31,7 @@ const Categories = [
   PictureScreen,
   HeadingScreen,
   ParagraphScreen,
+  InputScreen,
   TextAreaScreen,
   FrameScreen,
   ButtonScreen,

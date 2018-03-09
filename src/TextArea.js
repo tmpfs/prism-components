@@ -25,7 +25,6 @@ class TextArea extends Component {
     maxLength: PropTypes.number,
     numberOfLines: PropTypes.number,
     disabled: PropTypes.bool,
-    editable: PropTypes.bool,
     multiline: PropTypes.bool
   }
 

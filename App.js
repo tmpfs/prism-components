@@ -18,7 +18,10 @@ Prism.configure(
     textTransform: true,
     colorNames: true,
     tintColor: true,
-    debug: true
+    debug: true,
+    invariants: [
+      'placeholderColor'
+    ]
   }
 )
 

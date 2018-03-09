@@ -1,6 +1,7 @@
 export default {
   colors: {
     cream: '#fdfbdf',
+    disabled: '#9e9e9e',
     background: 'steelblue',
     backgroundLight: 'powderblue',
     backgroundDark: '#336699',
@@ -133,15 +134,27 @@ export default {
         textAlignVertical: 'top',
         height: 100,
         paddingHorizontal: 10,
-        //backgroundColor: 'transparent',
         backgroundColor: 'rgba(51, 102, 153, 0.75)',
         borderColor: 'rgba(255, 255, 255, 0.5)',
         borderWidth: 1
       },
       'prism|TextArea:disabled': {
-        color: '#9e9e9e'
+        color: colors.disabled
       },
-
+      'prism|Input': {
+        fontSize: 16,
+        color: colors.cream,
+        borderRadius: 6,
+        borderWidth: 1,
+        backgroundColor: 'rgba(51, 102, 153, 0.75)',
+        borderColor: 'rgba(255, 255, 255, 0.5)',
+        placeholderColor: colors.cream,
+        paddingVertical: 5,
+        paddingHorizontal: 10
+      },
+      'prism|Input:disabled': {
+        color: colors.disabled
+      },
       'prism|NumberStack': {
         flex: 1
       },

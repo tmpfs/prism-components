@@ -23,7 +23,7 @@ class TextAreaScreen extends ScreenRenderer {
       component: (
         <TextArea disabled>Do something before editing</TextArea>
       )
-    }
+    },
   ]
 }
 
