@@ -58,8 +58,6 @@ class Input extends Component {
   render() {
     const {style, type, disabled, placeholderColor} = this.props
 
-    console.log(placeholderColor)
-
     let typeProps = {}
     switch (type) {
       case 'email':
