@@ -68,6 +68,12 @@ class ButtonScreen extends ScreenRenderer {
         </Button>
       )
     },
+    {
+      label: 'Style Name',
+      component: (
+        <Button styleName='TextButton'>Touch Me</Button>
+      )
+    },
   ]
 }
 

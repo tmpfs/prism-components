@@ -6,6 +6,10 @@ export default {
         // merge if you uncomment this
         //
         //color: 'black'
+      },
+      'prism|TextButton label': {
+        color: '#9e9e9e',
+        textAlign: 'center'
       }
     }
   }

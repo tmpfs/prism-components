@@ -3601,9 +3601,9 @@ react-native-prism-primitives@^2.2.2:
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/react-native-prism-primitives/-/react-native-prism-primitives-2.2.2.tgz#57142cea4d1f48ab79dec0aacd48e3bd600756da"
 
-react-native-prism@5.0.5:
-  version "5.0.5"
-  resolved "https://registry.yarnpkg.com/react-native-prism/-/react-native-prism-5.0.5.tgz#876e2428e0aea595875a9a16e2466f5da1bebac3"
+react-native-prism@^5.0.7:
+  version "5.0.7"
+  resolved "https://registry.yarnpkg.com/react-native-prism/-/react-native-prism-5.0.7.tgz#d79f4d16a4dac74dd62a8422a9dd36754dfbe117"
 
 react-native-safe-area-view@^0.6.0:
   version "0.6.0"
