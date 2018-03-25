@@ -5,6 +5,7 @@ import {Prism} from 'react-native-prism'
 import namespace from './namespace'
 import Layout from './Layout'
 import BackLink from './BackLink'
+import withPreventDoubleTap from './withPreventDoubleTap'
 
 class BackNavigation extends Component {
 
@@ -30,4 +31,4 @@ class BackNavigation extends Component {
   }
 }
 
-export default Prism(BackNavigation, {namespace})
+export default Prism(withPreventDoubleTap(BackNavigation), {namespace})

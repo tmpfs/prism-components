@@ -13,6 +13,7 @@
     "url": "https://github.com/fika-community/prism-components.git"
   },
   "dependencies": {
+    "lodash.debounce": "^4.0.8",
     "react-native-prism-primitives": "^2.2.2"
   },
   "devDependencies": {

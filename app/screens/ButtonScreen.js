@@ -14,14 +14,22 @@ class ExampleButtonStateChange extends Component {
   }
 
   render () {
+    const {debounceTimeout} = this.props
     const toggle = () => {
       this.setState({disabled: !this.state.disabled})
     }
     const text = !this.state.disabled ? 'Enabled' : 'Disabled'
     return (
       <List space={20}>
-        <Button id='target' disabled={this.state.disabled}>{text}</Button>
-        <Button id='trigger' onPress={toggle}>Toggle Disabled State</Button>
+        <Button id='target' disabled={this.state.disabled}>
+          {text}
+        </Button>
+        <Button
+          id='trigger'
+          debounceTimeout={debounceTimeout}
+          onPress={toggle}>
+          Toggle Disabled State
+        </Button>
       </List>
     )
   }
@@ -50,6 +58,12 @@ class ButtonScreen extends ScreenRenderer {
       label: 'State Change',
       component: (
         <ExampleButtonStateChange />
+      )
+    },
+    {
+      label: 'State Change (No Debounce)',
+      component: (
+        <ExampleButtonStateChange debounceTimeout={0} />
       )
     },
     {

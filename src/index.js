@@ -21,6 +21,7 @@ import Picture from './Picture'
 import ScrollPane from './ScrollPane'
 import TextArea from './TextArea'
 import TouchButton from './TouchButton'
+import withPreventDoubleTap from './withPreventDoubleTap'
 
 export {
   Activity,
@@ -46,6 +47,7 @@ export {
   ScrollPane,
   TextArea,
   TouchButton,
+  withPreventDoubleTap
 }
 
 export * from 'react-native-prism-primitives'

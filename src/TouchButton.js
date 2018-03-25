@@ -1,10 +1,10 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 import {Prism} from 'react-native-prism'
-
 import {TouchableOpacity} from 'react-native-prism-primitives'
 import namespace from './namespace'
 import Label from './Label'
+import withPreventDoubleTap from './withPreventDoubleTap'
 
 class TouchButton extends Component {
 
@@ -34,11 +34,19 @@ class TouchButton extends Component {
   }
 
   render() {
-    const {style, title, labelStyle, onPress} = this.props
+    // TODO: deprecate title property
+    const {
+      style,
+      title,
+      labelStyle,
+      onPress
+    } = this.props
+
     let {multiline} = this.props
     if (typeof(multiline) === 'boolean') {
       multiline = parseInt(multiline) === 0 ? 1 : 0
     }
+
     return (
       <TouchableOpacity
         onPress={onPress}
@@ -54,4 +62,4 @@ class TouchButton extends Component {
   }
 }
 
-export default Prism(TouchButton, {namespace})
+export default Prism(withPreventDoubleTap(TouchButton), {namespace})
