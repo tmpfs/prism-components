@@ -61,23 +61,24 @@ export default {
       'prism|BulletList bullet': {
         marginRight: 5
       },
-      'prism|BackNavigation': {
-        flex: 0,
+
+      'prism|BackNavigationHeader': {
+        padding: 12,
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
         backgroundColor: colors.backgroundDark
       },
-      'prism|BackLink': {
-        flexDirection: 'row',
-        width: '100%',
-        //alignContent: 'center',
-        alignItems: 'flex-start',
-        padding: 12,
+      'prism|BackNavigation': {
+        flex: 0
       },
-
+      'prism|BackLink': {
+        flexDirection: 'row'
+      },
       'prism|BackLink image': {
         marginRight: 15,
         tintColor: colors.cream
       },
-
       'prism|BackLink label': {
         fontFamily: fonts.regular,
         // NOTE: must reset the font weight

@@ -34,7 +34,10 @@ class LayoutScreen extends ScreenRenderer {
   static title = 'Layout'
   static navigationOptions = {
     name: 'LayoutScreen',
-    header: BackNavigationHeader('Home')
+    //header: BackNavigationHeader('Home')
+    header: BackNavigationHeader('Home', {
+      title: 'Back',
+      headerRight: <Square background='backgroundLight' />})
   }
   list = [
     {
