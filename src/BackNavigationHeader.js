@@ -27,8 +27,7 @@ const BackNavigationHeader = (screen, options = {title: 'Back'}) => {
       const {style} = props
 
       //console.log(style)
-
-      console.log(title)
+      //console.log(title)
 
       let {
         onPress,
@@ -61,20 +60,24 @@ const BackNavigationHeader = (screen, options = {title: 'Back'}) => {
         }
       }
 
+      const headerLeft = options.headerLeft || (
+        <BackNavigation onPress={onPress}>
+          {title}
+        </BackNavigation>
+      )
+
       // NOTE: must reset position to relative
       return (
         <View style={[style, {position: 'relative'}]}>
-          <BackNavigation onPress={onPress}>
-            {title}
-          </BackNavigation>
+          {headerLeft}
           {headerRight}
         </View>
       )
-
     }
   }
 
   const Header = Prism(BackNavigationHeader, {namespace})
+  // NOTE: must export a function for `react-navigation`
   return (props) => <Header {...props} />
 }
 
