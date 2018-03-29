@@ -67,7 +67,8 @@ class Input extends Component {
         break;
       case 'tel':
         typeProps = {
-          keyboardType: 'phone-pad'
+          keyboardType: 'phone-pad',
+          returnKeyType: 'done'
         }
         break;
       case 'number':
