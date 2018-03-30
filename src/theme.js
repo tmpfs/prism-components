@@ -189,7 +189,8 @@ export default {
         fontSize: 70
       },
       'prism|Activity': {
-        tintColor: colors.cream
+        tintColor: colors.cream,
+        flex: 0
       },
       'prism|Activity activityIndicator': {
         flex: 0
