@@ -29,7 +29,7 @@ class Activity extends Component {
   }
 
   static defaultProps = {
-    size: 'large',
+    large: true,
     space: 10,
     stacked: false,
     labelProps: {},
