@@ -22,8 +22,8 @@ const withPreventDoubleTap = (WrappedComponent) => {
       debounceOptions: {leading: true, trailing: false}
     }
 
-    debouncedOnPress = () => {
-      this.props.onPress && this.props.onPress()
+    debouncedOnPress = (...args) => {
+      this.props.onPress && this.props.onPress(...args)
     }
 
     onPress = debounce(
