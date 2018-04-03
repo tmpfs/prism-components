@@ -33,7 +33,7 @@ class NoticeScreen extends ScreenRenderer {
   static title = 'Notice'
   static navigationOptions = {
     name: 'NoticeScreen',
-    header: BackNavigationHeader('Home')
+    header: BackNavigationHeader()
   }
   list = [
     {

@@ -39,7 +39,7 @@ class ButtonScreen extends ScreenRenderer {
   static title = 'Button'
   static navigationOptions = {
     name: 'ButtonScreen',
-    header: BackNavigationHeader('Home')
+    header: BackNavigationHeader()
   }
   list = [
     {

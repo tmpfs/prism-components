@@ -11,7 +11,7 @@ class ExperimentalScreen extends ScreenRenderer {
   static title = 'Font / Text Transform'
   static navigationOptions = {
     name: 'ExperimentalScreen',
-    header: BackNavigationHeader('Home')
+    header: BackNavigationHeader()
   }
   list = [
     {

@@ -13,7 +13,7 @@ class BlockQuoteScreen extends ScreenRenderer {
   static title = 'Block Quote'
   static navigationOptions = {
     name: 'BlockQuoteScreen',
-    header: BackNavigationHeader('Home')
+    header: BackNavigationHeader()
   }
   list = [
     {

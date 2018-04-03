@@ -9,7 +9,7 @@ class BulletListScreen extends ScreenRenderer {
   static title = 'Bullet List'
   static navigationOptions = {
     name: 'BulletListScreen',
-    header: BackNavigationHeader('Home')
+    header: BackNavigationHeader()
   }
   list = [
     {

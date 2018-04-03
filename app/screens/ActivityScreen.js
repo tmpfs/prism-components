@@ -12,7 +12,7 @@ class ActivityScreen extends ScreenRenderer {
   static title = 'Activity'
   static navigationOptions = {
     name: 'ActivityScreen',
-    header: BackNavigationHeader('Home')
+    header: BackNavigationHeader()
   }
   list = [
     {

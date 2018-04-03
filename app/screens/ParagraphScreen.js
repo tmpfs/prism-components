@@ -13,7 +13,7 @@ class ParagraphScreen extends ScreenRenderer {
   static title = 'Paragraph'
   static navigationOptions = {
     name: 'ParagraphScreen',
-    header: BackNavigationHeader('Home')
+    header: BackNavigationHeader()
   }
   list = [
     {

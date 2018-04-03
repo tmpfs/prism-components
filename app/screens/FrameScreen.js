@@ -10,7 +10,7 @@ class FrameScreen extends ScreenRenderer {
   static title = 'Frame'
   static navigationOptions = {
     name: 'FrameScreen',
-    header: BackNavigationHeader('Home')
+    header: BackNavigationHeader()
   }
   list = [
     {

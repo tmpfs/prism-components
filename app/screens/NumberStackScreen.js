@@ -10,7 +10,7 @@ class NumberStackScreen extends ScreenRenderer {
   static title = 'Number Stack'
   static navigationOptions = {
     name: 'NumberStackScreen',
-    header: BackNavigationHeader('Home')
+    header: BackNavigationHeader()
   }
   list = [
     {

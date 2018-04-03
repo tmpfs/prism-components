@@ -10,7 +10,7 @@ class ListScreen extends ScreenRenderer {
   static title = 'List Menu'
   static navigationOptions = {
     name: 'ListScreen',
-    header: BackNavigationHeader('Home')
+    header: BackNavigationHeader()
   }
   list = [
     {

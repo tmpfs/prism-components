@@ -9,7 +9,7 @@ class TextAreaScreen extends ScreenRenderer {
   static title = 'Text Area'
   static navigationOptions = {
     name: 'TextAreaScreen',
-    header: BackNavigationHeader('Home')
+    header: BackNavigationHeader()
   }
   list = [
     {

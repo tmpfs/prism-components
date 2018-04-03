@@ -9,7 +9,7 @@ class InputScreen extends ScreenRenderer {
   static title = 'Input'
   static navigationOptions = {
     name: 'InputScreen',
-    header: BackNavigationHeader('Home')
+    header: BackNavigationHeader()
   }
   list = [
     {

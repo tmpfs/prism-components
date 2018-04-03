@@ -12,7 +12,7 @@ class HeadingScreen extends ScreenRenderer {
   static title = 'Heading'
   static navigationOptions = {
     name: 'HeadingScreen',
-    header: BackNavigationHeader('Home')
+    header: BackNavigationHeader()
   }
   list = [
     {

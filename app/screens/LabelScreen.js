@@ -12,7 +12,7 @@ class LabelScreen extends ScreenRenderer {
   static title = 'Label'
   static navigationOptions = {
     name: 'LabelScreen',
-    header: BackNavigationHeader('Home')
+    header: BackNavigationHeader()
   }
   list = [
     {

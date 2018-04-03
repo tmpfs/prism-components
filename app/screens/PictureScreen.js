@@ -10,7 +10,7 @@ class PictureScreen extends ScreenRenderer {
   static title = 'Image'
   static navigationOptions = {
     name: 'PictureScreen',
-    header: BackNavigationHeader('Home')
+    header: BackNavigationHeader()
   }
   list = [
     {

@@ -14,14 +14,15 @@ class BackNavigationHeader extends Component {
   //}
 
   render () {
-    const {style, options, screen} = this.props
+    const {style, options} = this.props
     const {title} = options
 
     //console.log(style)
     //console.log(title)
 
+    let {onPress} = this.props
+
     let {
-      onPress,
       dismissKeyboard,
       headerRight
     } = options
@@ -35,9 +36,6 @@ class BackNavigationHeader extends Component {
         () => {
           if (dismissKeyboard) {
             Keyboard.dismiss()
-          }
-          if (screen) {
-            return this.props.navigation.navigate(screen)
           }
           this.props.navigation.pop()
         }
@@ -73,10 +71,10 @@ const Header = Prism(BackNavigationHeader, {namespace})
 // in StackNavigator, TabNavigator etc
 
 // NOTE: must export a function for `react-navigation`
-export default (screen, options = {title: 'Back'}) => {
-  if (typeof(screen) === 'function') {
-    options.onPress = screen
-    screen = null
+export default (onPress, options = {title: 'Back'}) => {
+  if (typeof(onPress) === 'object') {
+    options = onPress
+    onPress = null
   }
-  return (props) => <Header {...props} screen={screen} options={options} />
+  return (props) => <Header {...props} onPress={onPress} options={options} />
 }
