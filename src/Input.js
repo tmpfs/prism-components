@@ -58,11 +58,14 @@ class Input extends Component {
   render() {
     const {style, type, disabled, placeholderColor} = this.props
 
-    let typeProps = {}
+    let typeProps = {
+      returnKeyType: 'done'
+    }
     switch (type) {
       case 'email':
         typeProps = {
-          keyboardType: 'email-address'
+          keyboardType: 'email-address',
+          returnKeyType: 'done'
         }
         break;
       case 'tel':
@@ -73,12 +76,14 @@ class Input extends Component {
         break;
       case 'number':
         typeProps = {
-          keyboardType: 'numeric'
+          keyboardType: 'numeric',
+          returnKeyType: 'done'
         }
         break;
       case 'password':
         typeProps = {
-          secureTextEntry: true
+          secureTextEntry: true,
+          returnKeyType: 'done'
         }
         break;
     }
