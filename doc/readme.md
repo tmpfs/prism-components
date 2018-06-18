@@ -1,7 +1,7 @@
 <h1 align="center">Prism Components</h1>
-<p align="center">Component library for <a href="https://github.com/fika-community/prism"title="Prism">Prism</a></p>
+<p align="center">Component library for <a href="https://github.com/tmpfs/prism"title="Prism">Prism</a></p>
 <p align="center">
-  <img width="256" height="256" src="https://raw.githubusercontent.com/fika-community/prism/master/prism.png" />
+  <img width="256" height="256" src="https://raw.githubusercontent.com/tmpfs/prism/master/prism.png" />
 </p>
 
 ***
@@ -48,6 +48,6 @@ These are the component styles bundled with the library for reference, override 
 
 MIT
 
-[Prism]: https://github.com/fika-community/prism
-[Prism Primitives]: https://github.com/fika-community/prism#properties
-[Getting Started]: https://github.com/fika-community/prism#getting-started
+[Prism]: https://github.com/tmpfs/prism
+[Prism Primitives]: https://github.com/tmpfs/prism#properties
+[Getting Started]: https://github.com/tmpfs/prism#getting-started

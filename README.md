@@ -1,7 +1,7 @@
 <h1 align="center">Prism Components</h1>
-<p align="center">Component library for <a href="https://github.com/fika-community/prism"title="Prism">Prism</a></p>
+<p align="center">Component library for <a href="https://github.com/tmpfs/prism"title="Prism">Prism</a></p>
 <p align="center">
-  <img width="256" height="256" src="https://raw.githubusercontent.com/fika-community/prism/master/prism.png" />
+  <img width="256" height="256" src="https://raw.githubusercontent.com/tmpfs/prism/master/prism.png" />
 </p>
 
 ---
@@ -25,9 +25,9 @@ yarn add react-native-prism-components
 
 ## Synopsis
 
-Component library for [Prism](https://github.com/fika-community/prism) using the namespace `com.prism.ui`.
+Component library for [Prism](https://github.com/tmpfs/prism) using the namespace `com.prism.ui`.
 
-This library extends the [Prism Primitives](https://github.com/fika-community/prism#properties) library, re-exporting all the underlying primitive components so you have a clear upgrade path if you want to use this library.
+This library extends the [Prism Primitives](https://github.com/tmpfs/prism#properties) library, re-exporting all the underlying primitive components so you have a clear upgrade path if you want to use this library.
 
 ```javascript
 import {
@@ -42,7 +42,7 @@ To view the components in action clone the repo, install dependencies and run th
 
 ## Getting Started
 
-Configure your application (see the Prism [Getting Started](https://github.com/fika-community/prism#getting-started) guide) and then you can import the components from `react-native-prism-components` to use them in your application.
+Configure your application (see the Prism [Getting Started](https://github.com/tmpfs/prism#getting-started) guide) and then you can import the components from `react-native-prism-components` to use them in your application.
 
 ## Component Styles
 
@@ -229,7 +229,7 @@ MIT
 
 Created by [mkdoc](https://github.com/mkdoc/mkdoc) on February 4, 2018
 
-[prism]: https://github.com/fika-community/prism
-[prism primitives]: https://github.com/fika-community/prism#properties
-[getting started]: https://github.com/fika-community/prism#getting-started
+[prism]: https://github.com/tmpfs/prism
+[prism primitives]: https://github.com/tmpfs/prism#properties
+[getting started]: https://github.com/tmpfs/prism#getting-started
 
