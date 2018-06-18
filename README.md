@@ -52,6 +52,7 @@ These are the component styles bundled with the library for reference, override 
 export default {
   colors: {
     cream: '#fdfbdf',
+    disabled: '#9e9e9e',
     background: 'steelblue',
     backgroundLight: 'powderblue',
     backgroundDark: '#336699',
@@ -66,6 +67,14 @@ export default {
       'View': {
         backgroundColor: 'transparent'
       },
+      'WebView': {
+        backgroundColor: 'transparent',
+        flex: 1
+      },
+      'SafeAreaView': {
+        backgroundColor: 'transparent',
+        flex: 1
+      },
       'Text': {
         fontSize: 16,
         color: colors.cream
@@ -74,53 +83,54 @@ export default {
         fontSize: 16,
         color: colors.cream
       },
-      'com.prism.ui.Layout': {
+      'prism|Layout': {
         flex: 1
       },
-      'com.prism.ui.Label': {
+      'prism|Label': {
         fontFamily: fonts.regular,
         fontSize: 18,
         //color: colors.cream
       },
-      'com.prism.ui.Paragraph': {},
-      'com.prism.ui.ScrollPane': {
+      'prism|Paragraph': {},
+      'prism|ScrollPane': {
         flex: 1,
         //padding: 20
       },
-      'com.prism.ui.Panel.Header': {
+      'prism|Panel header': {
         backgroundColor: '#336699',
         paddingVertical: 10,
         paddingHorizontal: 20,
         textTransform: 'uppercase'
       },
-      'com.prism.ui.Panel.Body': {
+      'prism|Panel body': {
         backgroundColor: '#335599',
         padding: 20
       },
-      'com.prism.ui.BulletList': {
+      'prism|BulletList': {
         color: colors.cream
       },
-      'com.prism.ui.BulletList.Bullet': {
+      'prism|BulletList bullet': {
         marginRight: 5
       },
-      'com.prism.ui.BackNavigation': {
-        flex: 0,
+
+      'prism|BackNavigationHeader': {
+        padding: 12,
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
         backgroundColor: colors.backgroundDark
       },
-      'com.prism.ui.BackLink': {
-        flexDirection: 'row',
-        width: '100%',
-        //alignContent: 'center',
-        alignItems: 'flex-start',
-        padding: 12,
+      'prism|BackNavigation': {
+        flex: 0
       },
-
-      'com.prism.ui.BackLink.Image': {
+      'prism|BackLink': {
+        flexDirection: 'row'
+      },
+      'prism|BackLink image': {
         marginRight: 15,
         tintColor: colors.cream
       },
-
-      'com.prism.ui.BackLink.Label': {
+      'prism|BackLink label': {
         fontFamily: fonts.regular,
         // NOTE: must reset the font weight
         fontWeight: 'normal',
@@ -128,90 +138,123 @@ export default {
         fontSize: 18,
       },
 
-      'com.prism.ui.Notice': {
+      'prism|Notice': {
         padding: 10,
         borderRadius: 2,
         backgroundColor: '#336699',
       },
-      'com.prism.ui.Notice.Label': {
+      'prism|Notice label': {
         color: colors.cream,
         fontSize: 15
       },
-      'com.prism.ui.Notice:error': {
+      'prism|Notice:error': {
         backgroundColor: 'red',
       },
-      'com.prism.ui.Notice.Label:error': {
+      'prism|Notice label:error': {
         color: colors.cream
       },
-      'com.prism.ui.Button': {
-        fontSize: 18,
-        paddingTop: 12,
-        backgroundColor: 'steelblue',
+      'prism|TouchButton': {
+        // NOTE: must use opacity in backgroundColor
+        backgroundColor: 'rgba(70, 130, 180, 1.0)',
+        padding: 12,
         borderRadius: 4,
-        overflow: 'hidden',
-        textAlign: 'center',
-        height: 45,
-        width: '100%'
+        // For flex layouts and keyboard view we don't
+        // want our buttons squashed
+        minHeight: 48
       },
-      'com.prism.ui.Button:disabled': {
-        //backgroundColor: 'rgba(248, 231, 29, 1.0)',
-        //opacity: 0.2
+      'prism|TouchButton label': {
+        fontSize: 18,
+        textAlign: 'center'
       },
-      'com.prism.ui.List': {},
-      'com.prism.ui.ListItem': {
+      'prism|TouchButton:disabled': {
+        // NOTE: must use opacity in backgroundColor
+        backgroundColor: 'rgba(70, 130, 180, 0.2)'
+      },
+      'prism|List': {},
+      'prism|ListItem': {
         backgroundColor: colors.backgroundDark,
-        textAlign: 'left',
+        //textAlign: 'left',
         borderRadius: 0,
         paddingHorizontal: 12,
-        height: 45
+        minHeight: 45
       },
-      'com.prism.ui.TextArea': {
+      'prism|ListItem label': {
+        color: colors.cream,
+        textAlign: 'left'
+      },
+      'prism|TextArea': {
         textAlignVertical: 'top',
         height: 100,
         paddingHorizontal: 10,
-        //backgroundColor: 'transparent',
+        placeholderColor: colors.cream,
         backgroundColor: 'rgba(51, 102, 153, 0.75)',
         borderColor: 'rgba(255, 255, 255, 0.5)',
+        //borderRadius: 6,
         borderWidth: 1
       },
-      'com.prism.ui.TextArea:disabled': {
-        color: '#9e9e9e'
+      'prism|TextArea:disabled': {
+        placeholderColor: colors.disabled,
+        color: colors.disabled
+      },
+      'prism|Input': {
+        fontSize: 16,
+        color: colors.cream,
+        //borderRadius: 6,
+        borderWidth: 1,
+        backgroundColor: 'rgba(51, 102, 153, 0.75)',
+        borderColor: 'rgba(255, 255, 255, 0.5)',
+        placeholderColor: colors.cream,
+        paddingVertical: 5,
+        paddingHorizontal: 10
+      },
+      'prism|Input:disabled': {
+        placeholderColor: colors.disabled,
+        color: colors.disabled
+      },
+      'prism|NumberStack': {
+        flex: 1
+      },
+      'prism|NumberStack title': {
+        flex: 0
+      },
+      'prism|NumberStack number': {
+        flex: 0
       },
 
-      'com.prism.ui.NumberStack': {
-        flex: 1
-      },
-      'com.prism.ui.NumberStack.Title': {
-        flex: 1
-      },
-      'com.prism.ui.NumberStack.Number': {
-        flex: 1
-      },
-
-      'com.prism.ui.NumberStack.Title:small': {
+      'prism|NumberStack title:small': {
         fontSize: 16
       },
-      'com.prism.ui.NumberStack.Number:small': {
+      'prism|NumberStack number:small': {
         fontSize: 40
       },
-      'com.prism.ui.NumberStack.Title:medium': {
+      'prism|NumberStack title:medium': {
         fontSize: 20
       },
-      'com.prism.ui.NumberStack.Number:medium': {
+      'prism|NumberStack number:medium': {
         fontSize: 55
       },
-      'com.prism.ui.NumberStack.Title:large': {
+      'prism|NumberStack title:large': {
         fontSize: 24
       },
-      'com.prism.ui.NumberStack.Number:large': {
+      'prism|NumberStack number:large': {
         fontSize: 70
       },
-
-      'com.prism.ui.Activity': {
-        tintColor: colors.cream
-      },
-      'com.prism.ui.Activity.ActivityIndicator': {
+      'prism|Activity': {
+        tintColor: colors.cream,
         flex: 0
+      },
+      'prism|Activity activityIndicator': {
+        flex: 0
+      },
+      'prism|Picture activity': {
+        // Can overwrite invariant for child component
+        //tintColor: 'blue'
+      },
+      'prism|Picture image': {
+        position: 'absolute'
+      },
+      'prism|Frame': {
+        flex: 1
       },
       bold: {
         fontFamily: fonts.medium
@@ -227,7 +270,7 @@ MIT
 
 ---
 
-Created by [mkdoc](https://github.com/mkdoc/mkdoc) on February 4, 2018
+Created by [mkdoc](https://github.com/mkdoc/mkdoc) on June 18, 2018
 
 [prism]: https://github.com/tmpfs/prism
 [prism primitives]: https://github.com/tmpfs/prism#properties
