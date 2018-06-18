@@ -25,7 +25,7 @@ yarn add react-native-prism-components
 
 ## Synopsis
 
-Component library for [Prism](https://github.com/tmpfs/prism) using the namespace `com.prism.ui`.
+Component library for [Prism](https://github.com/tmpfs/prism) using the namespace `prism`.
 
 This library extends the [Prism Primitives](https://github.com/tmpfs/prism#properties) library, re-exporting all the underlying primitive components so you have a clear upgrade path if you want to use this library.
 
