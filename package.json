@@ -31,9 +31,9 @@
     "preset": "react-native"
   },
   "peerDependencies": {
-    "prop-types": "^15.6.1",
-    "react": "^16.3.0",
-    "react-native": "^0.54.0",
+    "prop-types": "*",
+    "react": "*",
+    "react-native": "*",
     "react-native-prism": "^5.0.5"
   }
 }
